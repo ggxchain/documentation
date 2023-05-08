@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "gitbook build ."
+    "build": "gitbook build .",
+    "serve": "gitbook serve"
   },
   "dependencies": {
     "gitbook-cli": "github:gengjiawen/gitbook-cli"
