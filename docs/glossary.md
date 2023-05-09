@@ -4,7 +4,6 @@
 
 BABE (Blind Assignment for Blockchain Extension) is a block production algorithm used in GGX. BABE is designed to be fast, efficient, and secure, and it uses a proof-of-stake (PoS) consensus mechanism to achieve consensus among nodes in the network.
 
-
 ## Block
 
 A block in a blockchain is a collection of data that is bundled together with a unique digital signature, known as a cryptographic hash. The data contained in a block can vary depending on the specific blockchain application, but it typically includes a record of recent transactions, a timestamp, and a reference to the previous block in the chain.
