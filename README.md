@@ -1,13 +1,3 @@
----
-id: getting-started
-title: Getting Started
-sidebar_label: Getting Started
-description: Get started with Polkadot.
-keywords: [introduction, getting started, what is GGX, why GGX]
-slug: ../getting-started
----
-
-
 ## What is Golden Gate?
 
 Golden Gate is the Interchain Infrastructure Protocol that utilizes Multi-Party Computation for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
