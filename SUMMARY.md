@@ -1,6 +1,11 @@
 # Summary
  
-* [Consensus](docs/consensus.md)
+* Architecture
+    - Roles and responsibilities
+    - Accounts
+    - Generic transactions
+    - Cross-chain transactions
+    - [Consensus](docs/consensus.md)
 * Wallet
     - Metamask
     - Polkadot.js
