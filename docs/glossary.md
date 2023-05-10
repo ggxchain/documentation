@@ -23,11 +23,11 @@ Byzantine fault tolerance (BFT) is a characteristic of a distributed system that
 
 ## Consensus
 
-Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain).  There are a variety of algorithms used for determining consensus.  GGX uses hybrid consensus - BABE for block production and GRANDPA as a finality gadget.
+Consensus is the process of a group of entities agreeing on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - BABE for block production and GRANDPA as a finality gadget.
 
 ## Controller account
 
-In Golden gate, a controller account is a type of account that is used to control the staking and nomination activities of a stash account. A stash account is the primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
+In Golden Gate, a controller account is a type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
 
 
 ## Dapps
@@ -42,47 +42,43 @@ Extrinsic properties can affect the behavior of a function or method, but they a
 
 ## Finality
 
-In blockchain, finality refers to the irreversible confirmation of a transaction or block. Once a transaction or block has been confirmed as final, it is considered permanently added to the blockchain and cannot be reversed or altered.
+In a blockchain, finality refers to the irreversible confirmation of a transaction or block. Once a transaction or block has been confirmed as final, it is considered permanently added to the blockchain and cannot be reversed or altered.
 
 ## Finality Gadget
 
-A mechanism which determines finality.
+A mechanism that determines finality.
 
 ## GRANDPA
-GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is a finality gadget used in the GGX network to achieve fast and secure finality. It is a Byzantine fault-tolerant consensus algorithm that works in conjunction with the BABE block production algorithm to provide finality for GGX Network
+GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is a finality gadget used in the GGX network to achieve fast and secure finality. It is a Byzantine fault-tolerant consensus algorithm that works in conjunction with the BABE block production algorithm to provide finality for GGX Network.
 
 
 ## Governance
 
-The process of determining what changes to the network are permissible, such as modifications to code or movement of funds.  The governance system in Polkadot is on-chain and revolves around stakeholder voting, i.e. the majority of the stake (DOTs) determines the direction of the network.
+The process of determining what changes to the network are permissible, such as modifications to code or movement of funds. The governance system in Polkadot is on-chain and revolves around stakeholder voting, i.e., the majority of the stake (DOTs) determines the direction of the network.
 
 ## LIBP2P
 
-An open-source library for encrypted peer-to-peer communications and other networking functionality.  More information at: [https://libp2p.io/](https://libp2p.io/)
+An open-source library for encrypted peer-to-peer communications and other networking functionality. More information at [https://libp2p.io/](https://libp2p.io/)
 
 ## Liveness
 
-The property of a distributed system that it will eventually come to some sort of consensus.  A system stuck in an infinite loop would not be considered live, even if computations are taking place; a system which eventually provides a result, even if incorrect or it takes a long time, is considered to have liveness.
+The property of a distributed system is that it will eventually come to some sort of consensus. A system stuck in an infinite loop would not be considered live, even if computations are taking place; a system that eventually provides a result, even if incorrect or it takes a long time, is considered to have liveness.
 
 ## Node explorer
 
-A tool which gives you information about a node, such as the latest blocks sealed, finalized, and the current chain state as known by that node.
+A tool that gives you information about a node, such as the latest blocks sealed, finalized, and the current chain state as known by that node.
 
 ## Nominated Proof of Stake (NPoS)
 
-A proof of stake system whereby nominators "lend" their stake to validators, as a show of faith in the good behavior of the validator.  Nominated proof-of-stake differs from delegated proof-of-stake in that nominators are subject to loss of stake if they nominate a bad validator; delegates are not subject to loss of stake based on the behavior of the validator.
+A proof of stake system whereby nominators "lend" their stake to validators as a show of faith in the good behavior of the validator. Nominated proof-of-stake differs from delegated proof-of-stake in that nominators are subject to loss of stake if they nominate a bad validator; delegates are not subject to loss of stake based on the behavior of the validator.
 
 ## Nominator
 
-Nodes which select a set of validators.  A certain amount of DOTs must be staked in order to do so, which may be lost if the validator behaves badly.  This forces nominators to carefully select validators.
+Nodes that select a set of validators. A certain amount of DOTs must be staked in order to do so, which may be lost if the validator behaves badly. This forces nominators to carefully select validators.
 
 ## NTP
 
-Networking protocol designed to synchronize the clocks of computers over a network. NTP allows you to synchronize the clocks of all the systems within the network. Currently it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service
-
-## On-chain governance
-
-Governance of a blockchain which is controlled by mechanisms controlled by the blockchain.  On-chain governance allows for decisions can be made in a transparent manner.  Note that there are a variety of different algorithms for making these decisions, such as simple majority voting or identity-based quadratic voting.
+Networking protocol is designed to synchronize the clocks of computers over a network. NTP allows you to synchronize the clocks of all the systems within the network. Currently, it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service.
 
 ## Proof of Stake (PoS)
 
@@ -95,7 +91,7 @@ A method of achieving consensus in which the next block is determined by the fir
 
 ## Runtime
 
-A state transition function which indicates a valid algorithm for determining the state of the next block given the previous block.
+A state transition function indicates a valid algorithm for determining the state of the next block given the previous block.
 
 ## Runtime Module
 
@@ -103,7 +99,7 @@ Wasm code which encodes a state transition function.
 
 ## Safety
 
-The property of a distributed system indicating that the system will properly meet all invariants; that is, that nothing "bad" ever happens to the data (such as it being corrupted).
+The property of a distributed system indicates that the system will properly meet all invariants; that is, that nothing "bad" ever happens to the data (such as it being corrupted).
 
 
 ## Session certificate
@@ -116,19 +112,19 @@ A session "key" is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually
 
 ## Staking
 
-"Reserving" tokens (for GGX network, GGX tokens) which are put up as "collateral" for a chance to produce a valid block (and thus obtain a block reward).  Validators and nominators (who back validators through NPoS) together stake their GGX tokens in order to add blocks.
+"Reserving" tokens (for GGX network, GGX tokens) that are put up as "collateral" for a chance to produce a valid block (and thus obtain a block reward). Validators and nominators (who back validators through NPoS) together stake their GGX tokens in order to add blocks.
 
 ## Stash account
 
-In Golden Gate, a stash account is the primary account that holds a user's GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
+In Golden Gate, a stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
 
 ## State transition function
 
-A function which describes how the state of a blockchain can be transformed.  For example, it may describe how tokens can be transferred from one account to another.
+A function which describes how the state of a blockchain can be transformed. For example, it may describe how tokens can be transferred from one account to another.
 
 ## Substrate
 
-Substrate is an open-source modular framework for building custom blockchain networks and decentralized applications (dApps). It is developed by Parity Technologies, and is designed to be flexible, scalable, and easy to use.
+Substrate is an open-source modular framework for building custom blockchain networks and decentralized applications (dApps). It is developed by Parity Technologies and is designed to be flexible, scalable, and easy to use.
 
 Substrate provides a set of pre-built modules that developers can use to create customized blockchain networks and dApps. These modules include functionality for consensus, networking, storage, governance, and more, allowing developers to quickly build and launch their own blockchain-based projects.
 
@@ -138,24 +134,24 @@ An individual element of the state transition function of a block, such as movin
 
 ## Validator
 
-A node which secures the relay chain by staking DOTs, validating proofs from collators on parachains, and determine a consensus along with other validators.
+A node secures the relay chain by staking DOTs, validating proofs from collators on parachains, and determining a consensus along with other validators.
 
 ## Voting
 
-The process of stakeholders determining whether or not a referendum to implement a specific proposal should pass.  Votes are weighted both by the number of GGX tokens  that the stakeholder account controls and the amount of time they are willing to lock their GGX tokens up.  
+The process of stakeholders determining whether or not a referendum to implement a specific proposal should pass. Votes are weighted both by the number of GGX tokens that the stakeholder account controls and the amount of time they are willing to lock their GGX tokens up.  
 
 ## Wallet
 
-A program which allows one to store, receive, and transmit GGX tokens or other blockchain-based tokens.
+A program that allows one to store, receive, and transmit GGX tokens or other blockchain-based tokens.
 
 
 ## WebAssembly
 
-An instruction format for a virtual, stack-based machine.  Polkadot Runtime Modules are compiled to WebAssembly. Also known as Wasm.
+An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.
 
 ## Wasm
 
-An instruction format for a virtual, stack-based machine.  Polkadot Runtime Modules are compiled to Wasm.
+An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled to Wasm.
 
 ## Witness
 

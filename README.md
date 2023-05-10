@@ -2,7 +2,7 @@
 id: getting-started
 title: Getting Started
 sidebar_label: Getting Started
-description: Get started with Polkadot.
+description: Get started with Golden Gate.
 keywords: [introduction, getting started, what is GGX, why GGX]
 slug: ../getting-started
 ---

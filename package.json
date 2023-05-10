@@ -5,6 +5,7 @@
     "clean": "rm -rf _book"
   },
   "dependencies": {
+    "gitbook": "^2.6.9",
     "gitbook-cli": "github:gengjiawen/gitbook-cli",
     "gitbook-plugin-anchors": "^0.7.1"
   }
