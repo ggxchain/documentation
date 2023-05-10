@@ -1,9 +1,11 @@
 {
   "scripts": {
     "build": "gitbook build .",
-    "serve": "gitbook serve"
+    "serve": "gitbook serve",
+    "clean": "rm -rf _book"
   },
   "dependencies": {
-    "gitbook-cli": "github:gengjiawen/gitbook-cli"
+    "gitbook-cli": "github:gengjiawen/gitbook-cli",
+    "gitbook-plugin-anchors": "^0.7.1"
   }
 }
