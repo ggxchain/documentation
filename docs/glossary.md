@@ -18,17 +18,16 @@ BLS signatures are specific signatures widely used in blockchains. They offer ad
 
 ## Byzantine Fault Tolerance
 
-Byzantine fault tolerance (BFT) is a characteristic of a distributed system that enables it to remain operational and consistent even in the presence of faulty components or malicious actors. The term "Byzantine" refers to the "Byzantine Generals' Problem," a hypothetical scenario in which a group of generals with different goals must coordinate a plan of attack while being separated by long distances and unreliable communication channels.
+Byzantine fault tolerance (BFT) is a characteristic of a distributed system that enables it to remain operational and consistent even in the presence of faulty components or malicious actors. The term "Byzantine" refers to the "Byzantine Generals' Problem", a hypothetical scenario in which a group of generals with different goals must coordinate a plan of attack while being separated by long distances and unreliable communication channels.
 
 
 ## Consensus
 
-Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain).  There are a variety of algorithms used for determining consensus.  GGX uses hybrid consensus - BABE for block production and GRANDPA as a finality gadget.
+Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain).  There are a variety of algorithms used for determining consensus.  GGX uses hybrid consensus - [BABE](#babe) for block production and [GRANDPA](#grandpa) as a finality gadget.
 
-## Controller account
+## Controller Account
 
-In Golden gate, a controller account is a type of account that is used to control the staking and nomination activities of a stash account. A stash account is the primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
-
+In Golden Gate the controller account is used to nominate validators and manage other staking-related activities, while the [stash account](#stash-account) holds the actual tokens being staked. The controller account and stash account are usually created at the same time
 
 ## Dapps
 
@@ -58,7 +57,7 @@ The process of determining what changes to the network are permissible, such as 
 
 ## LIBP2P
 
-An open-source library for encrypted peer-to-peer communications and other networking functionality.  More information at: [https://libp2p.io/](https://libp2p.io/)
+An open-source library for encrypted peer-to-peer communications and other networking functionality.  More information at: <https://libp2p.io/>
 
 ## Liveness
 
@@ -78,7 +77,7 @@ Nodes which select a set of validators.  A certain amount of DOTs must be staked
 
 ## NTP
 
-Networking protocol designed to synchronize the clocks of computers over a network. NTP allows you to synchronize the clocks of all the systems within the network. Currently it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service
+Networking protocol designed to synchronize the clocks of computers over a network. NTP(Network Time Protocol) allows you to synchronize the clocks of all the systems within the network. Currently it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service
 
 ## On-chain governance
 
@@ -116,11 +115,10 @@ A session "key" is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually
 
 ## Staking
 
-"Reserving" tokens (for GGX network, GGX tokens) which are put up as "collateral" for a chance to produce a valid block (and thus obtain a block reward).  Validators and nominators (who back validators through NPoS) together stake their GGX tokens in order to add blocks.
-
+In Golden Gate, staking refers to locking up a certain amount of GGX tokens to participate in network consensus and governance. Staking is a key mechanism in the Golden Gate ecosystem, as it helps secure the network and enables token holders to vote in the decision-making process.
 ## Stash account
 
-In Golden Gate, a stash account is the primary account that holds a user's GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
+In Golden Gate, a stash account is a primary account that holds a user's GGX tokens. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
 
 ## State transition function
 
@@ -160,3 +158,5 @@ An instruction format for a virtual, stack-based machine.  Polkadot Runtime Modu
 ## Witness
 
 Cryptographic proof statements of data validity.
+
+[Staking] #Staking
