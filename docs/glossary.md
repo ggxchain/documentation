@@ -102,7 +102,7 @@ Wasm code which encodes a state transition function.
 
 The property of a distributed system indicates that the system will properly meet all invariants; that is, that nothing "bad" ever happens to the data (such as it being corrupted).
 
-## Session certificate
+## Session Certificate
 
 Another name for the session "key" which is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually an Ed25519 key for libp2p.
 
