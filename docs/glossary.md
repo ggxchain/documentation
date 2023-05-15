@@ -24,7 +24,7 @@ Byzantine fault tolerance (BFT) is a characteristic of a distributed system that
 
 Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - [BABE](#babe) for block production and [GRANDPA](#grandpa) as a finality gadget.
 
-## Controller account
+## Controller Account
 
 In Golden Gate, a controller account is a type of account that is used to control the staking and nomination activities of a [stash account](#stash-account). A stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
 
