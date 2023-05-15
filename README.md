@@ -1,3 +1,4 @@
+
 ---
 id: getting-started
 title: Getting Started
@@ -6,6 +7,7 @@ description: Get started with Golden Gate.
 keywords: [introduction, getting started, what is GGX, why GGX]
 slug: ../getting-started
 ---
+
 
 
 ## What is Golden Gate?
