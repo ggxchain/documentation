@@ -4,7 +4,7 @@
     - Roles and responsibilities
     - Accounts
     - Generic transactions
-    - Cross-chain transactions
+    - Cross-chain Transactions
     - [Consensus](docs/consensus.md)
 * Wallet
     - Metamask
