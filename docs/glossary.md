@@ -62,7 +62,7 @@ An open-source library for encrypted peer-to-peer communications and other netwo
 
 The property of a distributed system is that it will eventually come to some sort of consensus. A system stuck in an infinite loop would not be considered live, even if computations are taking place; a system that eventually provides a result, even if incorrect or it takes a long time, is considered to have liveness.
 
-## Node explorer
+## Node Explorer
 
 A tool that gives you information about a node, such as the latest blocks sealed, finalized, and the current chain state as known by that node.
 
