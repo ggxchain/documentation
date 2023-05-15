@@ -3,7 +3,7 @@
 * Architecture
     - Roles and responsibilities
     - Accounts
-    - Generic transactions
+    - Generic Transactions
     - Cross-chain Transactions
     - [Consensus](docs/consensus.md)
 * Wallet
