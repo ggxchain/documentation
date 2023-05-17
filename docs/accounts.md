@@ -1,12 +1,3 @@
----
-id: accounts
-title: Accounts
-sidebar_label: Accounts
-description: Learn about the fundamentals of accounts in Golden Gate.
-keywords: [accounts, substrate]
-
-slug: ../accounts
----
 In Golden Gate, accounts are entities used to represent individuals or entities that own and transact with GGX tokens on the blockchain. Accounts are similar to bank accounts in traditional finance, where they hold assets and facilitate transactions.
 Each account in Golden Gate has a unique address, a string of characters that identifies the account on the blockchain. The address is derived from the account's public key, used to sign transactions and verify the account's ownership of tokens.
 Accounts in Golden Gate can be of two types:
