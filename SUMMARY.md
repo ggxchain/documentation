@@ -3,8 +3,8 @@
 - Architecture
   - [Consensus](docs/consensus.md)
 - Wallet
-  - Metamask
-  - Polkadot.js
+  - [Metamask](docs/metamask.md)
+  - [Polkadot.js](docs/polkadotjs.md)
 - Deploying a Smart Contract
   - [Rust-based WASM contracts](docs/how_to_deploy_rust.md)
   - Javascript-based WASM contracts
