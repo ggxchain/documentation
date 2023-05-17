@@ -2,7 +2,7 @@ WebAssembly is used in Substrate as the compilation target for the runtime.
 
 ## What is WebAssembly?
 
-WebAssembly, shortened to _Wasm_, is a binary instruction format for a stack-based virtual machine.
+WebAssembly (abbreviated as _Wasm_) is a binary instruction format for a stack-based virtual machine.
 Wasm is designed as a portable target for the compilation of high-level languages like C/C++/Rust,
 enabling deployment on the web for client and server applications.
 
