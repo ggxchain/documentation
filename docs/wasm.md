@@ -1,13 +1,4 @@
----
-id: learn-wasm
-title: WebAssembly (Wasm)
-sidebar_label: WebAssembly (Wasm)
-description: Learn how Wasm plays a role in Polkadot's runtime.
-keywords: [webassembly, wasm, runtime]
-slug: ../learn-wasm
----
-
-WebAssembly is used in Polkadot and Substrate as the compilation target for the runtime.
+WebAssembly is used in Substrate as the compilation target for the runtime.
 
 ## What is WebAssembly?
 
