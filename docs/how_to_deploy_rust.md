@@ -15,5 +15,6 @@ To build contract using cargo navigate to the folder with contract and run `carg
 2. Go to Developer-->Contracts page
 3. Press Upload & deploy code
 4. Choose deployment account (you will need [PolkadotJS][polkadotjs] or other substrate account manager to use your account)
-[wasm]./wasm.md
-[polkadots]./polkadotjs.md
+
+[wasm]: ./wasm.md
+[polkadotjs]: ./polkadotjs.md
