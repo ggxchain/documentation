@@ -4,7 +4,9 @@ To deploy Rust contract on the Golden Gate network you can follow video tutorial
 
 1. Update Rust using `rustup compnent add rust-src`
 2. Verify that you have the WebAssembly target installed using `rustup target add wasm32-unknown-unknown --toolchain nightly`
-**Install cargo-contract** 
+
+#### Install `cargo-contract` ####
+
 `cargo-contract` is a command-line tool which you will use to build, deploy, and interact with your `ink!` contracts. You can install it using `cargo install --force --locked cargo-contract --version 2.0.0-rc`
 **Compile your contract into [WASM][wasm]**
 To build contract using cargo navigate to the folder with contract and run `cargo contract build`
