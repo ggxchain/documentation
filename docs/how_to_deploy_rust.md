@@ -12,7 +12,8 @@ To deploy Rust contract on the Golden Gate network you can follow video tutorial
 #### Compile your contract into [WASM][wasm] ####
 
 To build contract using cargo navigate to the folder with the contract and run `cargo contract build`
-**Deploy your contract on the Golden Gate**
+#### Deploy your contract on the Golden Gate ####
+
 1. Navigate to explorer of the Golden Gate network you want to deploy your contract on (<https://testnet.brooklyn.ggxchain.io/> for the Brooklyn testnet)
 2. Go to Developer-->Contracts page
 3. Press Upload & deploy code
