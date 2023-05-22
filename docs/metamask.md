@@ -53,7 +53,7 @@ A form will appear where you can enter the details of the custom network.
 
 Network Name: Provide a name for the Golden Gate network.
 New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet 
-Chain ID: Input the Chain ID associated with the custom network. 8866 for the Golden Gate testnet
+Chain ID: Input the Chain ID associated with the custom network. The Golden Gate testnet uses Chain ID `888866`
 
 Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
 
