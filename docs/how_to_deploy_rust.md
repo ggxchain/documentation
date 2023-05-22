@@ -1,5 +1,7 @@
 To deploy Rust contract on the Golden Gate network you can follow video tutorials <https://youtu.be/xl-QliBpH9k> and <https://youtu.be/Zp1JtBYxXJg> or follow the steps.
-**Update your development environment**
+
+#### Update Your Development Environment ####
+
 1. Update Rust using `rustup compnent add rust-src`
 2. Verify that you have the WebAssembly target installed using `rustup target add wasm32-unknown-unknown --toolchain nightly`
 **Install cargo-contract** 
