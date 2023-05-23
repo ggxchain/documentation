@@ -20,6 +20,8 @@ To install MetaMask, follow these steps:
 
 1. Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at <https://metamask.io/>.
 
+![Browser extension](images/browser-extension.jpg)
+
 2. On the MetaMask website, click on the "Get Chrome Extension" (or "Get Firefox Extension" or "Get Brave Extension") button, depending on the browser you are using.
 
 3. You will be redirected to the browser's extension store. Click on the "Add to Chrome" (or "Add to Firefox" or "Add to Brave") button to start the installation process.
