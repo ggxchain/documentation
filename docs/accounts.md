@@ -5,4 +5,5 @@ Accounts in Golden Gate can be of two types:
   - External accounts: these accounts are owned by individuals or entities and are not associated with any specific smart contract or on-chain identity. External accounts can hold tokens and can participate in transactions on the blockchain.
   - Contract accounts: these accounts are associated with smart contracts on the blockchain and are used to store and manage contract states. Contract accounts can execute code and interact with other contracts and external accounts.
 Accounts in Golden Gate can be managed by users using their private keys. For example, users can sign transactions with their private keys to transfer tokens from their accounts or interact with smart contracts. Accounts can also be managed by on-chain governance mechanisms, such as council members or validators, who can execute transactions on behalf of the account.
+
 Overall, accounts are a fundamental concept in Substrate and are essential for managing token ownership and transactions on the blockchain.
