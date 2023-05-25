@@ -17,22 +17,23 @@ Here are some key features and functionalities of MetaMask:
 MetaMask has gained significant popularity within the blockchain ecosystem due to its user-friendly interface, seamless dApp integration, and wide adoption by developers and users alike. It serves as a crucial tool for accessing and interacting with the blockchain and its associated decentralized applications.
 
 To install MetaMask, follow these steps:
+ screenshots
+1. Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at <https://metamask.io/>.
 
-Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at <https://metamask.io/>.
+![Browser extension](images/browser-extension.jpg)
 
-On the MetaMask website, click on the "Get Chrome Extension" (or "Get Firefox Extension" or "Get Brave Extension") button, depending on the browser you are using.
+2. On the MetaMask website, click on the "Get Chrome Extension" (or "Get Firefox Extension" or "Get Brave Extension") button, depending on the browser you are using.
 
-You will be redirected to the browser's extension store. Click on the "Add to Chrome" (or "Add to Firefox" or "Add to Brave") button to start the installation process.
+3. You will be redirected to the browser's extension store. Click on the "Add to Chrome" (or "Add to Firefox" or "Add to Brave") button to start the installation process.
 
-A pop-up window will appear, asking for confirmation to add the extension. Click "Add extension" to proceed.
+4. A pop-up window will appear, asking for confirmation to add the extension. Click "Add extension" to proceed.
 
-Once the extension is added, you will see the MetaMask icon in your browser's toolbar (usually located at the top right corner).
+5. Once the extension is added, you will see the MetaMask icon in your browser's toolbar (usually located at the top right corner). Click on the MetaMask icon to launch the extension.
 
-Click on the MetaMask icon to launch the extension.
+6. The first time you launch MetaMask, you will be presented with the Terms of Service. Read through the terms, and if you agree, click "Accept" to continue.
 
-The first time you launch MetaMask, you will be presented with the Terms of Service. Read through the terms, and if you agree, click "Accept" to continue.
+7. Next, you will be prompted to create a new MetaMask wallet or import an existing one. Follow the on-screen instructions to set up your wallet. This includes creating a strong password and securely storing your seed phrase.
 
-Next, you will be prompted to create a new MetaMask wallet or import an existing one. Follow the on-screen instructions to set up your wallet. This includes creating a strong password and securely storing your seed phrase.
 
 After setting up your wallet, you will have access to your EVM accounts and can start using MetaMask to interact with dApps, manage tokens, and perform EVM transactions.
 
@@ -53,7 +54,9 @@ A form will appear where you can enter the details of the custom network.
 
 Network Name: Provide a name for the Golden Gate network.
 New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet 
+
 Chain ID: Input the Chain ID associated with the custom network. The Golden Gate testnet uses Chain ID `888866`
+
 
 Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
 
