@@ -8,7 +8,7 @@
 - Deploying a Smart Contract
   - Rust-based WASM contracts
   - Javascript-based WASM contracts
-  - Solidity-based EVM contracts
+  - [Solidity-based EVM contracts](docs/how_to_deploy_solidity.md)
 - Running a Validator
   - Generate Validator Account
   - Deploy Validator Node
