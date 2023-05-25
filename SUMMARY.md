@@ -1,14 +1,16 @@
 # Summary
 
 - Architecture
+  - [Accounts](docs/accounts.md)
+  - [WASM](docs/wasm.md)
   - [Consensus](docs/consensus.md)
-- Wallet
-  - Metamask
-  - Polkadot.js
+- [Wallet](docs/wallet.md)
+  - [Metamask](docs/metamask.md)
+  - [Polkadot.js](docs/polkadotjs.md)
 - Deploying a Smart Contract
-  - Rust-based WASM contracts
+  - [Rust-based WASM contracts](docs/how_to_deploy_rust.md)
   - Javascript-based WASM contracts
-  - Solidity-based EVM contracts
+  - [Solidity-based EVM contracts](docs/how_to_deploy_solidity.md)
 - Running a Validator
   - Generate Validator Account
   - Deploy Validator Node
