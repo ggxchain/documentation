@@ -58,6 +58,7 @@ The process of determining what changes to the network are permissible, such as 
 
 An open-source library for encrypted peer-to-peer communications and other networking functionality. More information at: <https://libp2p.io/>
 
+
 ## Liveness
 
 The property of a distributed system is that it will eventually come to some sort of consensus. A system stuck in an infinite loop would not be considered live, even if computations are taking place; a system that eventually provides a result, even if incorrect or it takes a long time, is considered to have liveness.
@@ -81,6 +82,7 @@ Networking protocol designed to synchronize the clocks of computers over a netwo
 ## On-chain Governance
 
 Governance of a blockchain which is controlled by mechanisms controlled by the blockchain. On-chain governance allows for decisions can be made transparently. Note that there are a variety of different algorithms for making these decisions, such as simple majority voting or identity-based quadratic voting.
+
 
 ## Proof of Stake (PoS)
 
@@ -116,7 +118,7 @@ In Golden Gate, staking refers to locking up a certain amount of GGX tokens to p
 
 ## Stash Account
 
-In Golden Gate, a stash account is a primary account that holds a user's GGX tokens. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
+In Golden Gate, a stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
 
 ## State Transition Function
 
@@ -138,7 +140,7 @@ A node secures the relay chain by staking DOTs, validating proofs from collators
 
 ## Voting
 
-The process of stakeholders determining whether or not a referendum to implement a specific proposal should pass. Votes are weighted both by the number of GGX tokens that the stakeholder account controls and the amount of time they are willing to lock their GGX tokens up.
+The process of stakeholders determining whether or not a referendum to implement a specific proposal should pass. Votes are weighted both by the number of GGX tokens that the stakeholder account controls and the amount of time they are willing to lock their GGX tokens up.  
 
 ## Wallet
 

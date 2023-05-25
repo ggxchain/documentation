@@ -1,5 +1,4 @@
 # Summary
-
 - Architecture
   - [Consensus](docs/consensus.md)
 - Wallet
@@ -21,3 +20,4 @@
   - Delegator Operations
 - Tokenomics
 - [Glossary](docs/glossary.md)
+
