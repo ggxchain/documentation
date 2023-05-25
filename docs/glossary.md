@@ -18,17 +18,15 @@ BLS signatures are specific signatures widely used in blockchains. They offer ad
 
 ## Byzantine Fault Tolerance
 
-Byzantine fault tolerance (BFT) is a characteristic of a distributed system that enables it to remain operational and consistent even in the presence of faulty components or malicious actors. The term "Byzantine" refers to the "Byzantine Generals' Problem," a hypothetical scenario in which a group of generals with different goals must coordinate a plan of attack while being separated by long distances and unreliable communication channels.
-
+Byzantine fault tolerance (BFT) is a characteristic of a distributed system that enables it to remain operational and consistent even in the presence of faulty components or malicious actors. The term "Byzantine" refers to the "Byzantine Generals' Problem", a hypothetical scenario in which a group of generals with different goals must coordinate a plan of attack while being separated by long distances and unreliable communication channels.
 
 ## Consensus
 
-Consensus is the process of a group of entities agreeing on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - BABE for block production and GRANDPA as a finality gadget.
+Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - [BABE](#babe) for block production and [GRANDPA](#grandpa) as a finality gadget.
 
-## Controller account
+## Controller Account
 
-In Golden Gate, a controller account is a type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
-
+In Golden Gate, a controller account is a type of account that is used to control the staking and nomination activities of a [stash account](#stash-account). A stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
 
 ## Dapps
 
@@ -49,8 +47,8 @@ In a blockchain, finality refers to the irreversible confirmation of a transacti
 A mechanism that determines finality.
 
 ## GRANDPA
-GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is a finality gadget used in the GGX network to achieve fast and secure finality. It is a Byzantine fault-tolerant consensus algorithm that works in conjunction with the BABE block production algorithm to provide finality for GGX Network.
 
+GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) is a finality gadget used in the GGX network to achieve fast and secure finality. It is a Byzantine fault-tolerant consensus algorithm that works in conjunction with the BABE block production algorithm to provide finality for GGX Network.
 
 ## Governance
 
@@ -58,13 +56,14 @@ The process of determining what changes to the network are permissible, such as 
 
 ## LIBP2P
 
-An open-source library for encrypted peer-to-peer communications and other networking functionality. More information at [https://libp2p.io/](https://libp2p.io/)
+An open-source library for encrypted peer-to-peer communications and other networking functionality. More information at: <https://libp2p.io/>
+
 
 ## Liveness
 
 The property of a distributed system is that it will eventually come to some sort of consensus. A system stuck in an infinite loop would not be considered live, even if computations are taking place; a system that eventually provides a result, even if incorrect or it takes a long time, is considered to have liveness.
 
-## Node explorer
+## Node Explorer
 
 A tool that gives you information about a node, such as the latest blocks sealed, finalized, and the current chain state as known by that node.
 
@@ -78,7 +77,12 @@ Nodes that select a set of validators. A certain amount of DOTs must be staked i
 
 ## NTP
 
-Networking protocol is designed to synchronize the clocks of computers over a network. NTP allows you to synchronize the clocks of all the systems within the network. Currently, it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service.
+Networking protocol designed to synchronize the clocks of computers over a network. NTP(Network Time Protocol) allows you to synchronize the clocks of all the systems within the network. Currently it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service
+
+## On-chain Governance
+
+Governance of a blockchain which is controlled by mechanisms controlled by the blockchain. On-chain governance allows for decisions can be made transparently. Note that there are a variety of different algorithms for making these decisions, such as simple majority voting or identity-based quadratic voting.
+
 
 ## Proof of Stake (PoS)
 
@@ -87,7 +91,6 @@ A method of achieving consensus in which the next block is determined by a node 
 ## Proof of Work
 
 A method of achieving consensus in which the next block is determined by the first to solve a difficult puzzle (e.g., in Bitcoin, solving a partial pre-image hash for a block candidate).
-
 
 ## Runtime
 
@@ -101,24 +104,23 @@ Wasm code which encodes a state transition function.
 
 The property of a distributed system indicates that the system will properly meet all invariants; that is, that nothing "bad" ever happens to the data (such as it being corrupted).
 
+## Session Certificate
 
-## Session certificate
-
-Another name for the session "key" which is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually an Ed25519 key for libp2p. 
+Another name for the session "key" which is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually an Ed25519 key for libp2p.
 
 ## Session key
 
-A session "key" is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually an Ed25519 key for libp2p. 
+A session "key" is a BLS key for GRANDPA, a sr25519 key for BABE, and eventually an Ed25519 key for libp2p.
 
 ## Staking
 
-"Reserving" tokens (for GGX network, GGX tokens) that are put up as "collateral" for a chance to produce a valid block (and thus obtain a block reward). Validators and nominators (who back validators through NPoS) together stake their GGX tokens in order to add blocks.
+In Golden Gate, staking refers to locking up a certain amount of GGX tokens to participate in network consensus and governance. Staking is a key mechanism in the Golden Gate ecosystem, as it helps secure the network and enables token holders to vote in the decision-making process.
 
-## Stash account
+## Stash Account
 
 In Golden Gate, a stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their GGX tokens to their stash account.
 
-## State transition function
+## State Transition Function
 
 A function which describes how the state of a blockchain can be transformed. For example, it may describe how tokens can be transferred from one account to another.
 
@@ -143,7 +145,6 @@ The process of stakeholders determining whether or not a referendum to implement
 ## Wallet
 
 A program that allows one to store, receive, and transmit GGX tokens or other blockchain-based tokens.
-
 
 ## WebAssembly
 
