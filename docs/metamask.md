@@ -17,7 +17,7 @@ Here are some key features and functionalities of MetaMask:
 MetaMask has gained significant popularity within the blockchain ecosystem due to its user-friendly interface, seamless dApp integration, and wide adoption by developers and users alike. It serves as a crucial tool for accessing and interacting with the blockchain and its associated decentralized applications.
 
 To install MetaMask, follow these steps:
-
+ screenshots
 1. Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at <https://metamask.io/>.
 
 ![Browser extension](images/browser-extension.jpg)
@@ -33,6 +33,7 @@ To install MetaMask, follow these steps:
 6. The first time you launch MetaMask, you will be presented with the Terms of Service. Read through the terms, and if you agree, click "Accept" to continue.
 
 7. Next, you will be prompted to create a new MetaMask wallet or import an existing one. Follow the on-screen instructions to set up your wallet. This includes creating a strong password and securely storing your seed phrase.
+
 
 After setting up your wallet, you will have access to your EVM accounts and can start using MetaMask to interact with dApps, manage tokens, and perform EVM transactions.
 
@@ -53,7 +54,9 @@ A form will appear where you can enter the details of the custom network.
 
 Network Name: Provide a name for the Golden Gate network.
 New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet 
-Chain ID: Input the Chain ID associated with the custom network. 8866 for the Golden Gate testnet
+
+Chain ID: Input the Chain ID associated with the custom network. The Golden Gate testnet uses Chain ID `888866`
+
 
 Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
 
