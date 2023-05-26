@@ -9,7 +9,6 @@
   - [Polkadot.js](docs/polkadotjs.md)
 - Deploying a Smart Contract
   - [Rust-based WASM contracts](docs/how_to_deploy_rust.md)
-  - Javascript-based WASM contracts
   - [Solidity-based EVM contracts](docs/how_to_deploy_solidity.md)
   - Register Validator
   - Validator Operations
