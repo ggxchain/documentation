@@ -1,5 +1,4 @@
 # Summary
-
 - Architecture
   - [Accounts](docs/accounts.md)
   - [WASM](docs/wasm.md)
@@ -23,3 +22,4 @@
   - Delegator Operations
 - Tokenomics
 - [Glossary](docs/glossary.md)
+
