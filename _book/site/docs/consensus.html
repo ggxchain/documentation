@@ -1,0 +1,532 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Consensus · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="An explanation of the consensus model used in the Golden Gate network.">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wallet.md" />
+    
+    
+    <link rel="prev" href="wasm.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="accounts.html">
+            
+                <a href="accounts.html">
+            
+                    
+                    Accounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="wasm.html">
+            
+                <a href="wasm.html">
+            
+                    
+                    WASM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="consensus.html">
+            
+                <a href="consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="wallet.md">
+            
+                <span>
+            
+                    
+                    Wallet
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="metamask.html">
+            
+                <a href="metamask.html">
+            
+                    
+                    Metamask
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="polkadotjs.html">
+            
+                <a href="polkadotjs.html">
+            
+                    
+                    Polkadot.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Deploying a Smart Contract
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="how_to_deploy_rust.html">
+            
+                <a href="how_to_deploy_rust.html">
+            
+                    
+                    Rust-based WASM contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="how_to_deploy_solidity.html">
+            
+                <a href="how_to_deploy_solidity.html">
+            
+                    
+                    Solidity-based EVM contracts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    Register Validator
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" >
+            
+                <span>
+            
+                    
+                    Validator Operations
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" >
+            
+                <span>
+            
+                    
+                    Monitor Node
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" >
+            
+                <span>
+            
+                    
+                    Node Instance Operations
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    Delegator Guide
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    How to Delegate
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    Delegator Operations
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Tokenomics
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Consensus</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="why-do-we-need-consensus"><a name="why-do-we-need-consensus" class="plugin-anchor" href="#why-do-we-need-consensus"><i class="fa fa-link" aria-hidden="true"></i></a>Why do we need Consensus?</h2>
+<p>Consensus is an essential aspect of blockchain technology because it enables the system to reach an agreement on the state of the ledger or database without the need for a central authority. In a decentralized blockchain network, there are many nodes that maintain a copy of the database, and they need to agree on the current state of the ledger.</p>
+<p>Consensus is necessary to ensure that the blockchain network remains secure and immutable. If there is no consensus mechanism in place, it would be possible for an attacker to manipulate the ledger&apos;s state by introducing fraudulent transactions. With a consensus mechanism, all nodes must agree on the validity of a transaction before it can be added to the ledger, making it virtually impossible for an attacker to manipulate the system.</p>
+<p>Consensus also helps to prevent double-spending, which is a critical issue in decentralized payment systems. Without consensus, it would be possible for a user to spend the same digital asset more than once, leading to an inconsistent ledger state. By requiring consensus on the validity of transactions, the blockchain network ensures that double-spending is prevented.</p>
+<h2 id="what-are-pow-and-pos"><a name="what-are-pow-and-pos" class="plugin-anchor" href="#what-are-pow-and-pos"><i class="fa fa-link" aria-hidden="true"></i></a>What are PoW and PoS?</h2>
+<p>PoW and PoS are two popular consensus mechanisms used in blockchain technology.</p>
+<p>PoW, or Proof of Work, is a consensus mechanism that requires nodes in the network to solve complex mathematical problems to validate transactions and create new blocks. Miners in a PoW blockchain network compete to solve these problems, and the first one to solve the puzzle earns a reward and adds a new block to the chain. PoW is used by popular cryptocurrencies like Bitcoin and Ethereum, and it is known for being highly secure but energy-intensive.</p>
+<p>PoS, or Proof of Stake, is a consensus mechanism that selects validators based on the amount of cryptocurrency they hold. Validators put up a stake of their cryptocurrency as collateral, and they are selected to validate transactions and create new blocks based on the size of their stake. In a PoS blockchain network, validators are incentivized to act in the best interest of the network because they stand to lose their stake if they behave maliciously. PoS is known for being more energy-efficient than PoW because it doesn&apos;t require nodes to solve complex mathematical problems.</p>
+<p>Both PoW and PoS have their advantages and disadvantages, and different blockchain networks may choose to implement one or the other depending on their specific requirements.</p>
+<h2 id="nominated-proof-of-stake"><a name="nominated-proof-of-stake" class="plugin-anchor" href="#nominated-proof-of-stake"><i class="fa fa-link" aria-hidden="true"></i></a>Nominated Proof of Stake</h2>
+<p>Nominated Proof of Stake (NPoS) is a variation of the Proof of Stake (PoS) consensus mechanism that is designed to enhance the security and decentralization of a blockchain network.</p>
+<p>In a traditional PoS system, the validators are selected based on the amount of cryptocurrency they hold, and they are responsible for validating transactions and adding new blocks to the blockchain. However, in some PoS systems, the concentration of power among a small number of validators can pose a security risk to the network, as these validators may collude to manipulate transactions or control the network.</p>
+<p>NPoS addresses this issue by allowing token holders to nominate validators on the network. This means that token holders can choose which validators they trust to validate transactions and secure the network, and they can vote to remove validators that are not acting in the network&apos;s best interest.</p>
+<p>In an NPoS system, the validators are still selected based on the amount of cryptocurrency they hold, but they must also be nominated by a certain number of token holders to be eligible. Validators are then chosen based on their total stake and the number of nominations they receive. This ensures that the network is decentralized, and there is a fair distribution of power among the validators.</p>
+<h2 id="probabilistic-vs-provable-finality"><a name="probabilistic-vs-provable-finality" class="plugin-anchor" href="#probabilistic-vs-provable-finality"><i class="fa fa-link" aria-hidden="true"></i></a>Probabilistic vs. Provable Finality</h2>
+<p>Probabilistic and provable finality are two different approaches to achieving finality in blockchain networks.</p>
+<p>Probabilistic finality is a concept used in consensus mechanisms that use probabilistic algorithms to confirm transactions and add new blocks to the blockchain. In a probabilistic system, there is a small chance that a transaction may be reversed or a block may be orphaned if there is a competing chain with more computational power. This is because the blockchain network may occasionally experience forks or temporary reorganizations, but these are quickly resolved as the network continues to add new blocks.</p>
+<p>In contrast, provable finality is a concept used in consensus mechanisms that provide mathematical proof that a transaction is confirmed and cannot be reversed. In a provable system, once a block is added to the blockchain, it is considered final and cannot be modified or reversed. This is achieved through the use of cryptographic techniques such as digital signatures and hash functions, which ensure that any changes to a block would invalidate the cryptographic signatures of subsequent blocks.</p>
+<p>Provable finality is considered to be more secure and reliable than probabilistic finality because it provides a higher level of confidence that transactions are confirmed and cannot be reversed. However, provable finality may require more computational resources than probabilistic finality, and it may be more difficult to achieve in highly decentralized networks.</p>
+<p>Ultimately, the choice between probabilistic and provable finality depends on the specific requirements of the blockchain network and the trade-offs between security, scalability, and efficiency.</p>
+<h2 id="hybrid-consensus"><a name="hybrid-consensus" class="plugin-anchor" href="#hybrid-consensus"><i class="fa fa-link" aria-hidden="true"></i></a>Hybrid Consensus</h2>
+<p>Hybrid consensus with POS block production and the finality gadget is a consensus mechanism that combines Proof of Stake (PoS) for block production and the finality gadget for provable finality in a blockchain network.</p>
+<p>In this mechanism, validators with a stake of cryptocurrency are responsible for creating new blocks and validating transactions on the network. Validators are chosen based on the amount of cryptocurrency they hold and are incentivized to act in the best interest of the network because they stand to lose their stake if they behave maliciously.</p>
+<p>The finality gadget is then used to provide provable finality to the network. It works by using Byzantine Fault Tolerance (BFT) algorithms to ensure that once a block is added to the blockchain, it is considered final and cannot be modified or reversed.</p>
+<p>The combination of PoS block production and the finality gadget provides a secure and efficient consensus mechanism for blockchain networks. It is known for being energy-efficient compared to PoW-based systems and provides fast transaction finality, making it suitable for applications that require high throughput and low latency.</p>
+<h2 id="block-production-babe"><a name="block-production-babe" class="plugin-anchor" href="#block-production-babe"><i class="fa fa-link" aria-hidden="true"></i></a>Block Production: BABE</h2>
+<p><a href="glossary.html#babe">BABE</a> (Blind Assignment for Blockchain Extension) is a block production algorithm used in the Polkadot network, a multi-chain platform for interoperability between different blockchain networks.</p>
+<p>The BABE algorithm is a hybrid consensus algorithm that combines Proof of Stake (PoS) and a Verifiable Random Function (VRF) to select validators for block production. In this algorithm, validators are chosen based on their stake and a random number generated by the VRF, which is verifiable and unpredictable.</p>
+<p>Once a validator is chosen, they are responsible for producing a block and appending it to the chain. However, to prevent censorship and ensure decentralization, BABE allows multiple validators to produce blocks at the same time. These validators are chosen through a secondary selection process called GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement), which uses a GHOST (Greedy Heaviest Observed Subtree) algorithm to determine the final consensus of the network.</p>
+<p>The BABE algorithm is designed to be secure, efficient, and scalable, making it suitable for high-throughput applications. Its use of PoS and VRF ensures that validators are chosen fairly and randomly, and its use of multiple validators for block production ensures that the network is resilient to censorship and attacks.</p>
+<h2 id="finality-gadget-grandpa"><a name="finality-gadget-grandpa" class="plugin-anchor" href="#finality-gadget-grandpa"><i class="fa fa-link" aria-hidden="true"></i></a>Finality Gadget: GRANDPA</h2>
+<p>The GRANDPA finality gadget is used to provide provable finality to the blocks in the Polkadot chain. It works by using a GHOST (Greedy Heaviest Observed Subtree) algorithm to determine the final consensus of the network. The GHOST algorithm takes into account the weight of the blocks in the chain to determine which blocks are the heaviest and have the most support from the network.</p>
+<p>Once the GHOST algorithm has determined the heaviest chain, GRANDPA uses a recursive process to derive a prefix of this chain that has the support of the majority of the network. This prefix is then considered final and cannot be modified or reversed.</p>
+<p>The GRANDPA finality gadget is designed to be efficient and scalable, making it suitable for high-throughput applications. Its use of a recursive process allows it to quickly determine the final consensus of the network, and its use of a prefix ensures that only a small portion of the blockchain needs to be finalized, reducing the time and resources required for finality.</p>
+<p>Overall, the GRANDPA finality gadget is an important component of the Golden Gate network&apos;s consensus mechanism, ensuring fast and secure transactions across multiple chains.</p>
+<h1 id="resources"><a name="resources" class="plugin-anchor" href="#resources"><i class="fa fa-link" aria-hidden="true"></i></a>Resources</h1>
+<ul>
+<li><a href="https://research.web3.foundation/en/latest/polkadot/block-production/Babe.html" target="_blank">BABE paper</a> - The
+academic description of the BABE protocol.</li>
+<li><a href="https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf" target="_blank">GRANDPA paper</a> - The academic
+description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.</li>
+<li><a href="https://github.com/paritytech/finality-grandpa" target="_blank">Rust implementation</a> - The reference
+implementation and the accompanying
+<a href="https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs" target="_blank">Substrate pallet</a>.</li>
+<li><a href="https://www.crowdcast.io/e/polkadot-block-production" target="_blank">Block Production and Finalization in Polkadot</a> -
+An explanation of how BABE and GRANDPA work together to produce and finalize blocks on Kusama,
+with Bill Laboon.</li>
+<li><a href="https://www.youtube.com/watch?v=1CuTSluL7v4&amp;t=4s" target="_blank">Block Production and Finalization in Polkadot: Understanding the BABE and GRANDPA Protocols</a> -
+An academic talk by Bill Laboon, given at MIT Cryptoeconomic Systems 2020, describing Polkadot&apos;s
+hybrid consensus model in-depth.</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="wasm.html" class="navigation navigation-prev " aria-label="Previous page: WASM">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wallet.md" class="navigation navigation-next " aria-label="Next page: Wallet">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"id":"learn-consensus","title":"Consensus","sidebar_label":"Consensus","description":"An explanation of the consensus model used in the Golden Gate network.","keywords":["consensus","proof of stake","nominated proof of stake","hybrid consensus","finality"],"slug":"../learn-consensus","level":"1.2.3","depth":2,"next":{"title":"Wallet","level":"1.3","depth":1,"path":"docs/wallet.md","ref":"docs/wallet.md","articles":[{"title":"Metamask","level":"1.3.1","depth":2,"path":"docs/metamask.md","ref":"docs/metamask.md","articles":[]},{"title":"Polkadot.js","level":"1.3.2","depth":2,"path":"docs/polkadotjs.md","ref":"docs/polkadotjs.md","articles":[]}]},"previous":{"title":"WASM","level":"1.2.2","depth":2,"path":"docs/wasm.md","ref":"docs/wasm.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["anchors"],"pluginsConfig":{"anchors":{},"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/consensus.md","mtime":"2023-05-25T10:15:20.530Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-29T17:04:23.151Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
