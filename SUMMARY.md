@@ -1,13 +1,13 @@
 # Summary
 - Architecture
-  - [Consensus](docs/consensus.md)
+  - [Consensus](src/consensus.md)
 - Wallet
   - Metamask
   - Polkadot.js
 - Deploying a Smart Contract
-  - [Rust-based WASM contracts](docs/how_to_deploy_rust.md)
+  - [Rust-based WASM contracts](src/how_to_deploy_rust.md)
   - Javascript-based WASM contracts
-  - [Solidity-based EVM contracts](docs/how_to_deploy_solidity.md)
+  - [Solidity-based EVM contracts](src/how_to_deploy_solidity.md)
 - Running a Validator
   - Generate Validator Account
   - Deploy Validator Node
@@ -19,5 +19,5 @@
   - How to Delegate
   - Delegator Operations
 - Tokenomics
-- [Glossary](docs/glossary.md)
+- [Glossary](src/glossary.md)
 
