@@ -17,10 +17,10 @@ Here are some key features and functionalities of MetaMask:
 MetaMask has gained significant popularity within the blockchain ecosystem due to its user-friendly interface, seamless dApp integration, and wide adoption by developers and users alike. It serves as a crucial tool for accessing and interacting with the blockchain and its associated decentralized applications.
 
 To install MetaMask, follow these steps:
- screenshots
+
 1. Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at <https://metamask.io/>.
 
-![Browser extension](images/browser-extension.jpg)
+![Browser extension](../)
 
 2. On the MetaMask website, click on the "Get Chrome Extension" (or "Get Firefox Extension" or "Get Brave Extension") button, depending on the browser you are using.
 
@@ -34,7 +34,6 @@ To install MetaMask, follow these steps:
 
 7. Next, you will be prompted to create a new MetaMask wallet or import an existing one. Follow the on-screen instructions to set up your wallet. This includes creating a strong password and securely storing your seed phrase.
 
-
 After setting up your wallet, you will have access to your EVM accounts and can start using MetaMask to interact with dApps, manage tokens, and perform EVM transactions.
 
 Remember to keep your MetaMask password and seed phrase secure. The seed phrase is crucial for wallet recovery and should be stored offline in a safe place.
@@ -46,17 +45,17 @@ Open the MetaMask extension by clicking on the MetaMask icon in your browser's t
 
 In the MetaMask interface, click on the account avatar at the top right corner and select "Settings" from the dropdown menu.
 
-In the Settings menu, select the "Networks" tab.
+In the Settings menu, select the "Networks" tab. (Net)
 
-Scroll down to the "Networks" section and click on the "Add Network" button.
+Scroll down to the "Networks" section and click on the "Add Network" button. [Add network](images/add-network.jpg)
 
-A form will appear where you can enter the details of the custom network.
+Choose "Add a network manually". [Add network manually](images/add-network-manually.jpg)
+
+A form will appear where you can enter the details of the custom network. [Network details](configuring-network.jpg)
 
 Network Name: Provide a name for the Golden Gate network.
 New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet 
-
-Chain ID: Input the Chain ID associated with the custom network. The Golden Gate testnet uses Chain ID `888866`
-
+Chain ID: Input the Chain ID associated with the custom network. 8866 for the Golden Gate testnet
 
 Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
 

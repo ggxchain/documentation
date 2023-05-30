@@ -1,8 +1,17 @@
-WebAssembly is used in Substrate as the compilation target for the runtime.
+---
+id: learn-wasm
+title: WebAssembly (Wasm)
+sidebar_label: WebAssembly (Wasm)
+description: Learn how Wasm plays a role in Polkadot's runtime.
+keywords: [webassembly, wasm, runtime]
+slug: ../learn-wasm
+---
+
+WebAssembly is used in Polkadot and Substrate as the compilation target for the runtime.
 
 ## What is WebAssembly?
 
-WebAssembly (abbreviated as _Wasm_) is a binary instruction format for a stack-based virtual machine.
+WebAssembly, shortened to _Wasm_, is a binary instruction format for a stack-based virtual machine.
 Wasm is designed as a portable target for the compilation of high-level languages like C/C++/Rust,
 enabling deployment on the web for client and server applications.
 

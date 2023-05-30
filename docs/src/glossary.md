@@ -1,5 +1,10 @@
 # Terms and Definitions
 
+## AURA
+
+The Authority Round (AURA) block production algorithm is a consensus mechanism designed explicitly for permissioned or consortium blockchains. 
+In the AURA algorithm, a designated set of authorities or validators take turns producing blocks in a round-robin fashion. The authorities are typically trusted participants within the network, such as known organizations or entities.
+
 ## BABE
 
 BABE (Blind Assignment for Blockchain Extension) is a block production algorithm used in GGX. BABE is designed to be fast, efficient, and secure, and it uses a proof-of-stake (PoS) consensus mechanism to achieve consensus among nodes in the network.
@@ -22,7 +27,7 @@ Byzantine fault tolerance (BFT) is a characteristic of a distributed system that
 
 ## Consensus
 
-Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - [BABE](#babe) for block production and [GRANDPA](#grandpa) as a finality gadget.
+Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - [AURA](#aura) for block production and [GRANDPA](#grandpa) as a finality gadget.
 
 ## Controller Account
 
