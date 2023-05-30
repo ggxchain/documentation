@@ -21,13 +21,17 @@ You can deploy the Solidity contract via Remix IDE through the following steps:
 2. Add Golden Gate Network to your wallet and choose the corresponding injected provider. Please see [Metamask][metamask] for an instruction on how to do it using metamask
 3. Create your .sol contract in the file explorer
 4. Go to Deploy & run transactions
+[Deploy and run transactions](images/solidity-deploy-and-run.jpg)
 5. Press deploy - authorization pop-up from a wallet should appear.
+[Deploy](images/solidity-deploy.jpg)
 6. Authorize the transaction. In case you have a sufficient amount of tokens to pay, the gas fee deployed contract will appear below.
 
-Golden Gate supports calls to [WASM] [wasm] from the EVM environment. To do a WASM call, you need to populate additional data:
+Golden Gate supports calls to [WASM] from the EVM environment. To do a WASM call, you need to populate additional data:
+[Cross-chain call](images/cross-chain-call.jpg)
 - Context is the address of our WASM VM. For the Golden Gate testnet context is `0x1f0700e87648170284d71700`
 - Input is the command you are sending. It is hardcoded - `0xDEADBEEF`
-- To is the address of the WASM contract you want to call. You can check it in the Golden Gate block explorer. You need to convert the ss58 address into EVM address for EVm to understand it. For conversion, you can use <https://docs.substrate.io/reference/command-line-tools/subkey/>
+- To is the address of the WASM contract you want to call. You can check it in the Golden Gate block explorer. [WASM contract address](images/check-contract-address.jpg)
+ You need to convert the ss58 address into EVM address for EVm to understand it. For conversion, you can use <https://docs.substrate.io/reference/command-line-tools/subkey/>
 
-[metamask] ./metamask.md
-[wasm] ./wasm.md
+[metamask]: ./metamask.md
+[WASM]: ./glossary.md#wasm

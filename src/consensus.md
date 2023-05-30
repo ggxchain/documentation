@@ -1,12 +1,3 @@
----
-id: learn-consensus
-title: GGX Consensus
-sidebar_label: Consensus
-description: An explanation of the consensus model used in the Golden Gate network.
-keywords: [consensus, proof of stake, nominated proof of stake, hybrid consensus, finality]
-slug: ../learn-consensus
----
-
 ## Why do we need Consensus?
 
 Consensus is an essential aspect of blockchain technology because it enables the system to reach an agreement on the state of the ledger or database without the need for a central authority. In a decentralized blockchain network, there are many nodes that maintain a copy of the database, and they need to agree on the current state of the ledger.
