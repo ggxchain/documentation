@@ -4,7 +4,7 @@
 * [Terms and Definitions](terms-and-definitions.md)
 * [Architecture](architecture/README.md)
   * [Accounts and transactions](architecture/accounts-and-transactions.md)
-  * [Virtual Machine](architecture/virtual-machine.md)
+  * [Hybrid Virtual Machine](architecture/virtual-machine.md)
   * [Consensus](architecture/consensus.md)
 * [Wallets](wallets/README.md)
   * [Metamask](wallets/metamask.md)
