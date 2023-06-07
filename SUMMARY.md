@@ -1,0 +1,31 @@
+# Table of contents
+
+* [README](README.md)
+* [README](src/README.md)
+  * [Table of contents](src/SUMMARY.md)
+  * [Terms and Definitions](src/terms-and-definitions.md)
+  * [Architecture](src/architecture/README.md)
+    * [Accounts and transactions](src/architecture/accounts-and-transactions.md)
+    * [Consensus](src/architecture/consensus.md)
+    * [Virtual Machine](src/architecture/virtual-machine.md)
+  * [How to Guides](src/how-to-guides/README.md)
+    * [How to Deploy Rust](src/how-to-guides/how-to-deploy-rust.md)
+    * [How to Deploy Solidity](src/how-to-guides/how-to-deploy-solidity.md)
+  * [Wallets](src/wallets/README.md)
+    * [Metamask](src/wallets/metamask.md)
+    * [PolkadotJS](src/wallets/polkadotjs.md)
+* [docs](docs/README.md)
+  * [Architecture](docs/architecture/README.md)
+    * [Accounts and transactions](docs/architecture/accounts-and-transactions.md)
+    * [Consensus](docs/architecture/consensus.md)
+    * [Hybrid Virtual Machine](docs/architecture/virtual-machine.md)
+  * [How to Guides](docs/how-to-guides/README.md)
+    * [How to Deploy Rust](docs/how-to-guides/how-to-deploy-rust.md)
+    * [How to Deploy Solidity](docs/how-to-guides/how-to-deploy-solidity.md)
+  * [Wallets](docs/wallets/README.md)
+    * [Metamask](docs/wallets/metamask.md)
+    * [PolkadotJS](docs/wallets/polkadotjs.md)
+
+## Validator guides
+
+* [Validator node setup](validator-guides/validator-node-setup.md)
