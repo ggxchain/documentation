@@ -40,10 +40,10 @@ To use metamask with one of the Golden Gate networks, you will need to add the r
 
 1.  Open the MetaMask extension by clicking on the MetaMask icon in your browser's toolbar.
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 2.  In the MetaMask interface, click on the account avatar at the top right corner and select "Settings" from the dropdown menu
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 3. In the Settings menu, select the "Networks" tab.
 4.  Scroll down to the "Networks" section and click on the "Add Network" button.&#x20;
 
