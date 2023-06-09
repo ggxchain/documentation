@@ -21,7 +21,5 @@
 ## Validator guides
 
 * [How to setup a validator node](validator-guides/how-to-setup-a-validator-node.md)
-
-***
-
-* [Sydney validator programme](sydney-validator-programme.md)
+* [How to stake GGXT tokens](validator-guides/how-to-stake-ggxt-tokens.md)
+* [Sydney validator programme](validator-guides/sydney-validator-programme.md)
