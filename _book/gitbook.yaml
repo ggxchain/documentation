@@ -1,0 +1,5 @@
+root: ./docs
+
+​structure:  
+    readme: ./src/README.md  
+    summary: ./src/SUMMARY.md​
