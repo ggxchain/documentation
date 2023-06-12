@@ -2,7 +2,6 @@
 
 * [README](README.md)
 * [README](src/README.md)
-  * [Table of contents](src/SUMMARY.md)
   * [Terms and Definitions](src/terms-and-definitions.md)
   * [Architecture](src/architecture/README.md)
     * [Accounts and transactions](src/architecture/accounts-and-transactions.md)
