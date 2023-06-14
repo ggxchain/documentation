@@ -14,7 +14,6 @@ jobs:
       - name: Checkout action
         uses: actions/checkout@v2
 
-      # example1
       - name: Gitbook Action
         uses: ZanderZhao/gitbook-action@master
         with:
@@ -25,3 +24,4 @@ jobs:
           publish_commit_message: ${{ github.event.head_commit.message }}
           publish_branch: main
           publish_dir: docs
+          publish_push_force: true
