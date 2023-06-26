@@ -8,30 +8,24 @@ Please make sure to follow all of the instructions! Mistakes in setting up a nod
 
 The following dependencies are required to run the project:
 
-* rust, wasm32-unknown-unknown target
-* protobuf
-* dylint
+* docker
 
-Below is the code example how to install required software:
+To install docker, please use the official docker installation guide https://docs.docker.com/engine/install/ubuntu/.
 
 ```
-# Install rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh 
-
-# Install wasm32-unknown-unknown target
-rustup target add wasm32-unknown-unknown
-rustup component add rust-src
-
-# Install protobuf
-sudo apt install protobuf-compiler
-
-# Install dylint
-cargo install cargo-dylint dylint-link
-```
-
-You can use docker container to setup a validator node. Due to the highly CPU dependent nature of 'cargo build' command, it's strongly recommended that you have at least 8 core enabled for this method. It takes around 20 mins to complete with this suggested requirements, exponentially more if you use lesser proccessor power during the docker build operation.
+ Due to the highly CPU dependent nature of 'cargo build' command, it's strongly recommended that you have at least 8 core enabled for this method. It takes around 20 mins to complete with this suggested requirements, exponentially more if you use lesser proccessor power during the docker build operation.
 
 From the repository's root directory execute following commands in order:
+
+```
+git clone https://github.com/GoldenGateGGX/golden-gate.git
+
+If you want to avoid using docker from sudo user needs to be part of the docker group. To add the user to the docker group, run the command: 
+
+```
+sudo usermod -aG docker $USER
+```
+To install the docker container, run the command:
 
 ```
 docker run -it --rm --name ggx-local-node -p 9944:9944 -p 9933:9933 -p 30333:30333 -v $(pwd)/custom-spec-files:/tmp golden-gate-node:sydney /usr/src/app/target/release/golden-gate-node --base-path=/data-sydney --chain /tmp/sydney.json --bootnodes /ip4/3.69.173.157/tcp/30333/p2p/12D3KooWSriyuFSmvuc188UWqV6Un7YYCTcGcoSJcoyhtTZEWi1n --telemetry-url "wss://dev.telemetry.sydney.ggxchain.io/submit 0"
@@ -55,25 +49,6 @@ You can use the following optional flags:
 | `--telemetry-url <url verbosity>` | Specifies the URL of the telemetry server to connect to. You can pass <br>this flag multiple times to specify multiple telemetry endpoints. <br>Verbosity levels range from 0-9, with 0 denoting the least verbose. Use <br>the following format to specify the URL followed the verbosity option is `--telemetry-url 'wss://foo/bar 0'`. |
 ```
 
-#### NTP setup&#x20;
 
-[NTP ](../#ntp)is a networking protocol designed to synchronize the clocks of computers over a network. NTP allows you to synchronize the clocks of all the systems within the network. Currently it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service. You can check whether you have the NTP client by running:
 
-_If you are using Ubuntu 18.04 or a newer version, NTP Client should be installed by default._
-
-```
-timedatectl
-```
-
-If NTP is installed and running, you should see `System clock synchronized: yes` (or a similar message). If you do not see it, you can install it by executing:
-
-```
-sudo apt-get install ntp
-```
-
-ntpd will be started automatically after install. You can query ntpd for status information to verify that everything is working:
-
-```
-sudo ntpq -p
-```
 
