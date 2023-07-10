@@ -12,3 +12,4 @@
 * [How to Guides](how-to-guides/README.md)
   * [How to Deploy Solidity](how-to-guides/how-to-deploy-solidity.md)
   * [How to Deploy Rust](how-to-guides/how-to-deploy-rust.md)
+* [CI Test Page](test-for-ci.md)

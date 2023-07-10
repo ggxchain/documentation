@@ -25,4 +25,4 @@ jobs:
           publish_branch: main
           publish_dir: docs
           publish_push_force: true
-          publish_cname: docs.ggxchain.io
+          publish_nojekyll: true
