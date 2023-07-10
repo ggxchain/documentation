@@ -25,4 +25,3 @@ jobs:
           publish_branch: gh-pages
           publish_cname: docs.ggxchain.io
           publish_push_force: true
-          publish_nojekyll: true
