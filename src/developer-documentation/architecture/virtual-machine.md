@@ -1,6 +1,6 @@
 # Virtual Machine
 
-Golden Gate utilizes a hybrid virtual machine. Smart contracts in Golden Gate can be written in a general-purpose language that compiles into the [WebAssembly ](../terms-and-definitions.md#wasm)or on [Solidity](../terms-and-definitions.md#solidity).
+Golden Gate utilizes a hybrid virtual machine. Smart contracts in Golden Gate can be written in a general-purpose language that compiles into the WebAssembly or on Solidity.
 
 ### What is WebAssembly?
 
