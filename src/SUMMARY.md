@@ -9,9 +9,9 @@
 * [Wallets](developer-documentation/wallets/README.md)
   * [Metamask](developer-documentation/wallets/metamask.md)
   * [PolkadotJS](developer-documentation/wallets/polkadotjs.md)
-* [How to Guides](developer-documentation/how-to-guides/README.md)
-  * [How to Deploy Rust](developer-documentation/how-to-guides/how-to-deploy-rust.md)
-  * [How to Deploy Solidity](developer-documentation/how-to-guides/how-to-deploy-solidity.md)
+* [Rust Smart Contract Guides](developer-documentation/how-to-guides/README.md)
+  * [How to Deploy Rust Smart Contracts](developer-documentation/how-to-guides/how-to-deploy-rust.md)
+  * [How to Deploy Solidity Smart Contracts](developer-documentation/how-to-guides/how-to-deploy-solidity.md)
 
 ## Validator Guides
 
