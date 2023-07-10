@@ -12,11 +12,11 @@ BABE (Blind Assignment for Blockchain Extension) is a block production algorithm
 
 A block in a blockchain is a collection of data that is bundled together with a unique digital signature, known as a cryptographic hash. The data contained in a block can vary depending on the specific blockchain application, but it typically includes a record of recent transactions, a timestamp, and a reference to the previous block in the chain.
 
-## Block explorer
+## Block Explorer
 
 A block explorer is a tool that allows users to view and analyze the contents of a blockchain, including the transaction history, current status, and other important data. Block explorers are web-based applications that provide an intuitive user interface for navigating the blockchain, as well as a wide range of features for exploring and analyzing its data.
 
-## BLS signatures
+## BLS Signatures
 
 BLS signatures are specific signatures widely used in blockchains. They offer advantages over traditional signature schemes, such as shorter signature sizes, faster verification times, and aggregation of signatures.
 
@@ -26,13 +26,13 @@ Byzantine fault tolerance (BFT) is a characteristic of a distributed system that
 
 ## Consensus
 
-Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - [AURA](broken-reference) for block production and [GRANDPA](broken-reference) as a finality gadget.
+Consensus is the process of a group of entities to agree on a particular data value (such as the ordering and makeup of blocks on a blockchain). There are a variety of algorithms used for determining consensus. GGX uses hybrid consensus - AURA for block production and GRANDPA as a finality gadget.
 
 ## Controller Account
 
-In Golden Gate, a controller account is a type of account that is used to control the staking and nomination activities of a [stash account](broken-reference). A stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
+In Golden Gate, a controller account is a type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user's GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.
 
-## Dapps
+## DApps
 
 DApps (decentralized applications) are applications that run on a decentralized network, such as a blockchain. They are generally designed to be open-source, transparent, and resistant to censorship, making them a promising development in the field of blockchain technology.
 
@@ -82,7 +82,7 @@ Nodes that select a set of validators. A certain amount of DOTs must be staked i
 
 Networking protocol designed to synchronize the clocks of computers over a network. NTP(Network Time Protocol) allows you to synchronize the clocks of all the systems within the network. Currently it is required that validators' local clocks stay reasonably in sync, so you should be running NTP or a similar service
 
-## On-chain Governance
+## On-Chain Governance
 
 Governance of a blockchain which is controlled by mechanisms controlled by the blockchain. On-chain governance allows for decisions can be made transparently. Note that there are a variety of different algorithms for making these decisions, such as simple majority voting or identity-based quadratic voting.
 
@@ -155,10 +155,6 @@ A program that allows one to store, receive, and transmit GGX tokens or other bl
 ## WebAssembly
 
 An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.
-
-## Wasm
-
-An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled to Wasm.
 
 ## Witness
 

@@ -52,7 +52,7 @@ The combination of PoS block production and the finality gadget provides a secur
 
 ### Block Production: AURA
 
-[AURA](../terms-and-definitions.md#aura) (Authority Round) is a block production algorithm used in the Golden Gate network.
+AURA (Authority Round) is a block production algorithm used in the Golden Gate network.
 
 In the AURA algorithm, a designated set of authorities or validators take turns producing blocks in a round-robin fashion. The authorities are typically trusted participants within the network, such as known organizations or entities.
 
@@ -78,8 +78,5 @@ Overall, the GRANDPA finality gadget is an important component of the Golden Gat
 
 ## Resources
 
-
-
 * [GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) - The academic description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
 * [Rust implementation](https://github.com/paritytech/finality-grandpa) - The reference implementation and the accompanying [Substrate pallet](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs).
-
