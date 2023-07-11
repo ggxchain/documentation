@@ -2,13 +2,13 @@
 
 To stake GGXT tokens in the Golden Gate Sydney testnet, please follow the steps:
 
-1. Acquire tokens. Please check out our [sydney-validator-programme.md](../sydney-testnet/sydney-validator-programme.md "mention").
+1. Acquire tokens. Please check out our [Sydney Validator Program](../sydney-testnet/sydney-validator-programme.md "Sydney Validator Program").
 2. Create two substrate accounts. You can do that using [Polkadot-JS](../developer-documentation/wallets/polkadotjs.md).
-3. Distribute tokens between the [controller account](<../README (1).md#controller-account>) and the [stash account](<../README (1).md#stash-account>). You will need at least 1000 GGXT tokens in the stash to stake.
+3. Distribute tokens between the controller account and the stash account. You will need at least 1000 GGXT tokens in the stash to stake.
 4. After setting up a node [how-to-setup-a-validator-node.md](how-to-setup-a-validator-node.md "mention") and receiving tokens you can stake using our block explorer.
-5. Go to Network-->Staking
-6. Go to Accounts. You can see [Nominators ](<../README (1).md#nominator>)and [Validators](<../README (1).md#validator>) there.
-7.  You can bond tokens using **+Stash** button. You will need to populate:
+5. Go to Network 🡒 Staking
+6. Go to Accounts. You can see Nominators and Validators there.
+7.  You can bond tokens using **+Stash** button. You will need to populate the following fields:
 
     * **Stash account** - Select the stash account created in step 2.
     * **Controller account** - Select the controller account created in step 2. This account will also need a small amount of GGXT to pay for controlling transactions.
@@ -29,21 +29,23 @@ To get your node nominated, please follow the steps:
     sudo wget -qO /usr/local/bin/websocat https://github.com/vi/websocat/releases/latest/download/websocat.x86_64-unknown-linux-musl
     sudo chmod a+x /usr/local/bin/websocat
     ```
+
 2.  Get your node session key. You can do that running the command:
 
     ```bash
     websocat -n1 -B 99999999 ws://127.0.0.1:9944 <<< '{"id":1,"jsonrpc":"2.0","method":"author_rotateKeys","params":[]}'
     ```
-3. Go to Network-->Staking
-4. Go to Accounts. Click "Set Session Key" next to stash account created earlier.
+
+3. Go to Network 🡒 Staking
+4. Go to Accounts. Click **Set Session Key** next to stash account created earlier.
 5. Enter the output from `author_rotateKeys` from step 2 and click "Set Session Key".
 6. Authorize the transactions. Now others can nominate your node.
-7.  Go to Network-->Staking
+7.  Go to Network 🡒 Staking
 
     <figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
-8.  Go to Accounts. You can see [Nominators ](<../README (1).md#nominator>)and [Validators](<../README (1).md#validator>) there
+8.  Go to Accounts. You can see Nominators and Validators there
 
     <figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
-9.  You can bond tokens using **+Stash** button, nominate a validator using +Validator button and add a Nominator using **+Nominator** button
+9.  You can bond tokens using **+Stash** button, nominate a validator using **+Validator** button and add a Nominator using **+Nominator** button
 
     <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

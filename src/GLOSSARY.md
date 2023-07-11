@@ -1,5 +1,3 @@
-# Terms and Definitions
-
 ## AURA
 
 The Authority Round (AURA) block production algorithm is a consensus mechanism designed explicitly for permissioned or consortium blockchains. In the AURA algorithm, a designated set of authorities or validators take turns producing blocks in a round-robin fashion. The authorities are typically trusted participants within the network, such as known organizations or entities.

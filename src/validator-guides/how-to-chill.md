@@ -2,9 +2,9 @@
 
 The Golden Gate validator may opt to chill whenever he wants to prevent participation in staking for the upcoming era but does not want to unstake funds (e.g. when there is maintenance planned)
 
-Validator can do that by calling the `chill` [extrinsic ](<../README (1).md#extrinsic>)in the [staking pallet](https://paritytech.github.io/substrate/master/pallet\_staking/pallet/enum.Call.html#variant.chill) following the steps:
+Validator can do that by calling the `chill` extrinsic in the [staking pallet](https://paritytech.github.io/substrate/master/pallet\_staking/pallet/enum.Call.html#variant.chill) following the steps:
 
-1.  Go to Developer-->Extrinsics
+1.  Go to Developer 🡒 Extrinsics
 
     <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 2.  Choose the validator account you want to chill\
