@@ -20,10 +20,11 @@ MetaMask has gained significant popularity within the blockchain ecosystem due t
 
 To install MetaMask, follow these steps:
 
-1. Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at [https://metamask.io/](https://metamask.io/).
-2.  On the MetaMask website, click on the "Get Chrome Extension" (or "Get Firefox Extension" or "Get Brave Extension") button, depending on the browser you are using. In Chrome, it should look like this &#x20;
+1. Open your preferred web browser (Chrome, Firefox, or Brave) and visit the MetaMask website at <https://metamask.io/>.
+2.  On the MetaMask website, click on the "Get Chrome Extension" (or "Get Firefox Extension" or "Get Brave Extension") button, depending on the browser you are using. In Chrome, it should look like this
 
-    <figure><img src="../../.gitbook/assets/browser-extension.JPG" alt=""><figcaption></figcaption></figure>
+    ![Browser Extension](../../.gitbook/assets/browser-extension.JPG)
+
 3. You will be redirected to the browser's extension store. Click on the "Add to Chrome" (or "Add to Firefox" or "Add to Brave") button to start the installation process.
 4. A pop-up window will appear, asking for confirmation to add the extension. Click "Add extension" to proceed.
 5. Once the extension is added, you will see the MetaMask icon in your browser's toolbar (usually located at the top right corner). Click on the MetaMask icon to launch the extension.
