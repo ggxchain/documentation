@@ -1,5 +1,3 @@
-# README
-
 ### What is Golden Gate?
 
 Golden Gate is the Interchain Infrastructure Protocol that utilizes Multi-Party Computation for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
