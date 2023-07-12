@@ -12,9 +12,10 @@ You can deploy the Solidity contract via Remix IDE through the following steps:
 
 4. Go to Deploy & Run Transactions
 
-   ![Deploy & Run Transactions](../../.gitbook/assets/solidity-deploy-and-run.JPG)
+   ![Deploy & Run Transactions](../../.gitbook/assets/solidity-deploy-and-run.jpg)
 
 5. Press _deploy_ - authorization pop-up from a wallet should appear
-   ![Deploy](../../.gitbook/assets/solidity-deploy.JPG)
+
+   ![Deploy](../../.gitbook/assets/solidity-deploy.jpg)
 
 6. Authorize the transaction. In case you have a sufficient amount of tokens to pay, the gas fee deployed contract will appear below.
