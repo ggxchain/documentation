@@ -31,25 +31,25 @@ To use MetaMask with one of the Golden Gate networks, you will need to add the r
 
 1.  Open the MetaMask extension by clicking on the MetaMask icon in your browser's toolbar.
 
-    ![](../../.gitbook/assets/open-metamask-extension.png "Open metamask extension")
+    ![](../../.gitbook/assets/metamask/open-metamask-extension.png "Open metamask extension")
 
 2.  In the MetaMask interface, click on the account avatar at the top right corner and select "Settings" from the dropdown menu
 
-    ![](../../.gitbook/assets/metamask-settings.png "Metamask settings")
+    ![](../../.gitbook/assets/metamask/metamask-settings.png "Metamask settings")
 
 3. In the Settings menu, select the "Networks" tab.
 
 4.  Scroll down to the "Networks" section and click on the "Add Network" button.
 
-    ![](../../.gitbook/assets/add-network.jpg "Add network")
+    ![](../../.gitbook/assets/metamask/add-network.jpg "Add network")
 
 5.  Scroll to the bottom and choose "Add a network manually"
 
-    ![](../../.gitbook/assets/add-network-manually.jpg "Add network manually")
+    ![](../../.gitbook/assets/metamask/add-network-manually.jpg "Add network manually")
 
     A form will appear where you can enter the details of the custom network.
 
-    ![](../../.gitbook/assets/configuring-network.jpg "Configure Metamask's Network")
+    ![](../../.gitbook/assets/metamask/configuring-network.jpg "Configure Metamask's Network")
 
     * Network Name: Golden Gate Testnet
     * New RPC URL: https://testnode.ggxchain.io
