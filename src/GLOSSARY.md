@@ -1,22 +1,14 @@
 ## AURA
 
-The Authority Round (AURA) block production algorithm is a consensus mechanism designed explicitly for permissioned or consortium blockchains. In the AURA algorithm, a designated set of authorities or validators take turns producing blocks in a round-robin fashion. The authorities are typically trusted participants within the network, such as known organizations or entities.
+The **Au**thority **R**ound block production **A**lgorithm is a consensus mechanism designed explicitly for permissioned or consortium blockchains. In this consensus algorithm a designated set of authorities or validators take turns producing blocks in a round-robin fashion. The authorities are typically trusted participants within the network, such as known organizations or entities.
 
 ## BABE
 
-BABE (Blind Assignment for Blockchain Extension) is a block production algorithm used in GGX. BABE is designed to be fast, efficient, and secure, and it uses a proof-of-stake (PoS) consensus mechanism to achieve consensus among nodes in the network.
-
-## Block
-
-A block in a blockchain is a collection of data that is bundled together with a unique digital signature, known as a cryptographic hash. The data contained in a block can vary depending on the specific blockchain application, but it typically includes a record of recent transactions, a timestamp, and a reference to the previous block in the chain.
+**B**lind **A**ssignment for **B**lockchain **E**xtension is a block production algorithm used in GGX. It is designed to be fast, efficient, and secure, and it uses a proof-of-stake (PoS) consensus mechanism to achieve consensus among nodes in the network.
 
 ## Block Explorer
 
 A block explorer is a tool that allows users to view and analyze the contents of a blockchain, including the transaction history, current status, and other important data. Block explorers are web-based applications that provide an intuitive user interface for navigating the blockchain, as well as a wide range of features for exploring and analyzing its data.
-
-## BLS Signatures
-
-BLS signatures are specific signatures widely used in blockchains. They offer advantages over traditional signature schemes, such as shorter signature sizes, faster verification times, and aggregation of signatures.
 
 ## Byzantine Fault Tolerance
 

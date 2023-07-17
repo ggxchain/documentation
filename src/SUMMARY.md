@@ -15,11 +15,11 @@
 
 ## Sydney Testnet
 
-* [How to Setup a Validator Node on Sydney Testnet](validator-guides/how-to-setup-a-validator-node.md)
-* [How to Stake GGXT Tokens on Sydney Testnet](validator-guides/how-to-stake-ggxt-tokens.md)
-* [How to Pause Staking](validator-guides/how-to-chill.md)
-* [Sydney Validator Program](sydney-testnet/sydney-validator-programme.md)
-* [Sydney Bug Bounty Program](sydney-testnet/sydney-bug-bounty-programme.md)
+* [How to Setup a Validator Node on Sydney Testnet](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
+* [How to Stake GGXT Tokens on Sydney Testnet](sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md)
+* [How to Pause Staking](sydney-testnet/validator-guides/how-to-chill.md)
+* [Sydney Validator Program](sydney-testnet/sydney-validator-program.md)
+* [Sydney Bug Bounty Program](sydney-testnet/sydney-bug-bounty-program.md)
 
 ***
 
