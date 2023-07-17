@@ -51,9 +51,9 @@ To use MetaMask with one of the Golden Gate networks, you will need to add the r
 
     ![](../../.gitbook/assets/configuring-network.jpg "Configure Metamask's Network")
 
-    * Network Name: Provide a name for the Golden Gate network.
-    * New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet
-    * Chain ID: Input the Chain ID associated with the custom network. 888866 for the Golden Gate testnet
+    * Network Name: Golden Gate Testnet
+    * New RPC URL: https://testnode.ggxchain.io
+    * Chain ID: 888866
     
     Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
     
