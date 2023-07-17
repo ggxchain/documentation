@@ -2,21 +2,6 @@
 
 MetaMask is a popular cryptocurrency wallet and browser extension that enables users to interact with decentralized applications (dApps) on the EVM blockchains. It acts as a bridge between a user's web browser and an EVM blockchain, allowing them to manage their accounts, store and transfer ERC-20 tokens, and interact with smart contracts.
 
-Here are some key features and functionalities of MetaMask:
-
-**Wallet Management**: MetaMask allows users to create and manage multiple Ethereum accounts within their wallets. Each account has a unique address and associated private keys, which are securely stored locally on the user's device.
-
-**Browser Extension**: MetaMask is available as a browser extension for popular web browsers like Chrome, Firefox, and Brave. Users can install the extension to easily access their accounts and interact with dApps directly from their browsers.
-
-**Secure Account Access**: To ensure the security of user accounts, MetaMask requires users to enter their account password or use biometric authentication (if supported by the device) to access their accounts.
-
-**Interaction with dApps**: MetaMask integrates with websites and dApps that are built on the Ethereum blockchain. It provides a user-friendly interface for users to connect their accounts, sign transactions, and interact with smart contracts seamlessly.
-
-**Token Managemen**t: MetaMask supports various ERC-20 tokens, allowing users to view and manage their token balances within the wallet. It also facilitates token transfers and token approvals required for interacting with different decentralized applications.
-
-**Network Customization**: MetaMask allows users to switch between different EVM-based networks, including the mainnet, testnets (like Ropsten, Kovan, and Rinkeby), and custom networks. This flexibility enables users to interact with dApps across different EVM-based networks.
-
-MetaMask has gained significant popularity within the blockchain ecosystem due to its user-friendly interface, seamless dApp integration, and wide adoption by developers and users alike. It serves as a crucial tool for accessing and interacting with the blockchain and its associated decentralized applications.
 
 To install MetaMask, follow these steps:
 
@@ -42,30 +27,34 @@ Remember to keep your MetaMask password and seed phrase secure. The seed phrase 
 
 Note: The installation steps may vary slightly depending on the browser you are using. Make sure to follow the specific instructions for your browser.
 
-To use MetaMask with one of the Golden Gate networks, you will need to add the respective network into the metamask. You can do that using our video instruction <https://youtu.be/0RSAoHbn6C8> or follow the steps:
+To use MetaMask with one of the Golden Gate networks, you will need to add the respective network into metamask. You can do that using our video instruction <https://youtu.be/0RSAoHbn6C8> or follow the steps:
 
 1.  Open the MetaMask extension by clicking on the MetaMask icon in your browser's toolbar.
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    ![](../../.gitbook/assets/open-metamask-extension.png "Open metamask extension")
+
 2.  In the MetaMask interface, click on the account avatar at the top right corner and select "Settings" from the dropdown menu
 
-    <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+    ![](../../.gitbook/assets/metamask-settings.png "Metamask settings")
+
 3. In the Settings menu, select the "Networks" tab.
-4.  Scroll down to the "Networks" section and click on the "Add Network" button.&#x20;
 
-    <figure><img src="../../.gitbook/assets/add-network.JPG" alt=""><figcaption></figcaption></figure>
-5.  Scroll to the bottom and choose "Add a network manually"&#x20;
+4.  Scroll down to the "Networks" section and click on the "Add Network" button.
 
-    <figure><img src="../../.gitbook/assets/add-network-manually.JPG" alt=""><figcaption></figcaption></figure>
+    ![](../../.gitbook/assets/add-network.jpg "Add network")
 
-A form will appear where you can enter the details of the custom network. Network details
+5.  Scroll to the bottom and choose "Add a network manually"
 
-<figure><img src="../../.gitbook/assets/configuring network.JPG" alt=""><figcaption></figcaption></figure>
+    ![](../../.gitbook/assets/add-network-manually.jpg "Add network manually")
 
-* Network Name: Provide a name for the Golden Gate network.&#x20;
-* New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet&#x20;
-* Chain ID: Input the Chain ID associated with the custom network. 88886666 for the Golden Gate testnet
+    A form will appear where you can enter the details of the custom network.
 
-Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
+    ![](../../.gitbook/assets/configuring-network.jpg "Configure Metamask's Network")
 
-The custom network will now be available in the MetaMask interface. You can switch between networks by clicking on the network dropdown at the top of the MetaMask interface and selecting the desired network.
+    * Network Name: Provide a name for the Golden Gate network.
+    * New RPC URL: Enter the URL of the custom network's RPC (Remote Procedure Call) endpoint. https://testnode.ggxchain.io for the Golden Gate testnet
+    * Chain ID: Input the Chain ID associated with the custom network. 888866 for the Golden Gate testnet
+    
+    Once you have filled in the required details, click the "Save" button to add the custom network to MetaMask.
+    
+    The custom network will now be available in the MetaMask interface. You can switch between networks by clicking on the network dropdown at the top of the MetaMask interface and selecting the desired network.
