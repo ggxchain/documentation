@@ -1,4 +1,4 @@
-# Accounts and transactions
+# Accounts and Transactions
 
 In the context of blockchain, a transaction refers to a fundamental unit of activity that occurs on a blockchain network. It represents a transfer or exchange of data or value between participants in the network (accounts).
 

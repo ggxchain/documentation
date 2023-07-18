@@ -1,8 +1,10 @@
 # Sydney Bug Bounty Program
 
+_NOTE: The start date of the Sydney Bug Bounty Program has yet to be announced! We plan to announce it shortly._
+
 The Sydney bug bounty program is an initiative by the Golden Gate team to engage web3 developers and enthusiasts in securing the Golden Gate network for a reward in GGXT tokens.
 
-The scope of the program is the Golden Gate Sydney testnet.&#x20;
+The scope of the program is the Golden Gate Sydney testnet.
 
 **How to Apply**
 
@@ -17,7 +19,7 @@ Scope of this program is all code located in our public GitHub repository - [htt
 We define two bugs categories for the program:
 
 * Critical bugs - bugs that can lead to loss of funds more than 35% of the currently staked amount.
-* Crucial bugs - bugs that can lead to network halt, network stall for more than an hour, transactions censoring, or loss of funds less than 35% of the currently staked amount\
+* Crucial bugs - bugs that can lead to network halt, network stall for more than an hour, transactions censoring, or loss of funds less than 35% of the currently staked amount.
 
 
 **Submission**
