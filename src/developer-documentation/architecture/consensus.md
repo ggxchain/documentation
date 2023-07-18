@@ -79,4 +79,4 @@ Overall, the GRANDPA finality gadget is an important component of the Golden Gat
 ## Resources
 
 * [GRANDPA paper](https://github.com/w3f/consensus/blob/master/pdf/grandpa.pdf) - The academic description of the GRANDPA finality gadget. Contains formal proofs of the algorithm.
-* [Rust implementation](https://github.com/paritytech/finality-grandpa) - The reference implementation and the accompanying [Substrate pallet](https://github.com/paritytech/substrate/blob/master/frame/grandpa/src/lib.rs).
+* [Rust implementation](https://github.com/paritytech/finality-grandpa) - The reference implementation and the accompanying Substrate pallet.
