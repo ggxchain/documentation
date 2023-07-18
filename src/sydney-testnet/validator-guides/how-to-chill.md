@@ -4,9 +4,9 @@ The Golden Gate validator may opt to pause staking (or *chill*) whenever he or s
 
 Validator can do that by calling the `chill` extrinsic in the [staking pallet](https://paritytech.github.io/substrate/master/pallet\_staking/pallet/enum.Call.html#variant.chill) using following the steps:
 
-1.  Go to Developer 🡒 Extrinsics
+1.  Go to Developer &rarr; Extrinsics
 
-    ![](../../.gitbook/assets/how-to-chill/extrinsics.png "Developer 🡒 Extrinsics")
+    ![](../../.gitbook/assets/how-to-chill/extrinsics.png "Developer -> Extrinsics")
 
 2.  Choose the validator account you want to chill
 

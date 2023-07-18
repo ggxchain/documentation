@@ -12,6 +12,6 @@ To deploy Rust contract on the Golden Gate network you can follow video tutorial
 **Deploy your contract on the Golden Gate**
 
 1. Navigate to explorer of the Golden Gate network you want to deploy your contract on ([https://testnet.brooklyn.ggxchain.io/](https://testnet.brooklyn.ggxchain.io/) for the Brooklyn testnet)
-2. Go to Developer 🡒 Contracts page
+2. Go to Developer &rarr; Contracts page
 3. Press Upload & deploy code
 4. Choose deployment account (you will need PolkadotJS or other substrate account manager to use your account)
