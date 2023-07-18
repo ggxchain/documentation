@@ -32,7 +32,7 @@ To get your node nominated, please follow the steps:
 1.  Get your node session key. Assuming you are running using docker, you can do that running the command:
 
     ```bash
-    docker exec -it goofy_curie curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
+    docker exec -it ggx-local-node curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
     ```
 
 2. Go to Network &rarr; Staking
