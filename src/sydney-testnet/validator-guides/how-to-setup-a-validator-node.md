@@ -13,7 +13,6 @@ mkdir -p data-sydney
 
 docker run \
     -it \
-    --rm \
     --name ggx-local-node \
     -u $(id -g):$(id -u) \
     -p 30333:30333 \
