@@ -10,7 +10,7 @@ Validator can do that by calling the `chill` extrinsic in the staking pallet usi
 
 2.  Choose the validator account you want to chill
 
-    ![](../../.gitbook/assets/how-to-chill/choose-the-validator-account-you-want-to-chill.png "choose the validator account you want to chill")
+    ![](../../.gitbook/assets/how-to-chill/choose-the-validator-account-you-want-to-chill.png "Choose the validator account you want to chill")
 
 3.  Under the **submit the following extrinsic** dropdown menu choose the "staking" extrinsic
 
