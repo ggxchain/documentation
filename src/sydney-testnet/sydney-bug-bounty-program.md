@@ -19,7 +19,7 @@ Scope of this program is all code located in our public GitHub repository - [htt
 We define two bugs categories for the program:
 
 * Critical bugs - bugs that can lead to loss of funds more than 35% of the currently staked amount.
-* Crucial bugs - bugs that can lead to network halt, network stall for more than an hour, transactions censoring, or loss of funds less than 35% of the currently staked amount\
+* Crucial bugs - bugs that can lead to network halt, network stall for more than an hour, transactions censoring, or loss of funds less than 35% of the currently staked amount.
 
 
 **Submission**

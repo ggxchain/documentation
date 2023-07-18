@@ -14,7 +14,7 @@ Sydney testnet includes democracy routines. Any validator can propose a network 
 
 ## Validator Incentives
 
-* **Rewards** - Validators in the Sydney network have the opportunity to earn rewards in the form of GGXT tokens. By staking and participating in the consensus mechanism, validators can receive regular rewards for their contribution to securing and maintaining the network. _\[tokenomics parameters here]_
+* **Rewards** - Validators in the Sydney network have the opportunity to earn rewards in the form of GGXT tokens. By staking and participating in the consensus mechanism, validators can receive regular rewards for their contribution to securing and maintaining the network.
 * **Governance and Influence** - Validators play a vital role in the decentralized governance of the Sydney network. They have the power to vote on proposals and influence the direction of the network's development and upgrades. Participating as a validator allows individuals and organizations to have a say in the decision-making process and contribute to shaping the future of the network.
 * **Community and Collaboration** - Participating as a validator provides an opportunity to engage with like-minded individuals and collaborate on projects and initiatives related to the Sydney network. It allows for knowledge sharing, networking, and building relationships with others in the blockchain and cryptocurrency space.
 * **Learning and Technical Experience** - Operating a validator node in the Sydney network requires technical knowledge and infrastructure setup. Participating as a validator can be a learning experience, allowing individuals and organizations to deepen their understanding of blockchain technology, consensus mechanisms, and network operations.
