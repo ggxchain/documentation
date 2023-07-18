@@ -1,5 +1,7 @@
 # Sydney Bug Bounty Program
 
+_NOTE: The start date of the Sydney Bug Bounty Program has yet to be announced! We plan to announce it shortly._
+
 The Sydney bug bounty program is an initiative by the Golden Gate team to engage web3 developers and enthusiasts in securing the Golden Gate network for a reward in GGXT tokens.
 
 The scope of the program is the Golden Gate Sydney testnet.
