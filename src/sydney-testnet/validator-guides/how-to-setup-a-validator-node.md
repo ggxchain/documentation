@@ -28,6 +28,8 @@ docker run \
 
 Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
 
+You should be able to see your node when you visit the GGX telemetry website: <https://testnet.telemetry.sydney.ggxchain.io/>
+
 You can use the following optional flags:
 
 | Flags                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
