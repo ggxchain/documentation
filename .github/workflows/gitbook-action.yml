@@ -1,11 +1,12 @@
-name: 'Gitbook-Action'
+name: 'docs.ggxchain.io documentation'
 
 on:
   push:
     branches:
       - main
+      - honkit-migration # for test purposes
     paths-ignore:
-      - 'docs/**'  # To Avoid Loop
+      - '_book/**'  # To Avoid Loop
 
 jobs:
   build:
@@ -14,14 +15,20 @@ jobs:
       - name: Checkout action
         uses: actions/checkout@v2
 
-      - name: Gitbook Action
-        uses: ZanderZhao/gitbook-action@master
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
         with:
-          token: ${{ secrets.PERSONAL_TOKEN }}
-          source_branch: main
-          source_dir: src
-          source_edit_time: true
-          publish_commit_message: ${{ github.event.head_commit.message }}
-          publish_branch: gh-pages
-          publish_cname: docs.ggxchain.io
-          publish_push_force: true
+          node-version: 18
+
+      - run: npm install
+      - run: npm run build
+
+      # - name: Deploy to GitHub Pages
+      #   if: success()
+      #   uses: crazy-max/ghaction-github-pages@v3
+      #   with:
+      #     target_branch: gh-pages
+      #     build_dir: _book
+      #     fqdn: docs.ggxchain.io
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
