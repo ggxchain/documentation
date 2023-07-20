@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - honkit-migration # for test purposes
     paths-ignore:
       - '_book/**'  # To Avoid Loop
 
@@ -23,12 +22,12 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      # - name: Deploy to GitHub Pages
-      #   if: success()
-      #   uses: crazy-max/ghaction-github-pages@v3
-      #   with:
-      #     target_branch: gh-pages
-      #     build_dir: _book
-      #     fqdn: docs.ggxchain.io
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: gh-pages
+          build_dir: _book
+          fqdn: docs.ggxchain.io
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
