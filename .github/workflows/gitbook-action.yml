@@ -10,6 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout action
         uses: actions/checkout@v2
@@ -30,4 +32,4 @@ jobs:
           build_dir: _book
           fqdn: docs.ggxchain.io
         env:
-          GH_PAT: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
