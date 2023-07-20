@@ -30,4 +30,4 @@ jobs:
           build_dir: _book
           fqdn: docs.ggxchain.io
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.PERSONAL_TOKEN }}
