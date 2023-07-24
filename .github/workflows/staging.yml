@@ -40,5 +40,6 @@ jobs:
           target_branch: main
           build_dir: _book
           fqdn: staging-docs.dev.ggxchain.io
+          verbose: true
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
