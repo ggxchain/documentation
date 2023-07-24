@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - staging
-      - staging-pipeline
     paths-ignore:
       - '_book/**'  # To Avoid Loop
 
