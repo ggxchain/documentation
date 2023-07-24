@@ -36,7 +36,7 @@ jobs:
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
-          repo: documentation-staging-artifacts
+          repo: GoldenGateGGX/documentation-staging-artifacts
           target_branch: main
           build_dir: _book
           fqdn: staging-docs.dev.ggxchain.io
