@@ -1,0 +1,43 @@
+name: 'stg-docs.dev.ggxchain.io documentation'
+
+on:
+  push:
+    branches:
+      - staging
+    paths-ignore:
+      - '_book/**'  # To Avoid Loop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm install
+      - run: npm run build
+
+      - name: Generate token
+        id: generate_token
+        uses: getsentry/action-github-app-token@v2
+        with:
+          # RSA Private key created for the GitHub app
+          private_key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          # App id
+          app_id: ${{ secrets.GH_APP_ID }}
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          repo: GoldenGateGGX/documentation-staging-artifacts
+          target_branch: main
+          build_dir: _book
+          fqdn: staging-docs.dev.ggxchain.io
+        env:
+          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
