@@ -26,11 +26,12 @@ require(['gitbook'], function (gitbook, $) {
     });
 
     function setDefaultTheme(fontState) {
-        if (!fontState && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (!fontState) {
             fontState = {
                 family: 1,
                 size: 2,
-                theme: 2, // Dark theme
+                theme: isDark ? 2 : 0, // Dark theme
             }
             gitbook.storage.set('fontState', fontState);
         }
