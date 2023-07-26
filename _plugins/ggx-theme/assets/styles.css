@@ -1,0 +1,37 @@
+html {
+    font-size: 75%;
+}
+
+.page-inner {
+    max-width: 1000px;
+}
+
+.book-summary {
+    width: 300px;
+}
+@media screen and (max-width: 600px) {
+    .book-summary {
+        width: 100%;
+    }
+}
+
+.book-header a.btn {
+    font-size: 2rem;
+}
+
+.book-summary ul.summary li.chapter {
+    font-size: 1.3rem;
+}
+
+.book-summary ul.summary li.chapter > a {
+    white-space: normal;
+}
+
+.book-summary ul.summary li.chapter span i {
+    font-size: 2rem;
+    top: 6px;
+}
+
+li a.gitbook-link {
+    visibility: hidden;
+}

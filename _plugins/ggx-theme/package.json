@@ -1,0 +1,8 @@
+{
+    "name": "ggx-theme",
+    "version": "0.0.1",
+    "description": "GGX documentation theme",
+    "engines": {
+        "honkit": ">=5.0.0"
+    }
+}
