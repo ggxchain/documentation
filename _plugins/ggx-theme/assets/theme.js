@@ -31,7 +31,7 @@ require(['gitbook'], function (gitbook, $) {
             fontState = {
                 family: 1,
                 size: 2,
-                theme: isDark ? 2 : 0, // Dark theme
+                theme: isDark ? 2 : 0, // Set the theme based on user preferences
             }
             gitbook.storage.set('fontState', fontState);
         }
