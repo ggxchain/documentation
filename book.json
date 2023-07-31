@@ -1,4 +1,12 @@
 {
-    "honkit": ">= 3.0.0",
-    "root": "./src"
+    "honkit": ">= 5.0.0",
+    "root": "./src",
+    "title": "GGX Documentation",
+    "author": "GGX",
+    "plugins": ["chollapse", "octocat", "../../_plugins/ggx-theme"],
+    "pluginsConfig": {
+        "octocat": {
+            "url": "https://github.com/GoldenGateGGX/documentation"
+        }
+    }
 }
