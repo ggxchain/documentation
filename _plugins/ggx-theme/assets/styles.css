@@ -35,3 +35,7 @@ html {
 li a.gitbook-link {
     visibility: hidden;
 }
+
+.markdown-section img {
+    box-shadow: 2px 2px 7px #0006;
+}
