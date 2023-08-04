@@ -2,7 +2,7 @@
 # 1 ibc infomation
 ## 1.1 Channel lifecycle management
 
-![](./img/CSM.png)
+![](../../.gitbook/assets/ibc/CSM.png)
 
 
 # 2 ics20 interface
