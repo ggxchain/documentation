@@ -160,12 +160,10 @@ pub trait PSP37 {
 
     pub enum Amount {
         Native(Coin),
-        // FIXME? USe Cw20CoinVerified, and validate cw20 addresses
         Cw20(Cw20Coin),
     }
 
     impl Amount {
-        // TODO: write test for this
         pub fn from_parts(denom: String, amount: u128) -> Self {
             if denom.starts_with("cw20:") {
                 let address = denom.get(5..).unwrap().into();
@@ -485,8 +483,8 @@ pub enum Error {
         Staking(StakingMsg),
         // #[cfg(feature = "staking")]
         Distribution(DistributionMsg),
-        // /// A Stargate message encoded the same way as a protobuf [Any](https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/any.proto).
-        // /// This is the same structure as messages in `TxBody` from [ADR-020](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-020-protobuf-transaction-encoding.md)
+        /// A Stargate message encoded the same way as a protobuf [Any](https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/any.proto).
+        /// This is the same structure as messages in `TxBody` from [ADR-020](https://github.com/cosmos/cosmos-sdk/blob/master/docs/architecture/adr-020-protobuf-transaction-encoding.md)
         // #[cfg(feature = "stargate")]
         Stargate {
             type_url: String,
@@ -556,17 +554,6 @@ pub enum Error {
         ///result static string "result"
         result_prefix: Vec<u8>,
     }
-
-    // pub enum ReflectExecuteMsg {
-    //     ReflectMsg { msgs: Vec<CosmosMsg> },
-    // }
-
-    // pub enum PacketMsg {
-    //     Dispatch { msgs: Vec<CosmosMsg> },
-    //     WhoAmI {},
-    //     Balances {},
-    // }
-
 
     pub enum ExecuteMsg {
         ReflectMsg { msgs: Vec<CosmosMsg<CustomMsg>> },
