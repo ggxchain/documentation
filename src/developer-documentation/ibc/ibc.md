@@ -1,11 +1,11 @@
 
-# 1 ibc infomation
+# 1 IBC infomation
 ## 1.1 Channel lifecycle management
 
 ![](../../.gitbook/assets/ibc/CSM.png)
 
 
-# 2 ics20 interface
+# 2 ICS20 interface
 ## 2.1 ink! interface
 ```js
         /// transfer token, This allows us to transfer *exactly one* native token
@@ -367,7 +367,7 @@ pub enum Error {
 
 ```
 
-# 3 ics27 interface
+# 3 ICS27 interface
 ## 3.1 interface
 ```js
         /// create a reflect message
@@ -613,10 +613,10 @@ pub enum Error {
 }
 ```
 
-# 4 ics721 interface
+# 4 ICS721 interface
 ## 4.1 interface
 ```js
-        // receive nft
+        // receive NFT
         /// Receives a NFT to be IBC transfered away. The `msg` field must
         /// be a binary encoded `IbcOutgoingMsg`.
         pub fn execute_receive_nft(
