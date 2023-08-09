@@ -1,7 +1,5 @@
 # How to Deploy Rust Smart Contracts
 
-To deploy Rust contract on the Golden Gate network you can follow video tutorials <https://youtu.be/xl-QliBpH9k> and <https://youtu.be/Zp1JtBYxXJg> or follow the steps below.
-
 ## Update Your Development Environment
 
 1. Update Rust using `rustup compnent add rust-src`

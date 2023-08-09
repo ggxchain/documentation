@@ -22,7 +22,7 @@ async function connectToNode() {
 ```javascript
 async function generateKeyPair() {
   const api = await connectToNode();
-  const keyring = new Keyring({ type: 'sr25519' }); // or 'ed25519' for ed25519 keys
+  const keyring = new Keyring({ type: 'ed25519' }); // or 'sr25519'
 
   const keyPair = keyring.addNewPair();
 
