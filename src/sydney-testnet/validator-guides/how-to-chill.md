@@ -1,6 +1,6 @@
 # How to Pause Staking
 
-The Golden Gate validator may opt to pause staking (or *chill*) whenever he or she wants to prevent participation in staking for the upcoming era but does not want to unstake funds (e.g. when there is maintenance planned).
+The GGX chain validator may opt to pause staking (or *chill*) whenever he or she wants to prevent participation in staking for the upcoming era but does not want to unstake funds (e.g. when there is maintenance planned).
 
 Validator can do that by calling the `chill` extrinsic in the staking pallet using following the steps:
 

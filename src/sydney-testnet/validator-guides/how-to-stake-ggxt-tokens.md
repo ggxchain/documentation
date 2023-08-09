@@ -1,6 +1,6 @@
 # How to Stake GGXT Tokens
 
-To stake GGXT tokens in the Golden Gate Sydney testnet, please follow the steps:
+To stake GGXT tokens in the GGX Sydney testnet, please follow the steps:
 
 1. Acquire tokens. Please check out our [Sydney Validator Program](../sydney-testnet/sydney-validator-programme.md "Sydney Validator Program").
 2. Create two Substrate accounts. You can do that using [PolkadotJS](../../developer-documentation/wallets/polkadotjs.md).
