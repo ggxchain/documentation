@@ -9,16 +9,18 @@ docker build -f Dockerfile.sydney -t golden-gate-node:sydney .
 
 mkdir -p data-sydney
 
-docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 --name "ggx-node" \
+docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
+    --name <INSERT_UNIQUE_NAME> \
     -p "127.0.0.1:9944" \
     -p "127.0.0.1:9933" \
     -p "127.0.0.1:9615" \
     -p "0.0.0.0:30333" \
     -v $(pwd)/custom-spec-files:/tmp \
     -v $(pwd)/data-sydney:/data-sydney \
-    --base-path=/data-sydney \
-    --rpc-cors all \
+    golden-gate-node:sydney \
+    --wasm-execution Compiled \
     --database rocksdb \
+    --rpc-cors all \
     --sync warp \
     --no-private-ip \
     --no-mdns \
@@ -31,12 +33,18 @@ docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 --name 
     --unsafe-rpc-external \
     --prometheus-external \
     --validator \
-    --name "INSERT_UNIQUE_NAME" \
-    --wasm-execution Compiled \
     --chain /tmp/sydney.json \
-    --bootnodes '/ip4/35.157.76.223/tcp/30333/p2p/12D3KooWG4SbEsqHWXHzJAygRRHd4PHGKoG1XbS6Hqc2nVrYnLhT' \
+    --base-path=/data-sydney \
+    --bootnodes /ip4/35.157.76.223/tcp/30333/p2p/12D3KooWBWWVjVUUNAPLxkA56WuqiPXeXaNsFTPorvK2Nk6CG9eJ \
     --telemetry-url 'wss://test.telemetry.sydney.ggxchain.io/submit 0'
 ```
+
+Please note that is a recommended script to run for testnet, but you should be aware of some parameters that potentially can expose some security risks: 
+* --rpc-methods unsafe
+* --unsafe-rpc-external
+
+You don't need pruning if you want to run a full archive node for some purposes.
+`--chain /tmp/sydney.json` - You might need to specify a correct path to the file.
 
 Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
 

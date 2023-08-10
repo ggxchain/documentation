@@ -32,6 +32,13 @@ html {
     top: 6px;
 }
 
+.color-theme-2 #book-search-input {
+    background: #bfc4e1;
+}
+.color-theme-2 #book-search-input input {
+    color: #333;
+}
+
 li a.gitbook-link {
     visibility: hidden;
 }

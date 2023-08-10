@@ -13,7 +13,7 @@ If you are running a GGX node, you can generate keys directly from the node's co
 ```
 If you want to generate a key from a node running in Docker, use the following command:
 ```bash
-docker run -v $HOME/keys:/keys --rm <CONTAINER_ID> key generate-node-key > ./data-sydney/ggx.key
+docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate-node-key > ./data-sydney/node.key
 ```
 
 #### Generating keys for other purposes
