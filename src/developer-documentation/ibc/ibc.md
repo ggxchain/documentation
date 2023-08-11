@@ -181,7 +181,7 @@ pub trait PSP37 {
         }
     }
 ```
-## 2.5 error
+## 2.3 error
 ```js
 pub enum Error {
         /// StdError
