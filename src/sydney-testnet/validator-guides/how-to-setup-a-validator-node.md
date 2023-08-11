@@ -1,8 +1,6 @@
 # How to Setup a Validator Node
 
-For this instruction we consider a cloud server running Linux. The validator can use any provider according to his preferences . As OS it is best to use a recent Debian Linux. For this guide we will be using Ubuntu 22.04, but the instructions should be similar for other platforms.
-
-Please make sure to follow all of the instructions. Mistakes in setting up a node may get result in slashed tokens and may put the tokens of nominators at risk. Check our [Sydney Validator Program](../sydney-validator-programme.md) for requirements and incentives.
+Please make sure to follow the instructions carefully. Mistakes in setting up a node may get result in slashed tokens and may put the tokens of nominators at risk. Check our [Sydney Validator Program](../sydney-validator-programme.md) for requirements and incentives.
 
 From the repository's root directory execute following commands in order:
 
@@ -11,20 +9,42 @@ docker build -f Dockerfile.sydney -t golden-gate-node:sydney .
 
 mkdir -p data-sydney
 
-docker run \
-    -it \
-    --name ggx-local-node \
-    -u $(id -g):$(id -u) \
-    -p 30333:30333 \
+docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
+    --name <INSERT_UNIQUE_NAME> \
+    -p "127.0.0.1:9944" \
+    -p "127.0.0.1:9933" \
+    -p "127.0.0.1:9615" \
+    -p "0.0.0.0:30333" \
     -v $(pwd)/custom-spec-files:/tmp \
     -v $(pwd)/data-sydney:/data-sydney \
     golden-gate-node:sydney \
-    --base-path=/data-sydney \
+    --wasm-execution Compiled \
+    --database rocksdb \
+    --rpc-cors all \
+    --sync warp \
+    --no-private-ip \
+    --no-mdns \
+    --state-pruning 256 \
+    --blocks-pruning 256 \
+    --node-key-type ed25519 \
+    --node-key-file /data-sydney/node.key \
+    --log info \
+    --rpc-methods unsafe \
+    --unsafe-rpc-external \
+    --prometheus-external \
+    --validator \
     --chain /tmp/sydney.json \
-    --bootnodes /ip4/3.69.173.157/tcp/30333/p2p/12D3KooWSriyuFSmvuc188UWqV6Un7YYCTcGcoSJcoyhtTZEWi1n \
-    --telemetry-url "wss://test.telemetry.sydney.ggxchain.io/submit 0" \
-    --name <INSERT_UNIQUE_NAME>
+    --base-path=/data-sydney \
+    --bootnodes /ip4/35.157.76.223/tcp/30333/p2p/12D3KooWBWWVjVUUNAPLxkA56WuqiPXeXaNsFTPorvK2Nk6CG9eJ \
+    --telemetry-url 'wss://test.telemetry.sydney.ggxchain.io/submit 0'
 ```
+
+Please note that is a recommended script to run for testnet, but you should be aware of some parameters that potentially can expose some security risks: 
+* --rpc-methods unsafe
+* --unsafe-rpc-external
+
+You don't need pruning if you want to run a full archive node for some purposes.
+`--chain /tmp/sydney.json` - You might need to specify a correct path to the file.
 
 Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
 

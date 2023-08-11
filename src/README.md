@@ -1,11 +1,11 @@
-### What is Golden Gate?
+### What is GGX chain?
 
-Golden Gate is the Interchain Infrastructure Protocol that utilizes Multi-Party Computation for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
+GGX chain is the Interchain Infrastructure Protocol that utilizes Multi-Party Computation for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
 
-Golden Gate is built to connect arbitrary chains with each other turning sharded environment into the internet of blockchains.
+GGX chain is built to connect arbitrary chains with each other turning sharded environment into the internet of blockchains.
 
-### Why Golden Gate?
+### Why GGX chain?
 
-Golden Gate is a single platform where you can access most of available blockchain (aiming to provide availability for all valueable chains). Golden Gate utilizes hybrid virtual machine so you can programm in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript)
+GGX chain is a single platform where you can access most of available blockchain (aiming to provide availability for all valueable chains). GGX chain utilizes hybrid virtual machine, so you can program in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript).
 
-We provide agnostic base layer communication. modern security techniques and zero-knowledge precompiles providing the richest environment for dapps development, especially for dapps that require cross-chain communication
+We provide agnostic base layer communication, modern security techniques and zero-knowledge precompiles, providing the richest environment for dapps development, especially for dapps that require cross-chain communication.

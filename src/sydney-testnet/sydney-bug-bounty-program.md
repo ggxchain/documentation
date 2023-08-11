@@ -2,9 +2,9 @@
 
 _NOTE: The start date of the Sydney Bug Bounty Program has yet to be announced! We plan to announce it shortly._
 
-The Sydney bug bounty program is an initiative by the Golden Gate team to engage web3 developers and enthusiasts in securing the Golden Gate network for a reward in GGXT tokens.
+The Sydney bug bounty program is an initiative by the GGX chain team to engage web3 developers and enthusiasts in securing the GGX chain network for a reward in GGXT tokens.
 
-The scope of the program is the Golden Gate Sydney testnet.
+The scope of the program is the GGX chain Sydney testnet.
 
 **How to Apply**
 
@@ -12,7 +12,7 @@ To apply for our bug bounty program, contact us at info@ggxchain.io specifying "
 
 #### Scope
 
-Scope of this program is all code located in our public GitHub repository - [https://github.com/GoldenGateGGX/golden-gate](https://github.com/GoldenGateGGX/golden-gate).
+Scope of this program is all code located in our public GitHub repository - [https://github.com/ggxchain/ggxnode](https://github.com/ggxchain/ggxnode).
 
 **Bug Categories**
 
@@ -44,7 +44,7 @@ Our team will assess bug severity and assign reward accordingly to the table:
 | 3        | Up to 50000 GGX  |
 | 4        | Up to 100000 GGX |
 
-Golden Gate team may change rewards at their discretion.
+GGX chain team may change rewards at their discretion.
 
 | Level    | **Rewards**             |
 | -------- | ----------------------- |
