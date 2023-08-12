@@ -1,4 +1,4 @@
-## Key Generation using Polkadot.js Extension
+## Key Generation Using The Polkadot.js Extension
 
 The Polkadot.js extension is a browser extension that provides a user-friendly interface for interacting with Substrate-based chains, including GGX. It allows users to create key pairs with ease.
 
