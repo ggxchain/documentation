@@ -17,7 +17,7 @@ The Polkadot.js extension is a browser extension that provides a user-friendly i
 </div>
 5. The newly created account will appear in the list. The displayed format depends on the preferences set in the extension.
 
-You might want to convert the key format to match default network prefix by using Developer -> Utilities -> Convert Address in the [Explorer UI](https://testnet.sydney.ggxchain.io/).
+You might want to convert the key format to match default network prefix by using Developer &rarr; Utilities &rarr; Convert Address in the [Explorer UI](https://testnet.sydney.ggxchain.io/).
 
 **Note:** For security reasons, it is advisable to use this method only for accounts with limited access. For running a validator node use [node-based methods](node-create-keys.md).
 
