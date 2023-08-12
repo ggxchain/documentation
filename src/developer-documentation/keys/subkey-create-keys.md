@@ -12,7 +12,7 @@ sudo apt install -y build-essential protobuf-compiler pkg-config libssl-dev clan
 
 ### Install Rust
 
-If you don't have Rust installed, you can install it with:
+If you do not have Rust installed, you can install it with:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
