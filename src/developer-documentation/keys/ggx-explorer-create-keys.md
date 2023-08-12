@@ -40,7 +40,7 @@ Follow the instructions in the popup to create a key pair and save your mnemonic
 
 Please note, that a Multisig account doesn't have a private key. Instead, it is identified by a combination of its signatories' addresses and a threshold, which represents the minimum number of signatories required to approve a transaction.
 
-The identifier (or address) of a multisig wallet is derived from the addresses of the signatories and the threshold using a deterministic function. This identifier can be calculated by anyone who knows the addresses of the signatories and the threshold, but it does not provide any control over the multisig wallet.
+The identifier (or address) of a Multisig wallet is derived from the addresses of the signatories and the threshold using a deterministic function. This identifier can be calculated by anyone who knows the addresses of the signatories and the threshold, but it does not provide any control over the Multisig wallet.
 
 #### Proxied Accounts
 
