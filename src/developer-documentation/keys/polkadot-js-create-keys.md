@@ -21,4 +21,4 @@ You might want to convert the key format to match default network prefix by usin
 
 **Note:** For security reasons, it is advisable to use this method only for accounts with limited access. For running a validator node use [node-based methods](node-create-keys.md).
 
-It's not possible to use this extension for creation or management of EVM-based keys.
+It is not possible to use this extension for creation or management of EVM-based keys.
