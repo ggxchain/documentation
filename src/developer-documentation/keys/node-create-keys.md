@@ -27,7 +27,7 @@ For ed25519:
 ```
 For sr25519:
 ```bash
-./node-bin key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
+./ggx-bin key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
 ```
 
 ##### When running a node in Docker
