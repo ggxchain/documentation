@@ -7,6 +7,7 @@ In GGX chain, key generation is a crucial process that allows users to create cr
 GGX chain supports the following key standards for its accounts:
 
 ##### ed25519
+
 This format **is required** for running a validator node. However, conversion between sr25519 and ed25519 is not straightforward since they are different elliptic curve systems. They have different mathematical foundations and converting a private key from one to the other can compromise security.
 
 It is recommended to use sr25519 or EVM-based keys for end users rather than ed25519.
