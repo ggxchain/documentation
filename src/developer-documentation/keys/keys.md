@@ -12,6 +12,7 @@ This format **is required** for running a validator node. However, conversion be
 It is recommended to use sr25519 or EVM-based keys for end users rather than ed25519.
 
 ##### sr25519
+
 Also known as **Schnorr/Ristretto 25519**. An elliptic curve cryptography algorithm optimized for Substrate-based chains, providing efficient signature verification. sr25519 provides a high level of security and resistance against various attacks.
 
 ##### EVM-based keys (H160) - Recommended for end users
