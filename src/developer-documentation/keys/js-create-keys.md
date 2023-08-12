@@ -1,6 +1,7 @@
 ## Create a Key with a JS Script
 
 #### Install the @polkadot/api module:
+
 ```javascript
 npm install @polkadot/api
 ```
