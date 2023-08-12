@@ -1,4 +1,4 @@
-## Key Generation Using GGX Explorer
+## Key Generation Using the GGX Block Explorer
 
 The GGX Explorer UI is a web-based interface for interacting with GGX chain.
 It allows users to import keys from a QR code, generate Multisig accounts and create proxied accounts.
