@@ -23,7 +23,7 @@ In these examples the keys will be stored in the `keys` folder of your node. You
 
 For ed25519:
 ```bash
-./node-bin key generate -w 24 --output-type json --scheme ed25519 >$HOME/keys/ed25519key.json
+./ggx-bin key generate -w 24 --output-type json --scheme ed25519 >$HOME/keys/ed25519key.json
 ```
 For sr25519:
 ```bash
