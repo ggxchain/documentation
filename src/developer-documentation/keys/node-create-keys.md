@@ -16,7 +16,8 @@ If you want to generate a key from a node running in Docker, use the following c
 docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate-node-key > ./data-sydney/node.key
 ```
 
-#### Generating keys for other purposes
+#### Generating Keys for Other Purposes
+
 You may want to generate ed25519 or sr25519 keys for other purposes, in raw or json formats.
 In these examples the keys will be stored in the `keys` folder of your node. You might need to create this folder manually.
 
