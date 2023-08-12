@@ -9,7 +9,7 @@ It is an open-source project, and considered to be safe. But running anything in
 
 #### Creating a Key Pair
 
-By default, creating keys in Explorer is disabled for security reasons. Make sure you take the necessary precautions if you choose to use this feature. To enable it, go to the "Settings" section and select the "Enable local in-browser account storage" in the "account options" and click "Save". Alternatively, you can import a key pair from JSON file.
+By default, creating keys in the GGX Block Explorer is disabled for security reasons. Make sure you take the necessary precautions if you choose to use this feature. To enable it, go to the "Settings" section and select the "Enable local in-browser account storage" in the "account options" and click "Save". Alternatively, you can import a key pair from JSON file.
 <div align="center">
   <img src="../../assets/keys/explorer-account-settings.png" alt="Explorer Account Settings" style="max-width: 600px; margin: 20px 20px 40px 20px;" />
 </div>
