@@ -17,7 +17,7 @@ In order to use GGX chain in Metamask you'll have to manually configure the netw
 3. Select "Add network manually" and fill in the following details:
    - Network Name: GGX Sydney Testnet
    - New RPC URL: https://testnet.node.sydney.ggxchain.io
-   - Chain ID: 8866
+   - Chain ID: 8886
    - Currency Symbol: GGXT
    - Block Explorer URL: https://testnet.sydney.ggxchain.io
 4. Save and switch to the selected network.
