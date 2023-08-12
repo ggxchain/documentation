@@ -3,7 +3,6 @@
 #### Install the @polkadot/api module:
 ```javascript
 npm install @polkadot/api
-
 ```
 
 #### Set up your script and import the necessary modules:
