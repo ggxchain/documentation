@@ -24,7 +24,7 @@ As it is not directly possible to convert between sr25519 and ed25519 keys, it i
 
 ## Validator Node Keys
 
-For running a validator node, GGX requires two types of keys: Stash Account and Controller Account keys. The Stash key holds the funds and is used for nominating other validators, while the Controller key is used to control the validator node and manage nominations. The recommnded way to generate validator node key is by running a node and using its tools. For more information, see [Node](node-create-keys.md).
+For running a validator node, GGX requires two types of keys: Stash Account and Controller Account keys. The Stash key holds the funds and is used for nominating other validators, while the Controller key is used to control the validator node and manage nominations. The recommnded way to generate validator node key is by running a node and using its tools. For more information, see [the instructions for making a key using the Node](node-create-keys.md).
 
 ## Multisig Addresses
 
