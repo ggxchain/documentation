@@ -1,6 +1,6 @@
 # How to Deploy Solidity Smart Contracts
 
-You can use the Remix IDE to deploy Solidity contracts on the GGX chain network. The Remix IDE is an integrated development environment (IDE) specifically designed for developing and testing smart contracts on the EVM blockchain. It provides a browser-based interface that allows developers to write, compile, deploy, and debug smart contracts written in Solidity, the programming language for EVM.
+You can use the Remix IDE to deploy Solidity contracts on the GGX chain network. The Remix IDE is an Integrated Development Environment (IDE) specifically designed for developing and testing smart contracts on the EVM blockchain. It provides a browser-based interface that allows developers to write, compile, deploy, and debug smart contracts written in Solidity, the programming language for the EVM.
 
 You can deploy the Solidity contract via Remix IDE through the following steps:
 
