@@ -16,7 +16,7 @@ Also known as **Schnorr/Ristretto 25519**. An elliptic curve cryptography algori
 
 ##### EVM-based keys (H160) - Recommended for end users
 
-It's the easiest and versatile key format, that can be used by EVM-compatible wallets including Metamask. It's a 160-bit hash of the public key, which is used as an address in EVM-based chains. It's also known as *Ethereum address*. H160 keys are a good choice for end users, as they are easy to use and compatible with EVM-based wallets.
+It is the easiest and versatile key format, that can be used by EVM-compatible wallets including Metamask. It is a 160-bit hash of the public key, which is used as an address in EVM-based chains. It is also known as an *Ethereum address*. H160 keys are a good choice for end users, as they are easy to use and compatible with EVM-based wallets.
 
 ##### Converting Keys
 
