@@ -1,6 +1,6 @@
 ### What is GGX chain?
 
-GGX chain is the Interchain Infrastructure Protocol that utilizes Multi-Party Computation for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
+GGX chain is the interchain infrastructure protocol that utilizes Multi-Party Computation (MPC) for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
 
 GGX chain is built to connect arbitrary chains with each other turning sharded environment into the internet of blockchains.
 
