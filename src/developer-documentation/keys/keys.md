@@ -30,7 +30,6 @@ For running a validator node, GGX requires two types of keys: Stash Account and 
 
 GGX chain supports multisig addresses, which require multiple signatures to approve transactions or changes on the chain. To create a multisig address, you need the public keys of all signatories involved in the multisig account. A multisig address can be useful for joint accounts or organizations that require consensus for transactions.
 
-
 ## Ways to Generate Keys
 
 For better security, advanced users, and validators **it is recommended** to use node-based methods or the Subkey tool.
