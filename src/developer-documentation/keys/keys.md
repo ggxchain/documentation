@@ -7,7 +7,9 @@ In GGX chain, key generation is a crucial process that allows users to create cr
 GGX chain supports the following key standards for its accounts:
 
 ##### ed25519
-This format **is required** for running a validator node. However, conversion between sr25519 and ed25519 is not straightforward since they are different elliptic curve systems. They have different mathematical foundations and converting a private key from one to the other can compromise security. Therefore, it's recommended to use ed25519 keys for validator nodes and sr25519 or EVM-based keys for end users.
+This format **is required** for running a validator node. However, conversion between sr25519 and ed25519 is not straightforward since they are different elliptic curve systems. They have different mathematical foundations and converting a private key from one to the other can compromise security.
+
+It is recommended to use sr25519 or EVM-based keys for end users rather than ed25519.
 
 ##### sr25519
 Also known as **Schnorr/Ristretto 25519**. An elliptic curve cryptography algorithm optimized for Substrate-based chains, providing efficient signature verification. sr25519 provides a high level of security and resistance against various attacks.
