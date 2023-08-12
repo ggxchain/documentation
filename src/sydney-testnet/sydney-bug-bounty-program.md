@@ -12,7 +12,7 @@ To apply for our bug bounty program, contact us at info@ggxchain.io specifying "
 
 #### Scope
 
-Scope of this program is all code located in our public GitHub repository - [https://github.com/ggxchain/ggxnode](https://github.com/ggxchain/ggxnode).
+Scope of this program is all code located in our public GitHub repository - <https://github.com/ggxchain/ggxnode>.
 
 **Bug Categories**
 
