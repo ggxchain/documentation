@@ -6,6 +6,6 @@ GGX chain is built to connect arbitrary chains with each other turning sharded e
 
 ### Why GGX chain?
 
-GGX chain is a single platform where you can access most of available blockchain (aiming to provide availability for all valueable chains). GGX chain utilizes hybrid virtual machine, so you can program in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript).
+GGX chain is an interchain communication platform, allowing you to send messages and liquidity from one blockchain to another. GGX chain is also a smart contract platform, utilizing a hybrid virtual machine. GGX chain's hybrid virtual machine allows users to program in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript).
 
 We provide agnostic base layer communication, modern security techniques and zero-knowledge precompiles, providing the richest environment for dapps development, especially for dapps that require cross-chain communication.
