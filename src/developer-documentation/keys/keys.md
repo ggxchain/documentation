@@ -20,8 +20,7 @@ It is the easiest and versatile key format, that can be used by EVM-compatible w
 
 ##### Converting Keys
 
-As it's not directly possible to convert between sr25519 and ed25519 keys, it's recommended to create a new key pair for the desired key standard. However, it's possible to convert between sr25519/ed25519 and EVM-based keys. By using Keccak-256 function to generate hash from a public key and taking the rightmost 20 bytes of the
-hash, it's possible to get the H160 representation of the key.
+As it is not directly possible to convert between sr25519 and ed25519 keys, it is recommended to create a new key pair for the desired key standard. However, it is possible to convert between sr25519/ed25519 and EVM-based keys. By using Keccak-256 function to generate hash from a public key and taking the rightmost 20 bytes of the hash, it is possible to get the H160 representation of the key.
 
 ## Validator Node Keys
 
