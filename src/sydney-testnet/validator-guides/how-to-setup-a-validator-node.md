@@ -43,7 +43,7 @@ Please note that is a recommended script to run for testnet, but you should be a
 * --rpc-methods unsafe
 * --unsafe-rpc-external
 
-You don't need pruning if you want to run a full archive node for some purposes.
+You do not need pruning if you want to run a full archive node for some purposes.
 `--chain /tmp/sydney.json` - You might need to specify a correct path to the file.
 
 Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
