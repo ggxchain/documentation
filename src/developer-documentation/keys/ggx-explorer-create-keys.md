@@ -3,7 +3,7 @@
 The GGX Explorer UI is a web-based interface for interacting with GGX chain.
 It allows users to import keys from a QR code, generate Multisig accounts and create proxied accounts.
 
-#### Security considerations
+#### Security Considerations
 
 It's an open-source project, and considered to be safe. But running anything in a browser often increases security risks. For this reason, it is advisable to have unnecessary extensions disabled when working with the keys in UI.
 
