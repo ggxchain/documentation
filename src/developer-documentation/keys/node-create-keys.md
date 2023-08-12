@@ -30,7 +30,7 @@ For sr25519:
 ./ggx-bin key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
 ```
 
-##### When running a node in Docker
+##### When Running a Node in Docker
 
 For ed25519:
 ```bash
