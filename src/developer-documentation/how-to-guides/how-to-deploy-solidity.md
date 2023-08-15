@@ -6,7 +6,7 @@ You can deploy the Solidity contract via Remix IDE through the following steps:
 
 1. Go to the Remix IDE website - <https://remix.ethereum.org>
 
-2. Add GGX chain Network to your wallet and choose the corresponding injected provider. Please see the [Metamask wallet installation instructions](../wallets/metamask.md). 
+2. Add GGX chain Network to your wallet and choose the corresponding injected provider. Please see the [Metamask Extension](../keys/metamask-create-keys.md). 
 
 3. Create your `.sol` contract in the file explorer
 
