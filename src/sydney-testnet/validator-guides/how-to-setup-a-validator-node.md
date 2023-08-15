@@ -5,7 +5,7 @@ Please make sure to follow the instructions carefully. Mistakes in setting up a 
 From the repository's root directory execute following commands in order:
 
 ```bash
-docker build -f Dockerfile.sydney -t golden-gate-node:sydney .
+docker build -f Dockerfile.sydney -t ggxchain-node:sydney .
 
 mkdir -p data-sydney
 
@@ -17,7 +17,7 @@ docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
     -p "0.0.0.0:30333" \
     -v $(pwd)/custom-spec-files:/tmp \
     -v $(pwd)/data-sydney:/data-sydney \
-    golden-gate-node:sydney \
+    ggxchain-node:sydney \
     --wasm-execution Compiled \
     --database rocksdb \
     --rpc-cors all \

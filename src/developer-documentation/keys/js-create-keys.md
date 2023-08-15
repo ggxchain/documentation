@@ -1,40 +1,35 @@
 ## Create a Key with a JS Script
 
-#### Install the @polkadot/api module:
-
-```javascript
+#### Set up your script and install the dependencies
+```bash
+npm init -y
 npm install @polkadot/api
+npm install @polkadot/util-crypto
 ```
 
-#### Set up your script and import the necessary modules:
+#### Generate a new key pair and a mnemonic seed:
 ```javascript
-const { ApiPromise, Keyring } = require('@polkadot/api');
+const {Keyring} = require('@polkadot/api');
+const {cryptoWaitReady, mnemonicGenerate, mnemonicToMiniSecret} = require('@polkadot/util-crypto');
 
-async function connectToNode() {
-    const api = await ApiPromise.create({ provider: 'wss://testnet.node.sydney.ggxchain.io' });
-    return api;
-}
-
-// Call connectToNode() to establish the connection before proceeding.
-```
-
-#### Generate a new key pair:
-```javascript
 async function generateKeyPair() {
-  const api = await connectToNode();
-  const keyring = new Keyring({ type: 'ed25519' }); // or 'sr25519'
+    // Wait for the WASM interface to be initialized
+    await cryptoWaitReady();
 
-  const keyPair = keyring.addNewPair();
+    // Generate a valid BIP39 mnemonic as the seed
+    const seed = mnemonicGenerate();
 
-  console.log('Public Key:', keyPair.publicKey);
-  console.log('Private Key:', keyPair.secretKey);
+    const keyring = new Keyring({type: 'sr25519'});
+    const pair = keyring.addFromUri(seed, {name: 'mykey'});
 
-  // Optionally, you can also print the address derived from the public key
-  console.log('Address:', keyPair.address);
+    // Derive the private key from the seed
+    const privateKey = mnemonicToMiniSecret(seed);
 
-  // Return the key pair or relevant data as needed
-  return keyPair;
+    console.log(`Address: ${pair.address}`);
+    console.log(`PublicKey: 0x${Buffer.from(pair.publicKey).toString('hex')}`);
+    console.log(`PrivateKey: 0x${Buffer.from(privateKey).toString('hex')}`);
+    console.log(`Seed: ${seed}`);
 }
 
-// Call generateKeyPair() to generate a new key pair.
+generateKeyPair();
 ```

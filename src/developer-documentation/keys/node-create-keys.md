@@ -9,7 +9,7 @@ If you are running a GGX node, you can generate keys directly from the node's co
 2. Use the built-in command-line tools provided by the node to generate keys. You will need an **ed25519 key** to run a validator node. You can also generate a sr25519 key for other purposes.
 
 ```bash
-./ggx-node key generate-node-key --file ed25519 >./data-sydney/ggx.key
+./ggxchain-node key generate-node-key --file ed25519 >./data-sydney/ggx.key
 ```
 If you want to generate a key from a node running in Docker, use the following command:
 ```bash
@@ -23,11 +23,11 @@ In these examples the keys will be stored in the `keys` folder of your node. You
 
 For ed25519:
 ```bash
-./ggx-bin key generate -w 24 --output-type json --scheme ed25519 >$HOME/keys/ed25519key.json
+./ggxchain-node key generate -w 24 --output-type json --scheme ed25519 >$HOME/keys/ed25519key.json
 ```
 For sr25519:
 ```bash
-./ggx-bin key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
+./ggxchain-node key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
 ```
 
 ##### When Running a Node in Docker
