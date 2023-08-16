@@ -33,7 +33,7 @@ docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
     --unsafe-rpc-external \
     --prometheus-external \
     --validator \
-    --chain /tmp/sydney.json \
+    --chain sydney \
     --base-path=/data-sydney \
     --bootnodes /ip4/35.157.76.223/tcp/30333/p2p/12D3KooWG4SbEsqHWXHzJAygRRHd4PHGKoG1XbS6Hqc2nVrYnLhT \
     --telemetry-url 'wss://test.telemetry.sydney.ggxchain.io/submit 0'
