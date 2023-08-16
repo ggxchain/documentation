@@ -59,7 +59,7 @@ Follow the instructions in the popup to create a proxied account.
 
 You can genereate a vanity address using the GGX Explorer UI. A vanity address is an address that includes a specific string for better readability. For example, you can generate an address that includes "GGX" or "Alice" words.
 
-1. Open the [GGX Explorer UI](https://testnet.sydney.ggxchain.io/) and navigate to the "Accounts" section.
+1. Open the [GGX Explorer UI](https://explorer.ggxchain.io/) and navigate to the "Accounts" section.
 2. Sign up with an extension or add an account by scanning a QR-code.
 3. Click on the "Vanity Generator" in the Accounts section.
 4. Enter the desired prefix and click on the "Generate" button.
