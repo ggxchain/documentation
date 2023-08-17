@@ -38,5 +38,5 @@ docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate -w 24 --output-type 
 ```
 For sr25519:
 ```bash
-docker run -v $HOME/keys:/keys --rm <COINTAINER_ID> key generate -w 24 --output-type json --scheme sr25519 >~/keys/sr25519key.json
+docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
 ```
