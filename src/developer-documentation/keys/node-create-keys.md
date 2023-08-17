@@ -34,7 +34,7 @@ For sr25519:
 
 For ed25519:
 ```bash
-docker run -v $HOME/keys:/keys --rm <COINTAINER_ID> key generate -w 24 --output-type json --scheme ed25519 >~/keys/ed25519key.json
+docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate -w 24 --output-type json --scheme ed25519 >$HOME/keys/ed25519key.json
 ```
 For sr25519:
 ```bash
