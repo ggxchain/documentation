@@ -2,7 +2,7 @@
 
 To stake GGXT tokens in the GGX Sydney testnet, please follow the steps:
 
-1. Acquire tokens. Please check out our [Sydney Validator Program](../sydney-testnet/sydney-validator-programme.md "Sydney Validator Program").
+1. Acquire tokens. Please check out our [Sydney Validator Program](../sydney-validator-program.md "Sydney Validator Program").
 2. Create two Substrate accounts. You can do that using [PolkadotJS](../../developer-documentation/wallets/polkadotjs.md).
 3. Distribute tokens between the controller account and the stash account. You will need at least 1000 GGXT tokens in the stash to stake.
 4. After [setting up a validator node](how-to-setup-a-validator-node.md) and receiving tokens you can stake using our block explorer.

@@ -1,6 +1,6 @@
 # How to Setup a Validator Node
 
-Please make sure to follow the instructions carefully. Mistakes in setting up a node may get result in slashed tokens and may put the tokens of nominators at risk. Check our [Sydney Validator Program](../sydney-validator-programme.md) for requirements and incentives.
+Please make sure to follow the instructions carefully. Mistakes in setting up a node may get result in slashed tokens and may put the tokens of nominators at risk. Check our [Sydney Validator Program](../sydney-validator-program.md) for requirements and incentives.
 
 From the repository's root directory execute following commands in order:
 
@@ -44,7 +44,6 @@ Please note that is a recommended script to run for testnet, but you should be a
 * --unsafe-rpc-external
 
 You do not need pruning if you want to run a full archive node for some purposes.
-`--chain /tmp/sydney.json` - You might need to specify a correct path to the file.
 
 Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
 
