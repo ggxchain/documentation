@@ -6,9 +6,57 @@ html {
     max-width: 1000px;
 }
 
+.page-wrapper {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('/assets/bg-logo.png');
+    background-position: calc(50% + 150px) center;
+    background-repeat: no-repeat;
+}
+
+.color-theme-0 .page-wrapper, .color-theme-1 .page-wrapper {
+    background-image: url('/assets/bg-logo-dark.png');
+}
+
+.markdown-section img.logo-dark, .markdown-section img.logo-bright {
+    max-width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: none;
+}
+
+.logo-bright {
+    display: none;
+}
+
+.color-theme-2 .logo-dark {
+    display: none;
+}
+
+.color-theme-2 .logo-bright {
+    display: block;
+}
+
+.color-theme-0 .logo-bright, .color-theme-1 .logo-bright {
+    display: none !important;
+}
+.color-theme-0 .logo-dark, .color-theme-1 .logo-dark {
+    display: block;
+}
+
+.book-body .page-wrapper .page-inner section {
+    background: transparent !important;
+}
+
+.book.color-theme-2 .book-header {
+    background: #0002 !important;
+}
+
 .book-summary {
     width: 300px;
 }
+
 @media screen and (max-width: 600px) {
     .book-summary {
         width: 100%;
@@ -32,6 +80,17 @@ html {
     top: 6px;
 }
 
+.color-theme-2 #book-search-input {
+    background: #bfc4e1;
+}
+.color-theme-2 #book-search-input input {
+    color: #333;
+}
+
 li a.gitbook-link {
     visibility: hidden;
+}
+
+.markdown-section img {
+    box-shadow: 2px 2px 7px #0006;
 }
