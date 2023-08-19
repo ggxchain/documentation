@@ -9,7 +9,7 @@ GGX chain is the interchain infrastructure protocol that utilizes Multi-Party Co
 
 GGX chain is built to connect arbitrary chains with each other turning sharded environment into the internet of blockchains.
 
-### Why GGX chain?
+### Why GGX Chain?
 
 GGX chain is an interchain communication platform, allowing you to send messages and liquidity from one blockchain to another. GGX chain is also a smart contract platform, utilizing a hybrid virtual machine. GGX chain's hybrid virtual machine allows users to program in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript).
 
