@@ -3,7 +3,7 @@
   <img src="assets/logo-dark.png" class="logo-dark" alt="GGX Chain logo" />
 </div>
 
-### What is GGX chain?
+### What is GGX Chain?
 
 GGX chain is the interchain infrastructure protocol that utilizes Multi-Party Computation (MPC) for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
 
