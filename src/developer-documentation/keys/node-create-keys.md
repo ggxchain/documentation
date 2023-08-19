@@ -5,11 +5,11 @@ If you are running a GGX node, you can generate keys directly from the node's co
 
 #### Generating a Key for a Validator Node
 
-1. It is assumed you have a GGX node installed. Go to the folder of your node.
+1. It is assumed you have a GGX node installed. Go to the folder of your node: `target/release`.
 2. Use the built-in command-line tools provided by the node to generate keys. You will need an **ed25519 key** to run a validator node. You can also generate a sr25519 key for other purposes.
 
 ```bash
-./target/release/ggxchain-node key generate-node-key --file data-sydney/node.key
+./ggxchain-node key generate-node-key --file ../../data-sydney/node.key
 ```
 If you want to generate a key from a node running in Docker, use the following command:
 ```bash
