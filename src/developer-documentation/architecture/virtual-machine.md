@@ -1,6 +1,6 @@
 # Virtual Machine
 
-Golden Gate utilizes a hybrid virtual machine. Smart contracts in Golden Gate can be written in a general-purpose language that compiles into the WebAssembly or on Solidity.
+GGX chain utilizes a hybrid virtual machine. Smart contracts in GGX chain can be written in a general-purpose language that compiles into the WebAssembly or on Solidity.
 
 ### What is WebAssembly?
 
