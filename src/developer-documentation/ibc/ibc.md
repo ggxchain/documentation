@@ -7,7 +7,7 @@
 
 # 2 ICS20 interface
 ## 2.1 ink! interface
-```js
+```rust
         /// transfer token, This allows us to transfer *exactly one* native token
         pub fn execute_transfer(
             &self,
@@ -22,7 +22,7 @@
 ```
 
 ## 2.2 PSP37 interface  (open brach ink! ERC-1155: Multi Token Standard for Substrate's contracts pallet)
-```js
+```rust
 /// Contract module which provides a basic implementation of multiple token types.
 /// A single deployed contract may include any combination of fungible tokens,
 /// non-fungible tokens or other configurations (e.g. semi-fungible tokens).
@@ -95,8 +95,8 @@ pub trait PSP37 {
 }
 ```
 
-## 2.2 struct
-```js
+## 2.2 Struct
+```rust
     pub struct Addr(String);
 
     pub struct Coin {
@@ -182,7 +182,7 @@ pub trait PSP37 {
     }
 ```
 ## 2.3 error
-```js
+```rust
 pub enum Error {
         /// StdError
         StdError,
@@ -224,14 +224,14 @@ pub enum Error {
 
 ```
 # 3 ref
-[IBC interfaces for CosmWasm contracts](https://github.com/CosmWasm/cosmwasm/blob/main/IBC.md)
+[IBC Interfaces for CosmWasm Contracts](https://github.com/CosmWasm/cosmwasm/blob/main/IBC.md)
 
-[contracts SEMANTICS](https://github.com/CosmWasm/cosmwasm/blob/main/SEMANTICS.md)
+[Contracts Semantics](https://github.com/CosmWasm/cosmwasm/blob/main/SEMANTICS.md)
 
-[Introduction to cosmwasm](https://github.com/CosmWasm/cosmwasm/blob/main/README.md)
+[Introduction to CosmWasm](https://github.com/CosmWasm/cosmwasm/blob/main/README.md)
 
-[spec/core/ics-004-channel-and-packet-semantics](https://github.com/cosmos/ibc/tree/main/spec/core/ics-004-channel-and-packet-semantics)
+[Channel and Packet Semantics](https://github.com/cosmos/ibc/tree/main/spec/core/ics-004-channel-and-packet-semantics)
 
-[PSP37 protocol](https://github.com/w3f/PSPs/blob/master/PSPs/psp-37.md)
+[PSP37 Protocol](https://github.com/w3f/PSPs/blob/master/PSPs/psp-37.md)
 
-[PSP37 trait](https://github.com/Brushfam/openbrush-contracts/blob/main/contracts/src/traits/psp37/psp37.rs)
+[PSP37 Trait](https://github.com/Brushfam/openbrush-contracts/blob/main/contracts/src/traits/psp37/psp37.rs)
