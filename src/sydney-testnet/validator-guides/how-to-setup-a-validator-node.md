@@ -35,7 +35,7 @@ docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
     --validator \
     --chain sydney \
     --base-path=/data-sydney \
-    --bootnodes /ip4/35.157.76.223/tcp/30333/p2p/12D3KooWG4SbEsqHWXHzJAygRRHd4PHGKoG1XbS6Hqc2nVrYnLhT \
+    --bootnodes /ip4/18.198.233.34/tcp/30333/p2p/12D3KooWFnFkPBYHdPzh8g5p33xCRZfga77kkYaR2gknxKM2HE6q \
     --telemetry-url 'wss://test.telemetry.sydney.ggxchain.io/submit 0'
 ```
 
