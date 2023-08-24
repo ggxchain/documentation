@@ -19,7 +19,7 @@
   * [How to Deploy Solidity](developer-documentation/how-to-guides/how-to-deploy-solidity.md)
 
 * Interchain documentation
-  * [IBC/ICS20 Interface](developer-documentation/ibc/ibc.md)
+  * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
 
 ## Sydney Testnet
 * Validator Guides
