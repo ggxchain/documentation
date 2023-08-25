@@ -18,6 +18,9 @@
   * [How to Deploy Rust](developer-documentation/how-to-guides/how-to-deploy-rust.md)
   * [How to Deploy Solidity](developer-documentation/how-to-guides/how-to-deploy-solidity.md)
 
+* Interchain documentation
+  * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
+
 ## Sydney Testnet
 * Validator Guides
   * [How to Setup a Validator Node on Sydney Testnet](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
@@ -25,6 +28,5 @@
   * [How to Pause Staking](sydney-testnet/validator-guides/how-to-chill.md)
   * [Sydney Validator Program](sydney-testnet/sydney-validator-program.md)
   * [Sydney Bug Bounty Program](sydney-testnet/sydney-bug-bounty-program.md)
-
 
 * [Glossary](GLOSSARY.md)
