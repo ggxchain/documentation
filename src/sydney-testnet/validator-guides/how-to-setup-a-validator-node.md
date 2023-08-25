@@ -36,7 +36,7 @@ docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
     --chain sydney \
     --base-path=/data-sydney \
     --bootnodes /dns/sun.sydney.ggxchain.io/tcp/30333/p2p/12D3KooWGmopnFNtQb2bo1irpjPLJUnmt9K4opTSHTMhYYobB8pC \
-    --telemetry-url 'wss://test.telemetry.sydney.ggxchain.io/submit 0'
+    --telemetry-url 'ws://test.telemetry.sydney.ggxchain.io/submit 0'
 ```
 
 Please note that is a recommended script to run for testnet, but you should be aware of some parameters that potentially can expose some security risks: 
