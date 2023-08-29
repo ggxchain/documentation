@@ -1,11 +1,12 @@
-name: 'stg-docs.dev.ggxchain.io documentation'
+name: 'docs.staging.ggxchain.io documentation'
 
 on:
   push:
     branches:
       - staging
-    paths-ignore:
-      - '_book/**'  # To Avoid Loop
+
+permissions:
+      id-token: write
 
 jobs:
   build:
@@ -22,22 +23,13 @@ jobs:
       - run: npm install
       - run: npm run build
 
-      - name: Generate token
-        id: generate_token
-        uses: getsentry/action-github-app-token@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          # RSA Private key created for the GitHub app
-          private_key: ${{ secrets.GH_APP_PRIVATE_KEY }}
-          # App id
-          app_id: ${{ secrets.GH_APP_ID }}
+          aws-region: eu-central-1
+          role-to-assume: arn:aws:iam::${{ secrets.NONPROD_AWS_ACCOUNT_ID }}:role/github-dev
 
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          repo: GoldenGateGGX/documentation-staging-artifacts
-          target_branch: main
-          build_dir: _book
-          fqdn: docs.staging.ggxchain.io
-        env:
-          GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
+      - name: Upload artifacts to S3 and invalidate cloudfront cache
+        run: |
+          aws s3 cp _book s3://docs.staging.ggxchain.io/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION }} --paths "/*"
