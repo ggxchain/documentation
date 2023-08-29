@@ -1,9 +1,9 @@
-name: 'docs.staging.ggxchain.io documentation'
+name: 'docs.ggxchain.io documentation'
 
 on:
   push:
     branches:
-      - staging
+      - main
 
 permissions:
       id-token: write
@@ -31,5 +31,5 @@ jobs:
 
       - name: Upload artifacts to S3 and invalidate cloudfront cache
         run: |
-          aws s3 cp _book s3://docs.staging.ggxchain.io/ --recursive --acl private
-          aws cloudfront create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION }} --paths "/*"
+          aws s3 cp _book s3://docs.ggxchain.io/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.PROD_CLOUDFRONT_DISTRIBUTION }} --paths "/*"
