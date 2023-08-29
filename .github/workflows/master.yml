@@ -1,0 +1,35 @@
+name: 'docs.ggxchain.io documentation'
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+      id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout action
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - run: npm install
+      - run: npm run build
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-region: eu-central-1
+          role-to-assume: arn:aws:iam::${{ secrets.NONPROD_AWS_ACCOUNT_ID }}:role/github-dev
+
+      - name: Upload artifacts to S3 and invalidate cloudfront cache
+        run: |
+          aws s3 cp _book s3://docs.ggxchain.io/ --recursive --acl private
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.PROD_CLOUDFRONT_DISTRIBUTION }} --paths "/*"
