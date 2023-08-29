@@ -1,0 +1,664 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>GGX Explorer UI · GGX Chain Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.0.0">
+        <meta name="author" content="GGX">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chollapse/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/ggx-theme/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="polkadot-js-create-keys.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Developer documentation</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../architecture/accounts-and-transactions.html">
+            
+                <a href="../architecture/accounts-and-transactions.html">
+            
+                    
+                    Accounts and Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../architecture/consensus.html">
+            
+                <a href="../architecture/consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../architecture/virtual-machine.html">
+            
+                <a href="../architecture/virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Keys & Accounts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="keys.html">
+            
+                <a href="keys.html">
+            
+                    
+                    Managing Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="node-create-keys.html">
+            
+                <a href="node-create-keys.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="subkey-create-keys.html">
+            
+                <a href="subkey-create-keys.html">
+            
+                    
+                    Subkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="js-create-keys.html">
+            
+                <a href="js-create-keys.html">
+            
+                    
+                    Polkadot JS API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="metamask-create-keys.html">
+            
+                <a href="metamask-create-keys.html">
+            
+                    
+                    Metamask Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="polkadot-js-create-keys.html">
+            
+                <a href="polkadot-js-create-keys.html">
+            
+                    
+                    Polkadot.js Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="ggx-explorer-create-keys.html">
+            
+                <a href="ggx-explorer-create-keys.html">
+            
+                    
+                    GGX Explorer UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Smart Contract Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../how-to-guides/how-to-deploy-rust.html">
+            
+                <a href="../how-to-guides/how-to-deploy-rust.html">
+            
+                    
+                    How to Deploy Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../how-to-guides/how-to-deploy-solidity.html">
+            
+                <a href="../how-to-guides/how-to-deploy-solidity.html">
+            
+                    
+                    How to Deploy Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sydney Testnet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Validator Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                    
+                    How to Setup a Validator Node on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                    
+                    How to Stake GGXT Tokens on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                    
+                    How to Pause Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../sydney-testnet/sydney-validator-program.html">
+            
+                <a href="../../sydney-testnet/sydney-validator-program.html">
+            
+                    
+                    Sydney Validator Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                <a href="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                    
+                    Sydney Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >GGX Explorer UI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="key-generation-using-the-ggx-block-explorer">Key Generation Using the GGX Block Explorer</h2>
+<p>The <a href="https://explorer.ggxchain.io/" target="_blank">GGX Explorer</a> is a web-based interface for interacting with GGX chain.
+It allows users to import keys from a QR code, generate Multisig accounts and create proxied accounts.</p>
+<h4 id="security-considerations">Security Considerations</h4>
+<p>It is an open-source project, and considered to be safe. But running anything in a browser often increases security risks. For this reason, it is advisable to have unnecessary extensions disabled when working with the keys in UI.</p>
+<h4 id="creating-a-key-pair">Creating a Key Pair</h4>
+<p>By default, creating keys in the GGX <a href="../../GLOSSARY.html#block-explorer" class="glossary-term" title="A tool that allows users to view and analyze the contents of a blockchain, including the transaction history, current status, and other important data. Block explorers are web-based applications that provide an intuitive user interface for navigating the blockchain, as well as a wide range of features for exploring and analyzing its data.">Block Explorer</a> is disabled for security reasons. Make sure you take the necessary precautions if you choose to use this feature. To enable it, go to the &quot;Settings&quot; section and select the &quot;Enable local in-browser account storage&quot; in the &quot;account options&quot; and click &quot;Save&quot;. Alternatively, you can import a key pair from JSON file.</p>
+<div align="center">
+  <img src="../../assets/keys/explorer-account-settings.png" alt="Explorer Account Settings" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div>
+After navigating to &quot;Accounts&quot; page, click on the &quot;+ Account&quot; button on the top right section of the interface.
+<div align="center">
+  <img src="../../assets/keys/explorer-create-button.png" alt="Explorer Create button" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div>
+Follow the instructions in the popup to create a key pair and save your mnemonic phrase.
+<div align="center">
+  <img src="../../assets/keys/explorer-create-popup.png" alt="Explorer Create popup" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div>
+
+
+<h4 id="creating-a-multisig-account">Creating a Multisig Account</h4>
+<ol>
+<li>Open the GGX Explorer UI and navigate to the &quot;Accounts&quot; section.</li>
+<li>Sign up with an extension or add an account by scanning a QR-code. </li>
+<li>Click on the &quot;+ Multisig&quot; button on the top right section of the interface.<div align="center">
+<img src="../../assets/keys/explorer-multisig-button.png" alt="Explorer Multisig button" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div></li>
+<li>A popup appears where you can set the name of the account and the number of signatories and choose from available accounts on the left side. You can optionally upload a JSON file with the public keys of the signatories.<div align="center">
+<img src="../../assets/keys/explorer-create-multisig.png" alt="Explorer Multisig popup" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div></li>
+<li>The &quot;threshold&quot; controls the minimum amount of signatories required to approve a <a href="../../GLOSSARY.html#transaction" class="glossary-term" title="An individual element of the state transition function of a block, such as moving tokens from one account to another.">transaction</a>.</li>
+<li>Click on the &quot;Create&quot; button to create the Multisig account.</li>
+</ol>
+<p>Please note, that a Multisig account doesn&apos;t have a private key. Instead, it is identified by a combination of its signatories&apos; addresses and a threshold, which represents the minimum number of signatories required to approve a <a href="../../GLOSSARY.html#transaction" class="glossary-term" title="An individual element of the state transition function of a block, such as moving tokens from one account to another.">transaction</a>.</p>
+<p>The identifier (or address) of a Multisig <a href="../../GLOSSARY.html#wallet" class="glossary-term" title="A program that allows one to store, receive, and transmit $GGX or other blockchain-based tokens.">wallet</a> is derived from the addresses of the signatories and the threshold using a deterministic function. This identifier can be calculated by anyone who knows the addresses of the signatories and the threshold, but it does not provide any control over the Multisig <a href="../../GLOSSARY.html#wallet" class="glossary-term" title="A program that allows one to store, receive, and transmit $GGX or other blockchain-based tokens.">wallet</a>.</p>
+<h4 id="proxied-accounts">Proxied Accounts</h4>
+<p>A proxied account is a special type of account that allows another account to make transactions on its behalf. This is useful for delegating the management of an account to another account, for example, a multisig account.</p>
+<p>You can create a proxied account in the Explorer by navigating to the Accounts section and clicking the button on the top right of the interface.</p>
+<div align="center">
+  <img src="../../assets/keys/explorer-proxied-button.png" alt="Explorer Proxied Account button" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div>
+Follow the instructions in the popup to create a proxied account.
+<div align="center">
+  <img src="../../assets/keys/explorer-proxied-popup.png" alt="Explorer Proxied Account popup" style="max-width: 600px; margin: 20px 20px 40px 20px;">
+</div>
+
+<h4 id="vanity-generator">Vanity Generator</h4>
+<p>You can genereate a vanity address using the GGX Explorer UI. A vanity address is an address that includes a specific string for better readability. For example, you can generate an address that includes &quot;GGX&quot; or &quot;Alice&quot; words.</p>
+<ol>
+<li>Open the <a href="https://explorer.ggxchain.io/" target="_blank">GGX Explorer</a> and navigate to the &quot;Accounts&quot; section.</li>
+<li>Sign up with an extension or add an account by scanning a QR-code.</li>
+<li>Click on the &quot;Vanity Generator&quot; in the Accounts section.</li>
+<li>Enter the desired prefix and click on the &quot;Generate&quot; button.</li>
+<li>The generated addresses will start to appear in the list of accounts. It may take some time depending on the length of the prefix string.</li>
+<li>Hit &quot;Save&quot; button and save the keys securely.</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="polkadot-js-create-keys.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Polkadot.js Extension">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GGX Explorer UI","level":"1.3.7","depth":2,"next":{"title":"Smart Contract Guides","level":"1.4","depth":1,"ref":"","articles":[{"title":"How to Deploy Rust","level":"1.4.1","depth":2,"path":"developer-documentation/how-to-guides/how-to-deploy-rust.md","ref":"developer-documentation/how-to-guides/how-to-deploy-rust.md","articles":[]},{"title":"How to Deploy Solidity","level":"1.4.2","depth":2,"path":"developer-documentation/how-to-guides/how-to-deploy-solidity.md","ref":"developer-documentation/how-to-guides/how-to-deploy-solidity.md","articles":[]}]},"previous":{"title":"Polkadot.js Extension","level":"1.3.6","depth":2,"path":"developer-documentation/keys/polkadot-js-create-keys.md","ref":"developer-documentation/keys/polkadot-js-create-keys.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chollapse","octocat","../../_plugins/ggx-theme"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"octocat":{"url":"https://github.com/ggxchain/documentation"},"chollapse":{},"":{"":{"/":{"":{"/_plugins/ggx-theme":{}}}}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GGX","honkit":">= 5.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GGX Chain Documentation","gitbook":"*"},"file":{"path":"developer-documentation/keys/ggx-explorer-create-keys.md","mtime":"2023-08-29T07:09:37.106Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-29T07:09:44.140Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chollapse/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-octocat/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/ggx-theme/theme.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

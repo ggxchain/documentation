@@ -1,0 +1,617 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Accounts and Transactions · GGX Chain Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.0.0">
+        <meta name="author" content="GGX">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chollapse/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/ggx-theme/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="consensus.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Developer documentation</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="accounts-and-transactions.html">
+            
+                <a href="accounts-and-transactions.html">
+            
+                    
+                    Accounts and Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="consensus.html">
+            
+                <a href="consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="virtual-machine.html">
+            
+                <a href="virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Keys & Accounts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../keys/keys.html">
+            
+                <a href="../keys/keys.html">
+            
+                    
+                    Managing Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../keys/node-create-keys.html">
+            
+                <a href="../keys/node-create-keys.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../keys/subkey-create-keys.html">
+            
+                <a href="../keys/subkey-create-keys.html">
+            
+                    
+                    Subkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../keys/js-create-keys.html">
+            
+                <a href="../keys/js-create-keys.html">
+            
+                    
+                    Polkadot JS API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../keys/metamask-create-keys.html">
+            
+                <a href="../keys/metamask-create-keys.html">
+            
+                    
+                    Metamask Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../keys/polkadot-js-create-keys.html">
+            
+                <a href="../keys/polkadot-js-create-keys.html">
+            
+                    
+                    Polkadot.js Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../keys/ggx-explorer-create-keys.html">
+            
+                <a href="../keys/ggx-explorer-create-keys.html">
+            
+                    
+                    GGX Explorer UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Smart Contract Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../how-to-guides/how-to-deploy-rust.html">
+            
+                <a href="../how-to-guides/how-to-deploy-rust.html">
+            
+                    
+                    How to Deploy Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../how-to-guides/how-to-deploy-solidity.html">
+            
+                <a href="../how-to-guides/how-to-deploy-solidity.html">
+            
+                    
+                    How to Deploy Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sydney Testnet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Validator Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                    
+                    How to Setup a Validator Node on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                    
+                    How to Stake GGXT Tokens on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                    
+                    How to Pause Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../sydney-testnet/sydney-validator-program.html">
+            
+                <a href="../../sydney-testnet/sydney-validator-program.html">
+            
+                    
+                    Sydney Validator Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                <a href="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                    
+                    Sydney Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Accounts and Transactions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="accounts-and-transactions">Accounts and Transactions</h1>
+<p>In the context of blockchain, a <a href="../../GLOSSARY.html#transaction" class="glossary-term" title="An individual element of the state transition function of a block, such as moving tokens from one account to another.">transaction</a> refers to a fundamental unit of activity that occurs on a blockchain network. It represents a transfer or exchange of data or value between participants in the network (accounts).</p>
+<p>On GGX chain, accounts are entities used to represent individuals or entities that own and transact with GGX tokens on the blockchain. Accounts are similar to bank accounts in traditional finance, where they hold assets and facilitate transactions. Each account on GGX chain has a unique address which is a string of characters that identifies the account on the blockchain. The address is derived from the account&apos;s public key and is used to sign transactions and verify the account&apos;s ownership of tokens. Accounts in GGX chain can be of two types:</p>
+<ul>
+<li><strong>External accounts</strong>: These accounts are owned by individuals or entities and are not associated with any specific smart contract or on-chain identity. External accounts can hold tokens and can participate in transactions on the blockchain.</li>
+<li><strong>Contract accounts</strong> are associated with smart contracts on the blockchain and are used to store and manage contract states. Contract accounts can execute code and interact with other contracts and external accounts. Accounts in GGX chain can be managed by users using their private keys. For example, users can sign transactions with their private keys to transfer tokens from their accounts or interact with smart contracts.</li>
+</ul>
+<p>Accounts can also be managed by on-chain <a href="../../GLOSSARY.html#governance" class="glossary-term" title="The process of determining what changes to the network are permissible, such as modifications to code or movement of funds. In GGX the governing system is on-chain and revolves around validator voting.">governance</a> mechanisms, such as council members or validators, who can execute transactions on behalf of the account.</p>
+<p>Overall, accounts are a fundamental concept in <a href="../../GLOSSARY.html#substrate" class="glossary-term" title="An open-source modular framework for building custom blockchain networks and decentralized applications (dApps). It is developed by Parity Technologies and is designed to be flexible, scalable, and easy to use. It provides a set of pre-built modules that developers can use to create customized blockchain networks and dApps. These modules include functionality for consensus, networking, storage, governance, and more, allowing developers to quickly build and launch their own blockchain-based projects.">Substrate</a> and are essential for managing token ownership and transactions on the blockchain.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="consensus.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Consensus">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Accounts and Transactions","level":"1.2.1","depth":2,"next":{"title":"Consensus","level":"1.2.2","depth":2,"path":"developer-documentation/architecture/consensus.md","ref":"developer-documentation/architecture/consensus.md","articles":[]},"previous":{"title":"Architecture","level":"1.2","depth":1,"ref":"","articles":[{"title":"Accounts and Transactions","level":"1.2.1","depth":2,"path":"developer-documentation/architecture/accounts-and-transactions.md","ref":"developer-documentation/architecture/accounts-and-transactions.md","articles":[]},{"title":"Consensus","level":"1.2.2","depth":2,"path":"developer-documentation/architecture/consensus.md","ref":"developer-documentation/architecture/consensus.md","articles":[]},{"title":"Virtual Machine","level":"1.2.3","depth":2,"path":"developer-documentation/architecture/virtual-machine.md","ref":"developer-documentation/architecture/virtual-machine.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chollapse","octocat","../../_plugins/ggx-theme"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"octocat":{"url":"https://github.com/ggxchain/documentation"},"chollapse":{},"":{"":{"/":{"":{"/_plugins/ggx-theme":{}}}}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GGX","honkit":">= 5.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GGX Chain Documentation","gitbook":"*"},"file":{"path":"developer-documentation/architecture/accounts-and-transactions.md","mtime":"2023-08-29T07:09:37.106Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-29T07:09:44.140Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chollapse/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-octocat/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/ggx-theme/theme.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,627 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>How to Deploy Solidity · GGX Chain Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.0.0">
+        <meta name="author" content="GGX">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chollapse/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/ggx-theme/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="how-to-deploy-rust.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Developer documentation</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../architecture/accounts-and-transactions.html">
+            
+                <a href="../architecture/accounts-and-transactions.html">
+            
+                    
+                    Accounts and Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../architecture/consensus.html">
+            
+                <a href="../architecture/consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../architecture/virtual-machine.html">
+            
+                <a href="../architecture/virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Keys & Accounts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../keys/keys.html">
+            
+                <a href="../keys/keys.html">
+            
+                    
+                    Managing Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../keys/node-create-keys.html">
+            
+                <a href="../keys/node-create-keys.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../keys/subkey-create-keys.html">
+            
+                <a href="../keys/subkey-create-keys.html">
+            
+                    
+                    Subkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../keys/js-create-keys.html">
+            
+                <a href="../keys/js-create-keys.html">
+            
+                    
+                    Polkadot JS API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../keys/metamask-create-keys.html">
+            
+                <a href="../keys/metamask-create-keys.html">
+            
+                    
+                    Metamask Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../keys/polkadot-js-create-keys.html">
+            
+                <a href="../keys/polkadot-js-create-keys.html">
+            
+                    
+                    Polkadot.js Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../keys/ggx-explorer-create-keys.html">
+            
+                <a href="../keys/ggx-explorer-create-keys.html">
+            
+                    
+                    GGX Explorer UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Smart Contract Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="how-to-deploy-rust.html">
+            
+                <a href="how-to-deploy-rust.html">
+            
+                    
+                    How to Deploy Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="how-to-deploy-solidity.html">
+            
+                <a href="how-to-deploy-solidity.html">
+            
+                    
+                    How to Deploy Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sydney Testnet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Validator Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                    
+                    How to Setup a Validator Node on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                    
+                    How to Stake GGXT Tokens on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                    
+                    How to Pause Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../sydney-testnet/sydney-validator-program.html">
+            
+                <a href="../../sydney-testnet/sydney-validator-program.html">
+            
+                    
+                    Sydney Validator Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                <a href="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                    
+                    Sydney Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >How to Deploy Solidity</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="how-to-deploy-solidity-smart-contracts">How to Deploy Solidity Smart Contracts</h1>
+<p>You can use the Remix IDE to deploy <a href="../../GLOSSARY.html#solidity" class="glossary-term" title="Solidity is a high-level programming language specifically designed for writing smart contracts on blockchain platforms, primarily Ethereum. It is one of the most widely used languages for developing decentralized applications (dApps) and executing smart contracts within the Ethereum Virtual Machine (EVM).">Solidity</a> contracts on the GGX chain network. The Remix IDE is an Integrated Development Environment (IDE) specifically designed for developing and testing smart contracts on the EVM blockchain. It provides a browser-based interface that allows developers to write, compile, deploy, and debug smart contracts written in <a href="../../GLOSSARY.html#solidity" class="glossary-term" title="Solidity is a high-level programming language specifically designed for writing smart contracts on blockchain platforms, primarily Ethereum. It is one of the most widely used languages for developing decentralized applications (dApps) and executing smart contracts within the Ethereum Virtual Machine (EVM).">Solidity</a>, the programming language for the EVM.</p>
+<p>You can deploy the <a href="../../GLOSSARY.html#solidity" class="glossary-term" title="Solidity is a high-level programming language specifically designed for writing smart contracts on blockchain platforms, primarily Ethereum. It is one of the most widely used languages for developing decentralized applications (dApps) and executing smart contracts within the Ethereum Virtual Machine (EVM).">Solidity</a> contract via Remix IDE through the following steps:</p>
+<ol>
+<li><p>Go to the Remix IDE website - <a href="https://remix.ethereum.org" target="_blank">https://remix.ethereum.org</a></p>
+</li>
+<li><p>Add GGX chain Network to your <a href="../../GLOSSARY.html#wallet" class="glossary-term" title="A program that allows one to store, receive, and transmit $GGX or other blockchain-based tokens.">wallet</a> and choose the corresponding injected provider. Please see the <a href="../keys/metamask-create-keys.html">Metamask Extension</a>. </p>
+</li>
+<li><p>Create your <code>.sol</code> contract in the file explorer</p>
+</li>
+<li><p>Go to Deploy &amp; Run Transactions</p>
+<p><img src="../../assets/how-to-deploy-solidity/solidity-deploy-and-run.jpg" alt="Deploy &amp; Run Transactions"></p>
+</li>
+<li><p>Press <strong>deploy</strong> - authorization pop-up from a <a href="../../GLOSSARY.html#wallet" class="glossary-term" title="A program that allows one to store, receive, and transmit $GGX or other blockchain-based tokens.">wallet</a> should appear</p>
+<p><img src="../../assets/how-to-deploy-solidity/solidity-deploy.jpg" alt="Deploy"></p>
+</li>
+<li><p>Authorize the <a href="../../GLOSSARY.html#transaction" class="glossary-term" title="An individual element of the state transition function of a block, such as moving tokens from one account to another.">transaction</a>. In case you have a sufficient amount of tokens to pay, the gas fee deployed contract will appear below.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="how-to-deploy-rust.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: How to Deploy Rust">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"How to Deploy Solidity","level":"1.4.2","depth":2,"next":{"title":"Validator Guides","level":"2.1","depth":1,"ref":"","articles":[{"title":"How to Setup a Validator Node on Sydney Testnet","level":"2.1.1","depth":2,"path":"sydney-testnet/validator-guides/how-to-setup-a-validator-node.md","ref":"sydney-testnet/validator-guides/how-to-setup-a-validator-node.md","articles":[]},{"title":"How to Stake GGXT Tokens on Sydney Testnet","level":"2.1.2","depth":2,"path":"sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md","ref":"sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md","articles":[]},{"title":"How to Pause Staking","level":"2.1.3","depth":2,"path":"sydney-testnet/validator-guides/how-to-chill.md","ref":"sydney-testnet/validator-guides/how-to-chill.md","articles":[]},{"title":"Sydney Validator Program","level":"2.1.4","depth":2,"path":"sydney-testnet/sydney-validator-program.md","ref":"sydney-testnet/sydney-validator-program.md","articles":[]},{"title":"Sydney Bug Bounty Program","level":"2.1.5","depth":2,"path":"sydney-testnet/sydney-bug-bounty-program.md","ref":"sydney-testnet/sydney-bug-bounty-program.md","articles":[]}]},"previous":{"title":"How to Deploy Rust","level":"1.4.1","depth":2,"path":"developer-documentation/how-to-guides/how-to-deploy-rust.md","ref":"developer-documentation/how-to-guides/how-to-deploy-rust.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chollapse","octocat","../../_plugins/ggx-theme"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"octocat":{"url":"https://github.com/ggxchain/documentation"},"chollapse":{},"":{"":{"/":{"":{"/_plugins/ggx-theme":{}}}}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GGX","honkit":">= 5.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GGX Chain Documentation","gitbook":"*"},"file":{"path":"developer-documentation/how-to-guides/how-to-deploy-solidity.md","mtime":"2023-08-29T07:09:37.106Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-29T07:09:44.140Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chollapse/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-octocat/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/ggx-theme/theme.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

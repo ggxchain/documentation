@@ -1,0 +1,656 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>How to Stake GGXT Tokens on Sydney Testnet · GGX Chain Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.0.0">
+        <meta name="author" content="GGX">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chollapse/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/ggx-theme/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="how-to-chill.html" />
+    
+    
+    <link rel="prev" href="how-to-setup-a-validator-node.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Developer documentation</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../developer-documentation/architecture/accounts-and-transactions.html">
+            
+                <a href="../../developer-documentation/architecture/accounts-and-transactions.html">
+            
+                    
+                    Accounts and Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../developer-documentation/architecture/consensus.html">
+            
+                <a href="../../developer-documentation/architecture/consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../developer-documentation/architecture/virtual-machine.html">
+            
+                <a href="../../developer-documentation/architecture/virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Keys & Accounts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../developer-documentation/keys/keys.html">
+            
+                <a href="../../developer-documentation/keys/keys.html">
+            
+                    
+                    Managing Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../developer-documentation/keys/node-create-keys.html">
+            
+                <a href="../../developer-documentation/keys/node-create-keys.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../developer-documentation/keys/subkey-create-keys.html">
+            
+                <a href="../../developer-documentation/keys/subkey-create-keys.html">
+            
+                    
+                    Subkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../developer-documentation/keys/js-create-keys.html">
+            
+                <a href="../../developer-documentation/keys/js-create-keys.html">
+            
+                    
+                    Polkadot JS API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../developer-documentation/keys/metamask-create-keys.html">
+            
+                <a href="../../developer-documentation/keys/metamask-create-keys.html">
+            
+                    
+                    Metamask Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../developer-documentation/keys/polkadot-js-create-keys.html">
+            
+                <a href="../../developer-documentation/keys/polkadot-js-create-keys.html">
+            
+                    
+                    Polkadot.js Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../developer-documentation/keys/ggx-explorer-create-keys.html">
+            
+                <a href="../../developer-documentation/keys/ggx-explorer-create-keys.html">
+            
+                    
+                    GGX Explorer UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Smart Contract Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../developer-documentation/how-to-guides/how-to-deploy-rust.html">
+            
+                <a href="../../developer-documentation/how-to-guides/how-to-deploy-rust.html">
+            
+                    
+                    How to Deploy Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../developer-documentation/how-to-guides/how-to-deploy-solidity.html">
+            
+                <a href="../../developer-documentation/how-to-guides/how-to-deploy-solidity.html">
+            
+                    
+                    How to Deploy Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sydney Testnet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Validator Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="how-to-setup-a-validator-node.html">
+            
+                <a href="how-to-setup-a-validator-node.html">
+            
+                    
+                    How to Setup a Validator Node on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.2" data-path="how-to-stake-ggxt-tokens.html">
+            
+                <a href="how-to-stake-ggxt-tokens.html">
+            
+                    
+                    How to Stake GGXT Tokens on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="how-to-chill.html">
+            
+                <a href="how-to-chill.html">
+            
+                    
+                    How to Pause Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../sydney-validator-program.html">
+            
+                <a href="../sydney-validator-program.html">
+            
+                    
+                    Sydney Validator Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../sydney-bug-bounty-program.html">
+            
+                <a href="../sydney-bug-bounty-program.html">
+            
+                    
+                    Sydney Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >How to Stake GGXT Tokens on Sydney Testnet</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="how-to-stake-ggxt-tokens">How to Stake GGXT Tokens</h1>
+<p>To stake GGXT tokens in the GGX Sydney testnet, please follow the steps:</p>
+<ol>
+<li>Acquire tokens. Please check out our <a href="../sydney-validator-program.html" title="Sydney Validator Program">Sydney Validator Program</a>.</li>
+<li>Create two <a href="../../GLOSSARY.html#substrate" class="glossary-term" title="An open-source modular framework for building custom blockchain networks and decentralized applications (dApps). It is developed by Parity Technologies and is designed to be flexible, scalable, and easy to use. It provides a set of pre-built modules that developers can use to create customized blockchain networks and dApps. These modules include functionality for consensus, networking, storage, governance, and more, allowing developers to quickly build and launch their own blockchain-based projects.">Substrate</a> accounts. You can do that using <a href="../../developer-documentation/wallets/polkadotjs.md">PolkadotJS</a>.</li>
+<li>Distribute tokens between the <a href="../../GLOSSARY.html#controller-account" class="glossary-term" title="A type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.">controller account</a> and the <a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">stash account</a>. You will need at least 1000 GGXT tokens in the stash to stake.</li>
+<li>After <a href="how-to-setup-a-validator-node.html">setting up a validator node</a> and receiving tokens you can stake using our <a href="../../GLOSSARY.html#block-explorer" class="glossary-term" title="A tool that allows users to view and analyze the contents of a blockchain, including the transaction history, current status, and other important data. Block explorers are web-based applications that provide an intuitive user interface for navigating the blockchain, as well as a wide range of features for exploring and analyzing its data.">block explorer</a>.</li>
+<li><p>Go to Network → <a href="../../GLOSSARY.html#staking" class="glossary-term" title="A lock-up mechanism which requires a certain amount of $GGX tokens to participate in network consensus and governance. Staking is a key mechanism in the Golden Gate ecosystem, as it helps secure the network and enables token holders to vote in the decision-making process.">Staking</a></p>
+<p> <img src="../../assets/how-to-stake-ggxt-tokens/network-staking.png" alt title="Network -&gt; Staking"></p>
+</li>
+<li><p>Go to Accounts. You can see <strong>Nominators</strong> and <strong>Validators</strong> there.</p>
+<p> <img src="../../assets/how-to-stake-ggxt-tokens/nominators-and-validators.png" alt title="Nominators and Validators"></p>
+</li>
+<li><p>You can bond tokens using <strong>+Stash</strong> button. You will need to populate the following fields:</p>
+<ul>
+<li><strong><a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">Stash account</a></strong> - Select the <a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">stash account</a> created in step 2.</li>
+<li><strong><a href="../../GLOSSARY.html#controller-account" class="glossary-term" title="A type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.">Controller account</a></strong> - Select the <a href="../../GLOSSARY.html#controller-account" class="glossary-term" title="A type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.">controller account</a> created in step 2. This account will also need a small amount of GGXT to pay for controlling transactions.</li>
+<li><strong>Value bonded</strong> - How much GGXT from the <a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">Stash account</a> you want to bond/stake. Note that withdrawing any bonded amount requires the duration of the unbonding period.</li>
+<li><strong>Payment destination</strong> - The account where the rewards from validating are sent.</li>
+</ul>
+<p>Once everything is filled in properly, click <code>Bond</code> and sign the <a href="../../GLOSSARY.html#transaction" class="glossary-term" title="An individual element of the state transition function of a block, such as moving tokens from one account to another.">transaction</a> with your <a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">Stash account</a>.</p>
+</li>
+</ol>
+<p>Make sure not to bond all your GGXT balance since you cannot pay <a href="../../GLOSSARY.html#transaction" class="glossary-term" title="An individual element of the state transition function of a block, such as moving tokens from one account to another.">transaction</a> fees from your bonded balance.</p>
+<h4 id="session-keys">Session keys</h4>
+<p>To get your node nominated, please follow the steps:</p>
+<ol>
+<li><p>Get your node <a href="../../GLOSSARY.html#session-key" class="glossary-term" title="A session &quot;key&quot; is a BLS key for GRANDPA, a sr25519 key for AURA, and eventually an Ed25519 key for libp2p.">session key</a>. Assuming you are running using docker, you can do that running the command:</p>
+<pre><code class="lang-bash">docker <span class="hljs-built_in">exec</span> -it ggxchain-node curl -H <span class="hljs-string">&quot;Content-Type: application/json&quot;</span> -d <span class="hljs-string">&apos;{&quot;id&quot;:1, &quot;jsonrpc&quot;:&quot;2.0&quot;, &quot;method&quot;: &quot;author_rotateKeys&quot;, &quot;params&quot;:[]}&apos;</span> http://localhost:9933
+</code></pre>
+</li>
+<li><p>Go to Network → <a href="../../GLOSSARY.html#staking" class="glossary-term" title="A lock-up mechanism which requires a certain amount of $GGX tokens to participate in network consensus and governance. Staking is a key mechanism in the Golden Gate ecosystem, as it helps secure the network and enables token holders to vote in the decision-making process.">Staking</a></p>
+</li>
+<li>Go to Accounts. Click <strong>Set <a href="../../GLOSSARY.html#session-key" class="glossary-term" title="A session &quot;key&quot; is a BLS key for GRANDPA, a sr25519 key for AURA, and eventually an Ed25519 key for libp2p.">Session Key</a></strong> next to <a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">stash account</a> created earlier.</li>
+<li>Enter the output from <code>author_rotateKeys</code> from step 2 and click &quot;Set <a href="../../GLOSSARY.html#session-key" class="glossary-term" title="A session &quot;key&quot; is a BLS key for GRANDPA, a sr25519 key for AURA, and eventually an Ed25519 key for libp2p.">Session Key</a>&quot;.</li>
+<li>Authorize the transactions. Now others can nominate your node.</li>
+<li>Go to Network → <a href="../../GLOSSARY.html#staking" class="glossary-term" title="A lock-up mechanism which requires a certain amount of $GGX tokens to participate in network consensus and governance. Staking is a key mechanism in the Golden Gate ecosystem, as it helps secure the network and enables token holders to vote in the decision-making process.">Staking</a></li>
+<li>Go to Accounts. As before, you can see <strong>Nominators</strong> and <strong>Validators</strong> there</li>
+<li><p>You can bond tokens using <strong>+Stash</strong> button, nominate a <a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">validator</a> using <strong>+<a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">Validator</a></strong> button and add a <a href="../../GLOSSARY.html#nominator" class="glossary-term" title="Users that select a set of validators to stake to. A certain amount of $GGX must be staked in order to do so, which may be lost if the validator behaves badly. This forces nominators to carefully select validators.">Nominator</a> using <strong>+<a href="../../GLOSSARY.html#nominator" class="glossary-term" title="Users that select a set of validators to stake to. A certain amount of $GGX must be staked in order to do so, which may be lost if the validator behaves badly. This forces nominators to carefully select validators.">Nominator</a></strong> button</p>
+<p> <img src="../../assets/how-to-stake-ggxt-tokens/stash-button.png" alt title="+Stash Button"></p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="how-to-setup-a-validator-node.html" class="navigation navigation-prev " aria-label="Previous page: How to Setup a Validator Node on Sydney Testnet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="how-to-chill.html" class="navigation navigation-next " aria-label="Next page: How to Pause Staking">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"How to Stake GGXT Tokens on Sydney Testnet","level":"2.1.2","depth":2,"next":{"title":"How to Pause Staking","level":"2.1.3","depth":2,"path":"sydney-testnet/validator-guides/how-to-chill.md","ref":"sydney-testnet/validator-guides/how-to-chill.md","articles":[]},"previous":{"title":"How to Setup a Validator Node on Sydney Testnet","level":"2.1.1","depth":2,"path":"sydney-testnet/validator-guides/how-to-setup-a-validator-node.md","ref":"sydney-testnet/validator-guides/how-to-setup-a-validator-node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chollapse","octocat","../../_plugins/ggx-theme"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"octocat":{"url":"https://github.com/ggxchain/documentation"},"chollapse":{},"":{"":{"/":{"":{"/_plugins/ggx-theme":{}}}}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GGX","honkit":">= 5.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GGX Chain Documentation","gitbook":"*"},"file":{"path":"sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md","mtime":"2023-08-29T07:09:37.106Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-29T07:09:44.140Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chollapse/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-octocat/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/ggx-theme/theme.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

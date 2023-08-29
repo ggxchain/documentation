@@ -1,0 +1,635 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Managing Keys · GGX Chain Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.0.0">
+        <meta name="author" content="GGX">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chollapse/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/ggx-theme/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="node-create-keys.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Developer documentation</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../architecture/accounts-and-transactions.html">
+            
+                <a href="../architecture/accounts-and-transactions.html">
+            
+                    
+                    Accounts and Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../architecture/consensus.html">
+            
+                <a href="../architecture/consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../architecture/virtual-machine.html">
+            
+                <a href="../architecture/virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Keys & Accounts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="keys.html">
+            
+                <a href="keys.html">
+            
+                    
+                    Managing Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="node-create-keys.html">
+            
+                <a href="node-create-keys.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="subkey-create-keys.html">
+            
+                <a href="subkey-create-keys.html">
+            
+                    
+                    Subkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="js-create-keys.html">
+            
+                <a href="js-create-keys.html">
+            
+                    
+                    Polkadot JS API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="metamask-create-keys.html">
+            
+                <a href="metamask-create-keys.html">
+            
+                    
+                    Metamask Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="polkadot-js-create-keys.html">
+            
+                <a href="polkadot-js-create-keys.html">
+            
+                    
+                    Polkadot.js Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="ggx-explorer-create-keys.html">
+            
+                <a href="ggx-explorer-create-keys.html">
+            
+                    
+                    GGX Explorer UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Smart Contract Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../how-to-guides/how-to-deploy-rust.html">
+            
+                <a href="../how-to-guides/how-to-deploy-rust.html">
+            
+                    
+                    How to Deploy Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../how-to-guides/how-to-deploy-solidity.html">
+            
+                <a href="../how-to-guides/how-to-deploy-solidity.html">
+            
+                    
+                    How to Deploy Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sydney Testnet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Validator Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                    
+                    How to Setup a Validator Node on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                    
+                    How to Stake GGXT Tokens on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                    
+                    How to Pause Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../sydney-testnet/sydney-validator-program.html">
+            
+                <a href="../../sydney-testnet/sydney-validator-program.html">
+            
+                    
+                    Sydney Validator Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                <a href="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                    
+                    Sydney Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Managing Keys</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="creating-keys">Creating Keys</h1>
+<p>In GGX chain, key generation is a crucial process that allows users to create cryptographic key pairs. These key pairs consist of a public key and a corresponding private key. The public key is used to derive the account address, while the private key is essential for signing transactions and proving ownership of the account. GGX supports multiple methods for key generation, including using the <a href="ggx-explorer-create-keys.html">GGX Explorer UI</a>, <a href="polkadot-js-create-keys.html">Polkadot.js extension</a>, <a href="subkey-create-keys.html">Subkey tool</a>, <a href="polkadot-js-create-keys.html">JS API</a>, and direct generation from the <a href="node-create-keys.html">GGX Node</a>. For better security and advanced users, it is recommended to use node-based methods or the Subkey tool. Multisig and Proxied accounts can be easily created using the <a href="ggx-explorer-create-keys.html">Explorer UI</a>. EVM-based keys can be created by using Metamask and other EVM-compatible wallets.</p>
+<h2 id="supported-key-standards">Supported Key Standards</h2>
+<p>GGX chain supports the following key standards for its accounts:</p>
+<h5 id="ed25519">ed25519</h5>
+<p>This format <strong>is required</strong> for running a <a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">validator</a> node. However, conversion between sr25519 and ed25519 is not straightforward since they are different elliptic curve systems. They have different mathematical foundations and converting a private key from one to the other can compromise security.</p>
+<p>It is recommended to use sr25519 or EVM-based keys for end users rather than ed25519.</p>
+<h5 id="sr25519">sr25519</h5>
+<p>Also known as <strong>Schnorr/Ristretto 25519</strong>. An elliptic curve cryptography algorithm optimized for <a href="../../GLOSSARY.html#substrate" class="glossary-term" title="An open-source modular framework for building custom blockchain networks and decentralized applications (dApps). It is developed by Parity Technologies and is designed to be flexible, scalable, and easy to use. It provides a set of pre-built modules that developers can use to create customized blockchain networks and dApps. These modules include functionality for consensus, networking, storage, governance, and more, allowing developers to quickly build and launch their own blockchain-based projects.">Substrate</a>-based chains, providing efficient signature verification. sr25519 provides a high level of security and resistance against various attacks.</p>
+<h5 id="evm-based-keys-h160---recommended-for-end-users">EVM-based keys (H160) - Recommended for end users</h5>
+<p>It is the easiest and versatile key format, that can be used by EVM-compatible wallets including Metamask. It is a 160-bit hash of the public key, which is used as an address in EVM-based chains. It is also known as an <em>Ethereum address</em>. H160 keys are a good choice for end users, as they are easy to use and compatible with EVM-based wallets.</p>
+<h5 id="converting-keys">Converting Keys</h5>
+<p>As it is not directly possible to convert between sr25519 and ed25519 keys, it is recommended to create a new key pair for the desired key standard. However, it is possible to convert between sr25519/ed25519 and EVM-based keys. By using Keccak-256 function to generate hash from a public key and taking the rightmost 20 bytes of the hash, it is possible to get the H160 representation of the key.</p>
+<h2 id="validator-node-keys">Validator Node Keys</h2>
+<p>For running a <a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">validator</a> node, GGX requires two types of keys: <a href="../../GLOSSARY.html#stash-account" class="glossary-term" title="The primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating on the network. When a user wants to participate in staking and nominating activities, they must first transfer their $GGX tokens to their stash account.">Stash Account</a> and <a href="../../GLOSSARY.html#controller-account" class="glossary-term" title="A type of account that is used to control the staking and nomination activities of a stash account. A stash account is a primary account that holds a user&apos;s $GGX tokens and is used for staking and nominating, while the controller account is a separate account that is linked to the stash account to manage its staking and nomination activities.">Controller Account</a> keys. The Stash key holds the funds and is used for nominating other validators, while the Controller key is used to control the <a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">validator</a> node and manage nominations. The recommnded way to generate <a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">validator</a> node key is by running a node and using its tools. For more information, see <a href="node-create-keys.html">the instructions for making a key using the Node</a>.</p>
+<h2 id="multisig-addresses">Multisig Addresses</h2>
+<p>GGX chain supports multisig addresses, which require multiple signatures to approve transactions or changes on the chain. To create a multisig address, you need the public keys of all signatories involved in the multisig account. A multisig address can be useful for joint accounts or organizations that require consensus for transactions.</p>
+<h2 id="ways-to-generate-keys">Ways to Generate Keys</h2>
+<p>For better security, advanced users, and validators <strong>it is recommended</strong> to use node-based methods or the Subkey tool.</p>
+<ul>
+<li><a href="node-create-keys.html">Node</a> <em>(recommended, especially for <a href="../../GLOSSARY.html#validator" class="glossary-term" title="A node securing the relay chain by staking $GGX, validating proofs from collators on parachains, and determining a consensus along with other validators.">Validator</a> keys)</em></li>
+<li><a href="subkey-create-keys.html">Subkey</a> <em>(CLI tool)</em></li>
+<li><a href="js-create-keys.html">Polkadot JS API</a> <em>(requires scripting)</em></li>
+<li><a href="metamask-create-keys.html">Metamask Extension</a> <em>(UI-based, H160 keys only)</em></li>
+<li><a href="polkadot-js-create-keys.html">Polkadot.js Extension</a> <em>(UI-based, no EVM support)</em></li>
+<li><a href="ggx-explorer-create-keys.html">GGX Explorer UI</a> <em>(UI-based. Multisig, Proxied accounts, and Vanity Generator)</em></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="node-create-keys.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Node">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Managing Keys","level":"1.3.1","depth":2,"next":{"title":"Node","level":"1.3.2","depth":2,"path":"developer-documentation/keys/node-create-keys.md","ref":"developer-documentation/keys/node-create-keys.md","articles":[]},"previous":{"title":"Keys & Accounts","level":"1.3","depth":1,"ref":"","articles":[{"title":"Managing Keys","level":"1.3.1","depth":2,"path":"developer-documentation/keys/keys.md","ref":"developer-documentation/keys/keys.md","articles":[]},{"title":"Node","level":"1.3.2","depth":2,"path":"developer-documentation/keys/node-create-keys.md","ref":"developer-documentation/keys/node-create-keys.md","articles":[]},{"title":"Subkey","level":"1.3.3","depth":2,"path":"developer-documentation/keys/subkey-create-keys.md","ref":"developer-documentation/keys/subkey-create-keys.md","articles":[]},{"title":"Polkadot JS API","level":"1.3.4","depth":2,"path":"developer-documentation/keys/js-create-keys.md","ref":"developer-documentation/keys/js-create-keys.md","articles":[]},{"title":"Metamask Extension","level":"1.3.5","depth":2,"path":"developer-documentation/keys/metamask-create-keys.md","ref":"developer-documentation/keys/metamask-create-keys.md","articles":[]},{"title":"Polkadot.js Extension","level":"1.3.6","depth":2,"path":"developer-documentation/keys/polkadot-js-create-keys.md","ref":"developer-documentation/keys/polkadot-js-create-keys.md","articles":[]},{"title":"GGX Explorer UI","level":"1.3.7","depth":2,"path":"developer-documentation/keys/ggx-explorer-create-keys.md","ref":"developer-documentation/keys/ggx-explorer-create-keys.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["chollapse","octocat","../../_plugins/ggx-theme"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"octocat":{"url":"https://github.com/ggxchain/documentation"},"chollapse":{},"":{"":{"/":{"":{"/_plugins/ggx-theme":{}}}}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GGX","honkit":">= 5.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GGX Chain Documentation","gitbook":"*"},"file":{"path":"developer-documentation/keys/keys.md","mtime":"2023-08-29T07:09:37.106Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-29T07:09:44.140Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chollapse/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-octocat/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/ggx-theme/theme.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

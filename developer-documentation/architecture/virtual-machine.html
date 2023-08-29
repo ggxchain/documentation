@@ -1,0 +1,621 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Virtual Machine · GGX Chain Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 5.0.0">
+        <meta name="author" content="GGX">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chollapse/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/ggx-theme/styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="consensus.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Developer documentation</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Architecture
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="accounts-and-transactions.html">
+            
+                <a href="accounts-and-transactions.html">
+            
+                    
+                    Accounts and Transactions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="consensus.html">
+            
+                <a href="consensus.html">
+            
+                    
+                    Consensus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="virtual-machine.html">
+            
+                <a href="virtual-machine.html">
+            
+                    
+                    Virtual Machine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Keys & Accounts
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../keys/keys.html">
+            
+                <a href="../keys/keys.html">
+            
+                    
+                    Managing Keys
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../keys/node-create-keys.html">
+            
+                <a href="../keys/node-create-keys.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../keys/subkey-create-keys.html">
+            
+                <a href="../keys/subkey-create-keys.html">
+            
+                    
+                    Subkey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../keys/js-create-keys.html">
+            
+                <a href="../keys/js-create-keys.html">
+            
+                    
+                    Polkadot JS API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../keys/metamask-create-keys.html">
+            
+                <a href="../keys/metamask-create-keys.html">
+            
+                    
+                    Metamask Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../keys/polkadot-js-create-keys.html">
+            
+                <a href="../keys/polkadot-js-create-keys.html">
+            
+                    
+                    Polkadot.js Extension
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../keys/ggx-explorer-create-keys.html">
+            
+                <a href="../keys/ggx-explorer-create-keys.html">
+            
+                    
+                    GGX Explorer UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Smart Contract Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../how-to-guides/how-to-deploy-rust.html">
+            
+                <a href="../how-to-guides/how-to-deploy-rust.html">
+            
+                    
+                    How to Deploy Rust
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../how-to-guides/how-to-deploy-solidity.html">
+            
+                <a href="../how-to-guides/how-to-deploy-solidity.html">
+            
+                    
+                    How to Deploy Solidity
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Sydney Testnet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Validator Guides
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-setup-a-validator-node.html">
+            
+                    
+                    How to Setup a Validator Node on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.html">
+            
+                    
+                    How to Stake GGXT Tokens on Sydney Testnet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                <a href="../../sydney-testnet/validator-guides/how-to-chill.html">
+            
+                    
+                    How to Pause Staking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../sydney-testnet/sydney-validator-program.html">
+            
+                <a href="../../sydney-testnet/sydney-validator-program.html">
+            
+                    
+                    Sydney Validator Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                <a href="../../sydney-testnet/sydney-bug-bounty-program.html">
+            
+                    
+                    Sydney Bug Bounty Program
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../GLOSSARY.html">
+            
+                <a href="../../GLOSSARY.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Virtual Machine</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="virtual-machine">Virtual Machine</h1>
+<p>GGX chain utilizes a hybrid virtual machine. Smart contracts in GGX chain can be written in a general-purpose language that compiles into the <a href="../../GLOSSARY.html#webassembly" class="glossary-term" title="An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.">WebAssembly</a> or on <a href="../../GLOSSARY.html#solidity" class="glossary-term" title="Solidity is a high-level programming language specifically designed for writing smart contracts on blockchain platforms, primarily Ethereum. It is one of the most widely used languages for developing decentralized applications (dApps) and executing smart contracts within the Ethereum Virtual Machine (EVM).">Solidity</a>.</p>
+<h3 id="what-is-webassembly">What is WebAssembly?</h3>
+<p><a href="../../GLOSSARY.html#webassembly" class="glossary-term" title="An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.">WebAssembly</a>, shortened to <em>Wasm</em>, is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for the compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications.</p>
+<h3 id="why-webassembly">Why WebAssembly?</h3>
+<p><a href="../../GLOSSARY.html#webassembly" class="glossary-term" title="An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.">WebAssembly</a> is a platform-agnostic binary format, meaning it will run the exact instructions across whatever machine it operates on. Blockchains need determinacy to have reliable state transition updates across all nodes in the peer-to-peer network without forcing every peer to run the same hardware. Wasm is an excellent fit for reliability among the diverse set of machines. Wasm is both efficient and fast. The efficiency means that it can be uploaded onto the chain as a blob of code without causing too much state bloat while keeping its ability to execute at near-native speeds.</p>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="https://webassembly.org/" target="_blank">WebAssembly.org</a> - <a href="../../GLOSSARY.html#webassembly" class="glossary-term" title="An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.">WebAssembly</a> homepage that contains a link to the spec.</li>
+<li><a href="https://github.com/paritytech/Wasmi" target="_blank">Wasmi</a> - <a href="../../GLOSSARY.html#webassembly" class="glossary-term" title="An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.">WebAssembly</a> interpreter written in Rust.</li>
+<li><a href="https://github.com/paritytech/parity-Wasm" target="_blank">Parity Wasm</a> - <a href="../../GLOSSARY.html#webassembly" class="glossary-term" title="An instruction format for a virtual, stack-based machine. Polkadot Runtime Modules are compiled into WebAssembly. Also known as Wasm.">WebAssembly</a> serialization/deserialization in Rust.</li>
+<li><a href="https://github.com/paritytech/Wasm-utils" target="_blank">Wasm utils</a> - Collection of Wasm utilities used in Parity and Wasm contract development.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="consensus.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Consensus">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Virtual Machine","level":"1.2.3","depth":2,"next":{"title":"Keys & Accounts","level":"1.3","depth":1,"ref":"","articles":[{"title":"Managing Keys","level":"1.3.1","depth":2,"path":"developer-documentation/keys/keys.md","ref":"developer-documentation/keys/keys.md","articles":[]},{"title":"Node","level":"1.3.2","depth":2,"path":"developer-documentation/keys/node-create-keys.md","ref":"developer-documentation/keys/node-create-keys.md","articles":[]},{"title":"Subkey","level":"1.3.3","depth":2,"path":"developer-documentation/keys/subkey-create-keys.md","ref":"developer-documentation/keys/subkey-create-keys.md","articles":[]},{"title":"Polkadot JS API","level":"1.3.4","depth":2,"path":"developer-documentation/keys/js-create-keys.md","ref":"developer-documentation/keys/js-create-keys.md","articles":[]},{"title":"Metamask Extension","level":"1.3.5","depth":2,"path":"developer-documentation/keys/metamask-create-keys.md","ref":"developer-documentation/keys/metamask-create-keys.md","articles":[]},{"title":"Polkadot.js Extension","level":"1.3.6","depth":2,"path":"developer-documentation/keys/polkadot-js-create-keys.md","ref":"developer-documentation/keys/polkadot-js-create-keys.md","articles":[]},{"title":"GGX Explorer UI","level":"1.3.7","depth":2,"path":"developer-documentation/keys/ggx-explorer-create-keys.md","ref":"developer-documentation/keys/ggx-explorer-create-keys.md","articles":[]}]},"previous":{"title":"Consensus","level":"1.2.2","depth":2,"path":"developer-documentation/architecture/consensus.md","ref":"developer-documentation/architecture/consensus.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chollapse","octocat","../../_plugins/ggx-theme"],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"octocat":{"url":"https://github.com/ggxchain/documentation"},"chollapse":{},"":{"":{"/":{"":{"/_plugins/ggx-theme":{}}}}},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"GGX","honkit":">= 5.0.0","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"GGX Chain Documentation","gitbook":"*"},"file":{"path":"developer-documentation/architecture/virtual-machine.md","mtime":"2023-08-29T07:09:37.106Z","type":"markdown"},"gitbook":{"version":"5.0.0","time":"2023-08-29T07:09:44.140Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chollapse/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-octocat/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/ggx-theme/theme.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
