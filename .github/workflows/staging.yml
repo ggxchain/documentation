@@ -38,6 +38,6 @@ jobs:
           repo: GoldenGateGGX/documentation-staging-artifacts
           target_branch: main
           build_dir: _book
-          fqdn: staging-docs.dev.ggxchain.io
+          fqdn: docs.staging.ggxchain.io
         env:
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
