@@ -14,4 +14,4 @@ The GGX chain team retains privileged access to the network, granting them the e
 * To become a validator, a bond of 1000 GGXT tokens is required.
 * Nodes must have both the Prometheus port and RPC open, and use other flags described in the [node setup documentation](validator-guides/how-to-setup-a-validator-node.md).
 
-The Sydney testnet incorporates democratic routines. Any validator can propose network upgrades or changes to tokenomics parameters. All validators with a minimum stake of 1000 GGXT tokens can vote on these proposals. Proposals are accepted or rejected based on a simple majority rule.
+The Sydney Testnet incorporates democratic routines. Any validator can propose network upgrades or changes to tokenomics parameters. All validators with a minimum stake of 1000 GGXT tokens can vote on these proposals. Proposals are accepted or rejected based on a simple majority rule.
