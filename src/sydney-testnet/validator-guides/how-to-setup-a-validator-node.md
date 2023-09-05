@@ -2,6 +2,8 @@
 
 Please make sure to follow the instructions carefully. Mistakes in setting up a node may get result in slashed tokens and may put the tokens of nominators at risk. Check our [Sydney Validator Program](../sydney-validator-program.md) for requirements and incentives.
 
+Checkout the latest stable release version from the [GitHub repository](https://github.com/ggxchain/ggxnode).
+
 From the repository's root directory execute following commands in order:
 
 ```bash
@@ -35,8 +37,8 @@ docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
     --validator \
     --chain sydney \
     --base-path=/data-sydney \
-    --bootnodes /ip4/18.198.233.34/tcp/30333/p2p/12D3KooWFnFkPBYHdPzh8g5p33xCRZfga77kkYaR2gknxKM2HE6q \
-    --telemetry-url 'wss://test.telemetry.sydney.ggxchain.io/submit 0'
+    --bootnodes /dns/sun.sydney.ggxchain.io/tcp/30333/p2p/12D3KooWGmopnFNtQb2bo1irpjPLJUnmt9K4opTSHTMhYYobB8pC \
+    --telemetry-url "wss://telemetry.sydney.ggxchain.io/submit 0"
 ```
 
 Please note that is a recommended script to run for testnet, but you should be aware of some parameters that potentially can expose some security risks: 
@@ -47,7 +49,7 @@ You do not need pruning if you want to run a full archive node for some purposes
 
 Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
 
-You should be able to see your node when you visit the GGX telemetry website: <https://testnet.telemetry.sydney.ggxchain.io/>
+You should be able to see your node when you visit the GGX telemetry website: <https://telemetry.sydney.ggxchain.io/>
 
 You can use the following optional flags:
 

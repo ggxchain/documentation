@@ -1,5 +1,15 @@
 # Table of contents
 
+## Overview
+
+## Sydney Testnet
+
+* Validator Guides
+  * [Sydney Validator Program](sydney-testnet/sydney-validator-program.md)
+  * [How to Setup a Validator Node on Sydney Testnet](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
+  * [How to Stake GGXT Tokens on Sydney Testnet](sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md)
+  * [How to Pause Staking](sydney-testnet/validator-guides/how-to-chill.md)
+
 ## Developer documentation
 
 * Architecture
@@ -20,13 +30,5 @@
 
 * Interchain documentation
   * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
-
-## Sydney Testnet
-* Validator Guides
-  * [How to Setup a Validator Node on Sydney Testnet](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
-  * [How to Stake GGXT Tokens on Sydney Testnet](sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md)
-  * [How to Pause Staking](sydney-testnet/validator-guides/how-to-chill.md)
-  * [Sydney Validator Program](sydney-testnet/sydney-validator-program.md)
-  * [Sydney Bug Bounty Program](sydney-testnet/sydney-bug-bounty-program.md)
 
 * [Glossary](GLOSSARY.md)
