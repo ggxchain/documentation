@@ -1,4 +1,4 @@
-# Sydney Validator Programme
+# Sydney Validator Program
 
 #### General Terms
 
