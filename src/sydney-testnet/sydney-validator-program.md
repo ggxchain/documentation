@@ -2,7 +2,7 @@
 
 #### General Terms
 
-The GGX chain's Sydney validator programme is a campaign designed to unite high-quality validators, developers, ambassadors, and other active members for participation in the **Sydney testnet**. This testnet operates as a Proof-of-Stake network built on the GGX chain blockchain.
+The GGX chain's Sydney validator program is a campaign designed to unite high-quality validators, developers, ambassadors, and other active members for participation in the **Sydney Testnet**. This testnet operates as a Proof-of-Stake network built on the GGX chain blockchain.
 
 The GGX chain team retains privileged access to the network, granting them the exclusive authority to upgrade and configure the network. This design choice was made to ensure a failover mechanism in emergencies. As the network matures, we intend to revoke this privileged access. Any exercise of this access by the GGX chain team will be transparent and evident to all network participants. The GGX chain team is only incentivized to use this access in emergency situations.
 
