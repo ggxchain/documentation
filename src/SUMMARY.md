@@ -30,5 +30,6 @@
 
 * Interchain Documentation
   * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
+  * [ETH Light Client & Relayer](developer-documentation/relayer/relayer.md)
 
 * [Glossary](GLOSSARY.md)
