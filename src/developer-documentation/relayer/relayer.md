@@ -1,6 +1,7 @@
-## ETH Light Client & Relayer setup & usage example
+## ETH Light Client & Relayer setup and usage example
 
-For now ETH Light Client is integrated only with Brooklyn.  
+**For now ETH Light Client is integrated only with our development blockchain Brooklyn, later Sydney and mainnet will support it too.**  
+
 Before starting register on https://www.infura.io/ and get your API key.
 
 ### Node setup:
