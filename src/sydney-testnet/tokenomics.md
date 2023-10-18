@@ -65,7 +65,7 @@ Slashed amounts are sent to treasury.
 | Account | Part | Type |
 | ------- | ---- | ---- |
 | Validator** | 5% | Fixed comission |
-| Nominator + Validator** | 95% | Shared between nominators and validator ||
+| Nominator + Validator** | 95% | Shared between nominators and validator |
 
 ** 10% of validators rewards go to Treasury
 |  Account  | Part |
