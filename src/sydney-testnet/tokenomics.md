@@ -85,7 +85,7 @@ Slashed amounts are sent to treasury.
 
 ## Rewards
 
-### From transaction fees
+### From Transaction Fees
 
 | Account | Part |
 | -------- | ----- |
