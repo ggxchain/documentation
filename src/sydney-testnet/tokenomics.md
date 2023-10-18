@@ -55,7 +55,7 @@ Staking rewards are distributed each session.
 | Consensus Equivocation for Blocks (Double Sign) | 0.01% * Stake | TBD |
 | MPC Signature (Wrong message) |  0.01% * Stake | TBD |
 | MPC Key Generation (Failure to Participate) | 0.001% * Stake | TBD |
-| Early unsake | 10% * Stake |
+| Early Unstake | 10% * Stake | TBD |
 | ...TBD... | ...TBD... |
 
 Slashed amounts are sent to treasury.
