@@ -30,7 +30,7 @@ Schedule of APY will be next:
 
 After 30 years the APY stabilizes at 2%
 
-### Current state
+### Current State
 
 * Initial total supply is distributed to active nodes for now.
 * 18 decimals is done. (configured by MILLIGGX)
