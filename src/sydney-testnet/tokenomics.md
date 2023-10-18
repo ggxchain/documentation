@@ -75,7 +75,7 @@ Slashed amounts are sent to treasury.
 
 ### Current state
 
-* 1 year withdrawal lock is implemented
+* 1 year withdrawal lock is implemented.
 * Session period is 4 hours. Era period is quarter.
   (configured by `EpochDurationInBlocks`, `SessionsPerEra`).
 * Payout at the end of the session. Configured by runtime/mainnet/src/pos/session_payout/mod.rs
