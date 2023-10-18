@@ -90,7 +90,7 @@ Slashed amounts are sent to treasury.
 | Account | Part |
 | -------- | ----- |
 | Treasury | 100% |
-| Validator(block producer) | 0% |
+| Validator (block producer) | 0% |
 | Burn | 0% |
 
 Fees are distributed each block.
