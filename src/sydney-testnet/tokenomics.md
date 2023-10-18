@@ -81,7 +81,7 @@ Slashed amounts are sent to treasury.
 * Payout at the end of the session. Configured by runtime/mainnet/src/pos/session_payout/mod.rs
 * Median commission to nominators from validator preferences calculated each session.
   Static commission can be enabled by referenda. Configured by runtime/mainnet/src/pos/session_payout/mod.rs
-* 10% Treasury comission is implemented. (configured by runtime/mainnet/src/pos/currency.rs TreasuryCommission)
+* 10% Treasury comission is implemented. (configured by runtime/mainnet/src/pos/currency.rs `TreasuryCommission`)
 
 ## Rewards
 
