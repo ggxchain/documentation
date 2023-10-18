@@ -36,7 +36,7 @@ After 30 years the APY stabilizes at 2%
 * 18 decimals is done. (configured by MILLIGGX)
 * APY configured to 16%. (configured by runtime/mainnet/src/pos/currency.rs InflationPercent)
 * APY decrease ladder scheduled for the runtime.
-  APY decrease happens every 365.25 days to address leap years. (configured by runtime/mainnet/src/pos/currency.rs InflationPercentDecay)
+*  APY decrease happens every 365.25 days to address leap years. (configured by runtime/mainnet/src/pos/currency.rs InflationPercentDecay)
 
 ## Staking
 
