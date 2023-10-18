@@ -52,7 +52,7 @@ Staking rewards are distributed each session.
 | Misbehavior | Amount |  Parameters |
 | ------------| -------| ------------------
 | Consensus Offline               | 0.01% to 44% * Stake | starting from 10% validators offline linear increase |  
-| Consensus Equivocation for blocks(double sign) | 0.01% * Stake |  TBD |
+| Consensus Equivocation for Blocks (Double Sign) | 0.01% * Stake | TBD |
 | MPC Signature (Wrong message) |  0.01% * Stake | TBD |
 | MPC Key Generation (Failure to Participate) | 0.001% * Stake | TBD |
 | Early unsake | 10% * Stake |
