@@ -6,12 +6,26 @@ Checkout the latest stable release version from the [GitHub repository](https://
 
 From the repository's root directory execute following commands in order:
 
+Please note that this guide expects that you have already created [node and validator keys](../../developer-documentation/keys/node-create-keys.md) to participate in the network.
+
 ```bash
 docker build -f Dockerfile.sydney -t ggxchain-node:sydney .
 
 mkdir -p data-sydney
 
-docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 \
+# You should insert keys in the data directory.
+# Inserting AURA SR25519 key
+docker run -it ggxchain-node:sydney key insert --key-type aura --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
+# Inserting GRANDPA ED25519 key
+docker run -it ggxchain-node:sydney key insert --key-type gran --scheme ed25519 --suri "{YOUR_GRANDPA_KEY}" --chain=sydney -d data-sydney
+# Inserting GRANDPA ECDSA key
+docker run -it ggxchain-node:sydney key insert --key-type beef --scheme ecdsa --suri "{YOUR_BEEFY_KEY}" --chain=sydney -d data-sydney
+# Inserting I'm Online SR25519 key. Please note you can reuse the same or choose another that is more secure.
+docker run -it ggxchain-node:sydney key insert --key-type imon --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
+
+# Now, when we prepared volume we can run the node.
+
+docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 ggxchain-node:sydney \
     --name <INSERT_UNIQUE_NAME> \
     -p 127.0.0.1:9944:9944 \
     -p 127.0.0.1:9933:9933 \
