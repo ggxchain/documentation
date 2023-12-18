@@ -15,13 +15,13 @@ mkdir -p data-sydney
 
 # You should insert keys in the data directory.
 # Inserting AURA SR25519 key
-docker run -it ggxchain-node:sydney key insert --key-type aura --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
+docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type aura --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
 # Inserting GRANDPA ED25519 key
-docker run -it ggxchain-node:sydney key insert --key-type gran --scheme ed25519 --suri "{YOUR_GRANDPA_KEY}" --chain=sydney -d data-sydney
+docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type gran --scheme ed25519 --suri "{YOUR_GRANDPA_KEY}" --chain=sydney -d data-sydney
 # Inserting GRANDPA ECDSA key
-docker run -it ggxchain-node:sydney key insert --key-type beef --scheme ecdsa --suri "{YOUR_BEEFY_KEY}" --chain=sydney -d data-sydney
+docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type beef --scheme ecdsa --suri "{YOUR_BEEFY_KEY}" --chain=sydney -d data-sydney
 # Inserting I'm Online SR25519 key. Please note you can reuse the same or choose another that is more secure.
-docker run -it ggxchain-node:sydney key insert --key-type imon --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
+docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type imon --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
 
 # Now, when we prepared volume we can run the node.
 
