@@ -43,7 +43,12 @@ For ed25519:
 cargo +nightly run -- generate -w 24 --output-type json --scheme ed25519 >$HOME/keys/ed25519key.json
 ```
 
-for sr25519:
+For sr25519:
 ```bash
 cargo +nightly run -- generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
+```
+
+For ecdsa:
+```bash
+cargo +nightly run -- generate -w 24 --output-type json --scheme ecdsa >$HOME/keys/sr25519key.json
 ```

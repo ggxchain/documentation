@@ -29,6 +29,10 @@ For sr25519:
 ```bash
 ./ggxchain-node key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
 ```
+For ecdsa:
+```bash
+./ggxchain-node key generate -w 24 --output-type json --scheme ecdsa >$HOME/keys/sr25519key.json
+```
 
 ##### When Running a Node in Docker
 
@@ -39,4 +43,8 @@ docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate -w 24 --output-type 
 For sr25519:
 ```bash
 docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate -w 24 --output-type json --scheme sr25519 >$HOME/keys/sr25519key.json
+```
+For ecdsa:
+```bash
+docker run -v $HOME/keys:/keys --rm <IMAGE_ID> key generate -w 24 --output-type json --scheme ecdsa >$HOME/keys/sr25519key.json
 ```
