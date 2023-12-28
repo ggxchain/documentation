@@ -30,6 +30,6 @@
 
 * Interchain Documentation
   * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
-  * [Ethereum Receipt Processing](developer-documentation/ibc/eth-receipt-processing.md)
+  * [Ethereum Receipt Processing](developer-documentation/ibc/eth-block-relaying.md)
 
 * [Glossary](GLOSSARY.md)
