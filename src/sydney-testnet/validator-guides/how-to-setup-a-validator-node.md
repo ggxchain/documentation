@@ -1,79 +1,404 @@
-# How to Setup a Validator Node
+## GGX Chain Systemd Installation Guide
 
-Please make sure to follow the instructions carefully. Mistakes in setting up a node may get result in slashed tokens and may put the tokens of nominators at risk. Check our [Sydney Validator Program](../sydney-validator-program.md) for requirements and incentives.
+If you are viewing this from the console, here is the [permanent link](https://github.com/ggxchain/documentation/blob/main/src/sydney-testnet/validator-guides/how-to-setup-a-validator-node.md) for better readability and convenience.
 
-Checkout the latest stable release version from the [GitHub repository](https://github.com/ggxchain/ggxnode).
+Repository: https://github.com/ggxchain/ggxnode
 
-From the repository's root directory execute following commands in order:
+* _We're currently on the Sydney testnet. To ensure efficient debugging and testing, kindly adhere closely to the provided instructions. Please avoid reusing existing $USER and create new one exclusively. Your cooperation in this matter is greatly appreciated._
 
-Please note that this guide expects that you have already created [node and validator keys](../../developer-documentation/keys/node-create-keys.md) to participate in the network.
+### Introduction:
 
-```bash
-docker build -f Dockerfile.sydney -t ggxchain-node:sydney .
+In this tutorial, we will guide you through the installation of the GGX node using Systemd. However, please note that the security of your infrastructure is not addressed here. It is important to [follow best practices](https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html) for ensuring the security of your system.
 
-mkdir -p data-sydney
+The primary objective of this setup is to establish a high-performance validator. As such, it is crucial to ensure that all system resources are exclusively dedicated to our application. Deploying the application within a Docker environment is generally not recommended as each virtualization layer introduces overhead and can diminish validator performance. For optimal performance, we highly recommend running only one validator per dedicated hardware instance.
 
-# You should insert keys in the data directory.
-# Inserting AURA SR25519 key
-docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type aura --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
-# Inserting GRANDPA ED25519 key
-docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type gran --scheme ed25519 --suri "{YOUR_GRANDPA_KEY}" --chain=sydney -d data-sydney
-# Inserting GRANDPA ECDSA key
-docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type beef --scheme ecdsa --suri "{YOUR_BEEFY_KEY}" --chain=sydney -d data-sydney
-# Inserting I'm Online SR25519 key. Please note you can reuse the same or choose another that is more secure.
-docker run -v $(pwd)/data-sydney:/data-sydney -it ggxchain-node:sydney key insert --key-type imon --scheme sr25519 --suri "{YOUR_AURA_KEY}" --chain=sydney -d data-sydney
+#### A little guidance for choosing hardware:
+* _Reasonable Modern Linux distro ( Debian, Ubuntu )_
+* _AMD Zen3 or above, Intel Ice Lake, or newer (Xeon or Core series)_
+* _4 physical cores @ 3.4GHz or above_
+* _Simultaneous multithreading disabled_
+* _Prefer single-threaded performance over higher cores count_
+* _Enterprise NVMe SSD 512GB+ ( the sizing needs to be proportionate to accommodate the growing size of the blockchain )_
+* _16GB+ DDR4 ECC_
+* _Latest Linux Kernel_
+* _A minimum symmetric networking speed of 100Mb/s is required._
 
-# Now, when we prepared volume we can run the node.
+### Preparation:
 
-docker run -d -it --restart=unless-stopped --ulimit nofile=100000:100000 ggxchain-node:sydney \
-    --name <INSERT_UNIQUE_NAME> \
-    -p 127.0.0.1:9944:9944 \
-    -p 127.0.0.1:9933:9933 \
-    -p 127.0.0.1:9615:9615 \
-    -p 0.0.0.0:30333:30333 \
-    -v $(pwd)/custom-spec-files:/tmp \
-    -v $(pwd)/data-sydney:/data-sydney \
-    ggxchain-node:sydney \
-    --wasm-execution Compiled \
-    --database rocksdb \
-    --rpc-cors all \
-    --no-private-ip \
-    --no-mdns \
-    --state-pruning 256 \
-    --blocks-pruning 256 \
-    --node-key-type ed25519 \
-    --node-key-file /data-sydney/node.key \
-    --log info \
-    --rpc-methods unsafe \
-    --unsafe-rpc-external \
-    --prometheus-external \
-    --validator \
-    --chain sydney \
-    --base-path=/data-sydney \
-    --bootnodes /dns/sun.sydney.ggxchain.io/tcp/30333/p2p/12D3KooWGmopnFNtQb2bo1irpjPLJUnmt9K4opTSHTMhYYobB8pC \
-    --telemetry-url "wss://telemetry.sydney.ggxchain.io/submit 0"
+_Assume we logged in as our admin user who is a member of sudo group, let's go_
+
+```sh
+# system upgrade
+sudo apt update && sudo apt upgrade -y
 ```
 
-Please note that is a recommended script to run for testnet, but you should be aware of some parameters that potentially can expose some security risks: 
-* --rpc-methods unsafe
-* --unsafe-rpc-external
+* _Reboot server_
 
-You do not need pruning if you want to run a full archive node for some purposes.
+```sh
+sudo apt install git wget curl jq -y
+```
 
-Here the user must replace `<INSERT_UNIQUE_NAME>` with a unique name for their validator.
+```sh
+# Install requirements
+sudo apt install build-essential protobuf-compiler pkg-config libssl-dev librust-clang-sys-dev -y
+```
 
-You should be able to see your node when you visit the GGX telemetry website: <https://telemetry.sydney.ggxchain.io/>
+* **Create user**
 
-You can use the following optional flags:
+This user should not be granted login privileges and should not be allowed to set any passwords.
 
-| Flags                             | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `--validator`                     | Starts the node with the authority role and enables it to actively participate in any consensus task that it can (for example, depending on availability of local keys).                                                                                                                                                                                                                                                                               |
-| `--rpc-external`                  | Listens to all RPC interfaces. By default, the node only listens to local RPC calls. If you set this command-line option, keep in mind that that not all RPC methods are safe to be exposed publicly. Use an RPC proxy server to filter out dangerous methods. For more information about RPC methods that shouldn't be publicly exposed, see Remote procedure calls. Use `--unsafe-rpc-external` to suppress the warning if you understand the risks. |
-| `--unsafe-rpc-external`           | Listens to all RPC interfaces. This option is the same as `--rpc-external`.                                                                                                                                                                                                                                                                                                                                                                            |
-| `--base-path <path>`              | Specifies a custom base path.                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `--bootnodes <node-identifier>`   | Specifies a list of boot nodes identifiers for peer-to-peer communication.                                                                                                                                                                                                                                                                                                                                                                             |
-| `--chain <chain-specification>`   | Specifies the chain specification to use. You can set this option using a predefined chain specification name,such as `dev`, `local`, or `staging`or you can specify the path to a file that contains the chain specification, for example, the chain specification generated by using the build-spec subcommand.                                                                                                                                      |
-| `--name <name>`                   | Specifies the human-readable name for this node. The node name is reported to the telemetry server, if enabled.                                                                                                                                                                                                                                                                                                                                        |
-| `--password <password>`           | Specifies the password to use for the keystore.                                                                                                                                                                                                                                                                                                                                                                                                        |
-| `--telemetry-url <url verbosity>` | Specifies the URL of the telemetry server to connect to. You can pass this flag multiple times to specify multiple telemetry endpoints. Verbosity levels range from 0-9, with 0 denoting the least verbose. Use the following format to specify the URL followed the verbosity option is `--telemetry-url 'wss://foo/bar 0'`.                                                                                                                          |
+```sh
+# For example our user name is ggx_user
+USER_NAME='ggx_user'
+```
+
+```sh
+# Create dedicated no-login user
+sudo adduser --disabled-login --disabled-password --gecos GECOS ${USER_NAME}
+```
+
+```sh
+# get user shell ( stay here untill we ready to start the node )
+sudo su - ${USER_NAME}
+```
+
+* **Set variables** _( Before integrating the parameters, kindly ensure the versions are up-to-date by performing a cross-check. )_
+
+We will need `USER_NAME`, `NODE_SYSTEM_NAME` later, please note.
+
+```sh
+# Set Rust Toolchain and node binary version
+# The entries below can be accidently left outdated and lead to unpredictable consequences
+RUST_TOOLCHAIN='nightly-2023-08-19'
+GGX_NODE_VERSION='v0.1.5'
+# Below can be set based on your personal preferences
+USER_NAME="$(whoami)"                # process owner
+NODE_SYSTEM_NAME='MyNodeName123'        # used for data folder name for easy identification
+# Make sure no . or any special characters is involved.
+NODE_PRETTY_NAME='My Node Name 123'     # This will be visible on public telemetry dashboard
+```
+
+* **Rust toolchain and additional components**
+
+```sh
+# Install Rust default profile
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
+     --default-toolchain ${RUST_TOOLCHAIN} \
+     --profile default && source "$HOME/.cargo/env"
+```
+
+```sh
+# Update toolchain and set default
+rustup update  ${RUST_TOOLCHAIN}
+rustup default ${RUST_TOOLCHAIN}
+```
+
+```sh
+# Install required components
+rustup target add wasm32-unknown-unknown --toolchain ${RUST_TOOLCHAIN}
+rustup component add rust-src --toolchain ${RUST_TOOLCHAIN}
+```
+
+### Installation:
+
+```sh
+# Clone repository
+cd ~ && git clone https://github.com/ggxchain/ggxnode.git
+cd ggxnode && git fetch --all --tags && git pull
+```
+
+```sh
+# Checkout required version ( please cross-check )
+git checkout ${GGX_NODE_VERSION}
+```
+
+```sh
+# Build ( Sydney Testnet ) This can take several hours, depends on the computer resources available.
+rustup run ${RUST_TOOLCHAIN} cargo build --locked --release --package ggxchain-node --no-default-features --features="sydney"
+```
+
+If the build fails for any reason, please reach out to the community validators on [Dicord](https://discord.gg/ggx) for assistance.
+
+### Server configuration
+
+In order to ensure the provisioning of necessary resources, it is imperative to appropriately configure the system. The approach to achieving this will vary depending on the specific distribution, hardware specifications, kernel version, and other relevant factors. Attempting to provide a comprehensive and universally applicable guide in this context would be unfeasible. Therefore, we will present a concise checklist to facilitate the configuration process.
+
+* Set CPU Governor to Performance
+* Increase Max Open Files Limit
+* Make sure this adjustments is preserver on boot
+
+### Systemd
+
+At the time of writing this documentation, the network is in the early testnet stage. Certain variables, such as `endpoints domains`, `bootnodes`, and `telemetry`, may undergo multiple changes. To streamline the adjustment of these parameters, we will create a configuration file and include it in the systemd unit configuration. This approach enables more coherent and organized management of these parameters in a transparent and readable manner, ensuring the freshness and accuracy of the values.
+
+**Prior to deploying the node, it is crucial to thoroughly validate all essential parameters. Here is a handy checklist to ensure a smooth deployment:**
+
+* _Node binary version_
+* _Rust toolchain version_
+* _Active bootnode credentials_
+* _Correct telemetry link_
+* _Legit chainspec json file_
+
+_Good place to confirm this is GGXChain public [Dicord](https://discord.gg/ggx) server_
+
+#### Folders & Names
+
+* **_Please ensure that `${USER_NAME}` user has read and write permissions._**
+
+```sh
+# Create binary home
+cd ~ && mkdir -p "${HOME}/bin"
+```
+
+```sh
+# add $HOME/bin to $PATH ( bash )
+echo 'export PATH="${HOME}/bin:$PATH"' >>.bashrc && . .bashrc
+```
+
+_At the time of writtining `we are on the Sydney` test network. However, can be set to your prefered location. Variable `${NODE_SYSTEM_NAME}` we set before is just example for better recognition, can be set according personal preference as `db`, `node_1` `data` or anything also._
+
+```sh
+# Create data folder aka BASE_PATH ( we will need this later, remember )
+BASE_PATH="${HOME}/data-sydney/${NODE_SYSTEM_NAME}"
+mkdir -p ${BASE_PATH} && chmod 0700 ${BASE_PATH}
+```
+
+```sh
+# Folder path to store node key
+PRIVATE_KEY_STORAGE_FOLDER="${HOME}/.private"
+mkdir -p "${PRIVATE_KEY_STORAGE_FOLDER}" && chmod 0700 "${PRIVATE_KEY_STORAGE_FOLDER}"
+```
+
+#### Make symlink to previously compiled binary
+
+```sh
+ln -s ${HOME}/ggxnode/target/release/ggxchain-node ${HOME}/bin/
+```
+
+```sh
+# Test
+ggxchain-node --version
+```
+
+### Creating Config
+
+**This step-by-step tutorial doesn't require any manual action, however just for better understanding of configuration file here is short description:**
+
+* **node name**, some special characters will not be accepted as such as `.`
+* **Path should be absolute**, double check if all locations _( created above )_ are in place.
+* For _author_rotateKeys_ method we do need `RPC_METHODS` to be `unsafe`, after activation please set to `safe` and **restart**
+* `BASE_PATH` is where database are stored. **Point to the same location we just choose previously**
+* `CUSTOM_CHAIN_SPEC` absolute path to chain json file. _( double check which one is currently active on the network )_
+* Variables which can change anytime `BOOT_NODES`, `TELEMETRY_URL` _( always double check )_
+* `NODE_KEY_FILE` you on your own on how to manage your `node.key`. Please follow best practices. Never stop research and improving security.
+* `RPC_PORT` `PROMETHEUS_PORT` `CONSENSUS_P2P` are flexible and can be set according installation preferences.
+* `SYNC_MODE` available methods `full` and `fast` _( archive mod only support full sync )_
+
+```sh
+# Create folder to store configuration
+mkdir -p ${HOME}/conf && chmod 0700 ${HOME}/conf
+```
+
+* Always check correct url and json file name before continue here: [Dicord](https://discord.gg/ggx)
+
+```sh
+# Set chainspec json name and url
+CHAIN_SPEC_FILE_NAME='sydney-testnet.raw.json'
+CHAIN_SPEC_URL="https://raw.githubusercontent.com/ggxchain/ggxnode/main/custom-spec-files/${CHAIN_SPEC_FILE_NAME}"
+```
+
+```sh
+# Pull custom chainspec file and set permissions
+cd ~ && wget "${CHAIN_SPEC_URL}" -P ${HOME}/conf -q --show-progress
+chmod 0644 "${HOME}"/conf/"${CHAIN_SPEC_FILE_NAME}"
+```
+
+Execute command block below, make sure everything up to date, adjust prooning parameters if required.
+`RPC_METHODS` will be set temporaty to `unsafe`, as we need to perform `keys_rotation call` required by **validator**.
+If you setting up passive observer node, set this to `safe` right after creation.
+
+```bash
+        # Create node configuration
+        cat <<EOF | tee ${HOME}/conf/node.conf
+RPC_METHODS=unsafe
+NODE_NAME=${NODE_PRETTY_NAME}
+BASE_PATH=/home/${USER_NAME}/data-sydney/${NODE_SYSTEM_NAME}
+BOOT_NODES='/dns/sun.sydney.ggxchain.io/tcp/30333/p2p/12D3KooWGmopnFNtQb2bo1irpjPLJUnmt9K4opTSHTMhYYobB8pC'
+TELEMETRY_URL='wss://telemetry.sydney.ggxchain.io/submit 0'
+NODE_KEY_FILE=${PRIVATE_KEY_STORAGE_FOLDER}/node.key
+CUSTOM_CHAIN_SPEC=${HOME}/conf/${CHAIN_SPEC_FILE_NAME}
+RPC_PORT=9933
+PROMETHEUS_PORT=9615
+CONSENSUS_P2P=33777
+RPC_CORS=localhost
+LOG_LEVEL=info
+STATE_PRUNING=archive
+BLOCKS_PRUNING=archive
+SYNC_MODE=full
+EOF
+```
+
+_( this configuration file can be easily updated later though our journey `${HOME}/conf/node.conf` )_
+
+```sh
+# Restrict permissions
+chmod 0600 ${HOME}/conf/node.conf
+```
+
+### Keys Generation
+
+_Private keys are highly sensitive files and should be handled with utmost care. It is essential to ensure maximum protection and prevent any potential exposure. It is strongly recommended to follow best practices for keys management._ _Make sure to keep your private keys private and avoid sharing them publicly. Implement measures to safeguard the confidentiality and integrity of these keys. It is crucial to be aware of GGX Chain node keys management techniques to ensure secure handling._
+
+```sh
+# generate node key
+ggxchain-node key generate-node-key --file "${PRIVATE_KEY_STORAGE_FOLDER}/node.key"
+```
+
+```sh
+# set permissions
+chmod 0600 "${PRIVATE_KEY_STORAGE_FOLDER}/node.key"
+```
+
+Check node public ID
+
+```sh
+# check node public ID
+ggxchain-node key inspect-node-key --file "${PRIVATE_KEY_STORAGE_FOLDER}/node.key"
+```
+
+* Backup encrypt, save securely _( not recommended in production, consult our community for better picture )_
+* Please note, as soon as you ask community regarding best security practices and private keys management, big chance what you will instantly receive multiple private messages. Remember, everyone who sent you private messages are scammers. Always communicate in public chats and avoid any private communications with anyone.
+
+_By design, GGX Chain doesn't require `node.key` backup for security reason. But we are on testnet now, remember this._
+
+### Create Systemd Unit Config
+
+To continue we need **sudo** right, but just before exit lets copy our user name and node system name in to clipboard
+
+```sh
+# execute this command and follow instruction
+echo -e "\n# Copy this lines below in to the clipboard: \nUSER_NAME=$(whoami)\nNODE_SYSTEM_NAME=${NODE_SYSTEM_NAME}" && echo
+```
+
+```sh
+# Exit from current non-sudo user shell
+exit
+```
+
+_Our wariables we set previously in user environment will be gone, lets set them again_
+
+* Paste copied lines from the step above and press enter to set them for sudo user environment
+
+```sh
+# Check if variables set
+echo " User name: ${USER_NAME}" && echo " Node system name: ${NODE_SYSTEM_NAME}"
+```
+
+Create systemd unit configuration
+
+```sh
+# Create systemd unit configuration
+sudo cat <<EOF | sudo tee /etc/systemd/system/ggx-node.service > /dev/null
+[Unit]
+Description=GGXChain Node
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=${USER_NAME}
+Group=${USER_NAME}
+
+Type=simple
+
+EnvironmentFile=/home/${USER_NAME}/conf/node.conf
+
+ExecStart=/home/${USER_NAME}/bin/ggxchain-node \\
+  --port \${CONSENSUS_P2P} \\
+  --base-path=\${BASE_PATH} \\
+  --database rocksdb \\
+  --sync \${SYNC_MODE} \\
+  --no-private-ip \\
+  --no-mdns \\
+  --state-pruning \${STATE_PRUNING} \\
+  --blocks-pruning \${BLOCKS_PRUNING} \\
+  --node-key-type ed25519 \\
+  --node-key-file \${NODE_KEY_FILE} \\
+  --log \${LOG_LEVEL} \\
+  --wasm-execution Compiled \\
+  --rpc-methods \${RPC_METHODS} \\
+  --rpc-cors "localhost" \\
+  --rpc-port \${RPC_PORT} \\
+  --prometheus-port \${PROMETHEUS_PORT} \\
+  --name \${NODE_NAME} \\
+  --chain \${CUSTOM_CHAIN_SPEC} \\
+  --bootnodes \${BOOT_NODES} \\
+  --telemetry-url \${TELEMETRY_URL}
+
+Restart=always
+RestartSec=160
+LimitNOFILE=280000
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+```
+
+```sh
+# Reload configuration
+sudo systemctl daemon-reload && sudo systemctl enable ggx-node.service
+```
+
+### Start The Node !
+
+```sh
+sudo systemctl start ggx-node.service && sudo journalctl -fu ggx-node.service -o cat
+```
+
+* _Logs should populate console screen by now, follow `monitoring` and `debugging` section of the documentation from here._
+* _Node should be visible at ==> [Telemetry Web Page](https://telemetry.sydney.ggxchain.io) <==_
+
+Feel free to experiment with parameters in `/bin/node.conf` before taking any serious actions.
+
+**_A little summary of what we just deployed:_**
+
+* `RPC`           _bond to host and exposed on port `$RPC_PORT`, set to `unsafe` or `safe`_
+* `Prometheus`    _bond to host and exposed on port `$PROMETHEUS_PORT`_
+* `Consensus P2P` _bond to all interfaces and available on port `$CONSENSUS_P2P`_
+
+**Validator**
+
+* _Currently, this node is passive observer, validator require additional flag to be passed here `/etc/systemd/system/ggx-node.service`_
+
+```sh
+        --validator
+```
+
+**Example:**
+```sh
+ExecStart=/home/${USER_NAME}/bin/ggxchain-node --port ${CONSENSUS_P2P} --validator \
+... rest of configuration ...
+```
+
+```sh
+# Ensure unit configuration is reload
+sudo systemctl daemon-reload
+```
+
+* To perform the `author_rotateKeys`, execute:
+
+```sh
+curl -H "Content-Type: application/json" \
+     -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' \
+      http://localhost:$RPC_PORT
+```
+
+* _After successful call, set `$RPC_METHODS` to `safe` and restart `ggx-node.service`_
+* Perform required transactions by using [GGXChain Explorer](https://explorer.ggxchain.io) interface
+* _Watch [GGXChain Explorer](https://explorer.ggxchain.io) as your node will about to start validating_
+
+#### Protocol Upgrade
+
+GGXChain offers the convenience of seamless upgrades without any downtime for validators. While detailed coverage of this feature is not within the scope of this particular discussion, you can find comprehensive information on this topic in our documentation portal.
+
+**Have fun ! And if you think we can improve this documentation feel free to collaborate, [talk to us](https://discord.gg/ggx).**

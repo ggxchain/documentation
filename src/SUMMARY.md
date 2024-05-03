@@ -5,10 +5,10 @@
 ## Sydney Testnet
 
 * Validator Guides
-  * [Sydney Validator Program](sydney-testnet/sydney-validator-program.md)
-  * [How to Setup a Validator Node on Sydney Testnet](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
-  * [How to Stake GGXT Tokens on Sydney Testnet](sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md)
-  * [How to Pause Staking](sydney-testnet/validator-guides/how-to-chill.md)
+  * [Sydney Testnet Introduction](sydney-testnet/Introduction.md)
+  * [Node Installation](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
+  * [How to Stake](sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md)
+  * [Pause Validator](sydney-testnet/validator-guides/how-to-chill.md)
 
 ## Developer documentation
 
