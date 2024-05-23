@@ -30,7 +30,7 @@
 * [DEX](developer-documentation/dex/README.md)
   * [DEX Pallet API Reference](developer-documentation/dex/api_dex.md)
   * [Assets Pallet API Reference](developer-documentation/dex/api_assets.md)
-  * [Code examples](developer-documentation/dex/examples/README.md)
+  * [Example](https://github.com/ggxchain/documentation/tree/main/src/developer-documentation/dex/examples)
 
 * Interchain Documentation
   * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
