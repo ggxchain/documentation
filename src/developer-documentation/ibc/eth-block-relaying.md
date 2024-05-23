@@ -19,7 +19,7 @@ You can add more contracts to track using the referenda voting process. If the n
 
 #### Solidity precompile
 
-```sol
+```
 /// SPDX-License-Identifier: GPL-3.0-only
 pragma solidity >=0.8.0;
 
@@ -32,12 +32,12 @@ pragma solidity >=0.8.0;
  *
  */
 interface EthReceiptProvider {
-    
+
     /**
      * @notice Fetches logs of a specified contract from a given block on an established chain.
      *
-     * @dev This function returns log information in the form of topics and data arrays for a 
-     *      specified contract from a given block on a specified chain. The log information is 
+     * @dev This function returns log information in the form of topics and data arrays for a
+     *      specified contract from a given block on a specified chain. The log information is
      *      returned as two separate arrays, where each entry corresponds to a log event.
      *
      * @param chain_id is the ID of the chain from which to retrieve log information.
