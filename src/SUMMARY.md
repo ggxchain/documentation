@@ -27,6 +27,10 @@
 * Smart Contract Guides
   * [How to Deploy Rust](developer-documentation/how-to-guides/how-to-deploy-rust.md)
   * [How to Deploy Solidity](developer-documentation/how-to-guides/how-to-deploy-solidity.md)
+* [DEX](developer-documentation/dex/README.md)
+  * [DEX Pallet API Reference](developer-documentation/dex/api_dex.md)
+  * [Assets Pallet API Reference](developer-documentation/dex/api_assets.md)
+  * [Code examples](developer-documentation/dex/examples/README.md)
 
 * Interchain Documentation
   * [IBC / ICS20 Interface](developer-documentation/ibc/ibc.md)
