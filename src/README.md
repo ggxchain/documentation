@@ -3,14 +3,12 @@
   <img src="assets/logo-dark.png" class="logo-dark" alt="GGX Chain logo" />
 </div>
 
-### What is GGX Chain?
+### What is the GGx Chain?
 
-GGX chain is the interchain infrastructure protocol that utilizes Multi-Party Computation (MPC) for interoperable communication and advanced liquidity routing over a network of decentralized independent sub-chains.
+GGx chain is a general purpose, interchain consensus platform. GGx is a sovereign Proof of Stake blockchain backed by professional validators, with EVM, WASM and Zero-Knowledge capabilities. This makes the GGx chain an ideal choice for settlement.
 
-GGX chain is built to connect arbitrary chains with each other turning sharded environment into the internet of blockchains.
+### Why is the GGx Chain?
 
-### Why GGX Chain?
+GGx chain is an interchain relay platform. GGx chain is also a smart contract platform, utilizing a hybrid virtual machine. GGx chain's hybrid virtual machine allows users to program in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript).
 
-GGX chain is an interchain communication platform, allowing you to send messages and liquidity from one blockchain to another. GGX chain is also a smart contract platform, utilizing a hybrid virtual machine. GGX chain's hybrid virtual machine allows users to program in Solidity as well as any general purpose programming language that can be compiled into the WASM (e.g. Rust, Javascript).
-
-We provide agnostic base layer communication, modern security techniques and zero-knowledge precompiles, providing the richest environment for dapps development, especially for dapps that require cross-chain communication.
+We provide base layer relays, modern security techniques and zero-knowledge precompiles, providing the richest environment for dapps development, especially for dapps that require cross-chain settlement.
