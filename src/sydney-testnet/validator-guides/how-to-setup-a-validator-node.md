@@ -13,10 +13,10 @@ In this tutorial, we will guide you through the installation of the GGX node usi
 The primary objective of this setup is to establish a high-performance validator. As such, it is crucial to ensure that all system resources are exclusively dedicated to our application. Deploying the application within a Docker environment is generally not recommended as each virtualization layer introduces overhead and can diminish validator performance. For optimal performance, we highly recommend running only one validator per dedicated hardware instance.
 
 #### A little guidance for choosing hardware:
-* _Reasonable Modern Linux distro ( Debian, Ubuntu )_
-* _AMD Zen3 or above, Intel Ice Lake, or newer (Xeon or Core series)_
-* _4 physical cores @ 3.4GHz or above_
-* _Simultaneous multithreading disabled_
+* _Reasonable Modern Linux distro ( Debian, Ubuntu ) configurable accordingly_
+* _AMD Zen3 or above, Intel Ice Lake, or newer (Xeon, Ryzen or Core series)_
+* _4+ physical cores @ 3.4GHz or above_
+* _Simultaneous multithreading disabled ( edge production )_
 * _Prefer single-threaded performance over higher cores count_
 * _Enterprise NVMe SSD 512GB+ ( the sizing needs to be proportionate to accommodate the growing size of the blockchain )_
 * _16GB+ DDR4 ECC_
@@ -70,12 +70,12 @@ We will need `USER_NAME`, `NODE_SYSTEM_NAME` later, please note.
 # Set Rust Toolchain and node binary version
 # The entries below can be accidently left outdated and lead to unpredictable consequences
 RUST_TOOLCHAIN='nightly-2023-08-19'
-GGX_NODE_VERSION='v0.1.5'
+GGX_NODE_VERSION='v0.1.6'
 # Below can be set based on your personal preferences
-USER_NAME="$(whoami)"                # process owner
-NODE_SYSTEM_NAME='MyNodeName123'        # used for data folder name for easy identification
-# Make sure no . or any special characters is involved.
-NODE_PRETTY_NAME='My Node Name 123'     # This will be visible on public telemetry dashboard
+USER_NAME="$(whoami)"                   # process owner
+NODE_SYSTEM_NAME='MyNodaName123'        # used for data folder name for easy identification
+# Make sure no "." or any special characters is involved.
+NODE_PRETTY_NAME='My Noda Sir 123'      # This will be visible on public telemetry dashboard
 ```
 
 * **Rust toolchain and additional components**
@@ -188,34 +188,19 @@ ggxchain-node --version
 * **Path should be absolute**, double check if all locations _( created above )_ are in place.
 * For _author_rotateKeys_ method we do need `RPC_METHODS` to be `unsafe`, after activation please set to `safe` and **restart**
 * `BASE_PATH` is where database are stored. **Point to the same location we just choose previously**
-* `CUSTOM_CHAIN_SPEC` absolute path to chain json file. _( double check which one is currently active on the network )_
-* Variables which can change anytime `BOOT_NODES`, `TELEMETRY_URL` _( always double check )_
+* `CUSTOM_CHAIN_SPEC` is a chain name. We will use `sydney` in our example, as we about to join Sydney testnet.
 * `NODE_KEY_FILE` you on your own on how to manage your `node.key`. Please follow best practices. Never stop research and improving security.
 * `RPC_PORT` `PROMETHEUS_PORT` `CONSENSUS_P2P` are flexible and can be set according installation preferences.
-* `SYNC_MODE` available methods `full` and `fast` _( archive mod only support full sync )_
+* `SYNC_MODE` available methods `full` `warp` `fast` _( archive mod only support full sync )_
 
 ```sh
 # Create folder to store configuration
 mkdir -p ${HOME}/conf && chmod 0700 ${HOME}/conf
 ```
 
-* Always check correct url and json file name before continue here: [Dicord](https://discord.gg/ggx)
-
-```sh
-# Set chainspec json name and url
-CHAIN_SPEC_FILE_NAME='sydney-testnet.raw.json'
-CHAIN_SPEC_URL="https://raw.githubusercontent.com/ggxchain/ggxnode/main/custom-spec-files/${CHAIN_SPEC_FILE_NAME}"
-```
-
-```sh
-# Pull custom chainspec file and set permissions
-cd ~ && wget "${CHAIN_SPEC_URL}" -P ${HOME}/conf -q --show-progress
-chmod 0644 "${HOME}"/conf/"${CHAIN_SPEC_FILE_NAME}"
-```
-
 Execute command block below, make sure everything up to date, adjust prooning parameters if required.
 `RPC_METHODS` will be set temporaty to `unsafe`, as we need to perform `keys_rotation call` required by **validator**.
-If you setting up passive observer node, set this to `safe` right after creation.
+If you setting up passive observer node, set this to `safe` now.
 
 ```bash
         # Create node configuration
@@ -223,10 +208,8 @@ If you setting up passive observer node, set this to `safe` right after creation
 RPC_METHODS=unsafe
 NODE_NAME=${NODE_PRETTY_NAME}
 BASE_PATH=/home/${USER_NAME}/data-sydney/${NODE_SYSTEM_NAME}
-BOOT_NODES='/dns/sun.sydney.ggxchain.io/tcp/30333/p2p/12D3KooWGmopnFNtQb2bo1irpjPLJUnmt9K4opTSHTMhYYobB8pC'
-TELEMETRY_URL='wss://telemetry.sydney.ggxchain.io/submit 0'
 NODE_KEY_FILE=${PRIVATE_KEY_STORAGE_FOLDER}/node.key
-CUSTOM_CHAIN_SPEC=${HOME}/conf/${CHAIN_SPEC_FILE_NAME}
+CUSTOM_CHAIN_SPEC=sydney
 RPC_PORT=9933
 PROMETHEUS_PORT=9615
 CONSENSUS_P2P=33777
@@ -330,9 +313,7 @@ ExecStart=/home/${USER_NAME}/bin/ggxchain-node \\
   --rpc-port \${RPC_PORT} \\
   --prometheus-port \${PROMETHEUS_PORT} \\
   --name \${NODE_NAME} \\
-  --chain \${CUSTOM_CHAIN_SPEC} \\
-  --bootnodes \${BOOT_NODES} \\
-  --telemetry-url \${TELEMETRY_URL}
+  --chain \${CUSTOM_CHAIN_SPEC}
 
 Restart=always
 RestartSec=160
@@ -355,8 +336,8 @@ sudo systemctl daemon-reload && sudo systemctl enable ggx-node.service
 sudo systemctl start ggx-node.service && sudo journalctl -fu ggx-node.service -o cat
 ```
 
-* _Logs should populate console screen by now, follow `monitoring` and `debugging` section of the documentation from here._
-* _Node should be visible at ==> [Telemetry Web Page](https://telemetry.sydney.ggxchain.io) <==_
+* _Logs will populate console screen by now, follow `monitoring` and `debugging` section of the documentation from here._
+* _Node also should be visible at ==> [Telemetry Page](https://telemetry.ggxchain.net) <==_
 
 Feel free to experiment with parameters in `/bin/node.conf` before taking any serious actions.
 
@@ -395,7 +376,8 @@ curl -H "Content-Type: application/json" \
 
 * _After successful call, set `$RPC_METHODS` to `safe` and restart `ggx-node.service`_
 * Perform required transactions by using [GGXChain Explorer](https://explorer.ggxchain.io) interface
-* _Watch [GGXChain Explorer](https://explorer.ggxchain.io) as your node will about to start validating_
+
+**New validators will land in to the waiting list first, please check "Waiting" [explorer tab](https://explorer.ggxchain.io/#/staking) before asking questions!**
 
 #### Protocol Upgrade
 
