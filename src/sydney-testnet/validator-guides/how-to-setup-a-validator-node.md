@@ -129,15 +129,12 @@ In order to ensure the provisioning of necessary resources, it is imperative to 
 
 ### Systemd
 
-At the time of writing this documentation, the network is in the early testnet stage. Certain variables, such as `endpoints domains`, `bootnodes`, and `telemetry`, may undergo multiple changes. To streamline the adjustment of these parameters, we will create a configuration file and include it in the systemd unit configuration. This approach enables more coherent and organized management of these parameters in a transparent and readable manner, ensuring the freshness and accuracy of the values.
+At the time of writing this documentation, the network is in the early testnet stage. Certain variables may undergo multiple changes. To streamline the adjustment of these parameters, we will create a configuration file and include it in the systemd unit configuration. This approach enables more coherent and organized management of these parameters in a transparent and readable manner, ensuring the freshness and accuracy of the values.
 
 **Prior to deploying the node, it is crucial to thoroughly validate all essential parameters. Here is a handy checklist to ensure a smooth deployment:**
 
 * _Node binary version_
 * _Rust toolchain version_
-* _Active bootnode credentials_
-* _Correct telemetry link_
-* _Legit chainspec json file_
 
 _Good place to confirm this is GGXChain public [Dicord](https://discord.gg/ggx) server_
 
@@ -381,6 +378,6 @@ curl -H "Content-Type: application/json" \
 
 #### Protocol Upgrade
 
-GGXChain offers the convenience of seamless upgrades without any downtime for validators. While detailed coverage of this feature is not within the scope of this particular discussion, you can find comprehensive information on this topic in our documentation portal.
+GGXChain provides seamless upgrades with no downtime for validators. We will add detailed coverage of this feature to our documentation portal when it becomes relevant.
 
 **Have fun ! And if you think we can improve this documentation feel free to collaborate, [talk to us](https://discord.gg/ggx).**
