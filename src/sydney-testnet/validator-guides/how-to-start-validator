@@ -1,0 +1,90 @@
+# Introduction
+Staking and setting up a validator on GGX Network is not a complex task but requires some careful setup to give yourself a secure configuration for your GGX tokens.
+
+## Prerequisites
+Before you start, make sure you have the following:
+
+- Access to the GGX Explorer.
+- Polkadotjs Chrome Extension.
+- Basic understanding of how to use the GGX Explorer.
+
+### 1. Navigate to GGX Explorer and Connect Wallet
+The GGX explorer can be found [here](http://explorer.ggxchain.io/), and the explorer should be recognizing your Polkadotjs Chrome Extension for you, showing your address in "Accounts".
+
+If not, please create 2 addresses by opening the Polkadotjs Chrome Extension, and selecting the '+' symbol to create a new account for each. Save your seed phrases, these are the most important ways to recover your accounts, tokens, and validator.
+
+<img width="332" alt="validator-create-acct" src="assets/stake-ggx/validator-create-acct.png">
+
+Name the first one "Whatever Stash" and the second one "Whatever Proxy"
+
+### 2. Funding Validator and Proxy
+Now that we have the addresses needed, you have either already got ~1100 GGX or need to request this amount so we can proceed. If you have the funds we will transfer them to the address we have created and labeled as "Whatever Stash" for ease, we will refer to it as this moving forward.
+
+We will send most funds 1090 to the "Whatever Stash" and the remaining 10 GGX to the "Whatever Proxy", because this is a way to control specific features for our Validator, we want to keep some tiny funds for TX Approvals.
+
+### 3. Creating Proxy
+We will need to go to the the "Developer" tab and choose "Extrinsics"
+<img width="913" alt="validator-extrinsics" src="assets/stake-ggx/validator-extrinsics.png">
+
+We now need to change the "system" extrinsic to "proxy", your page should look like below after entering the "Extrinsics" page.
+<img width="1195" alt="validator-proxy-submit" src="assets/stake-ggx/validator-proxy-submit.png">
+
+After changing to "proxy" the page should look like so, and the option addProxy should be automatically selected first. For the Proxy we would want to set the "Any" to "Staking" so it only has these permissions from your stash account.
+
+<img width="1445" alt="validate-staking-proxy" src="assets/stake-ggx/validate-staking-proxy.png">
+
+The top address chosen should be your "Whatever Stash" as we set earlier, while the "Id AccountId" should be your "Whatever Proxy". Once that is confirmed all good, we now select "Sign and Submit. This creates our proxy address by submitting it on chain.
+
+### 4. Cleaning up Wallet Accounts
+Since the new launch and setup we are using Proxy Accounts, which give the Stash account the potential to be an offline or cold wallet. So we want to now go to our Polkadotjs Chrome Extension and copy the "Whatever Stash" address. Then click on the "..." to "Forget Account".
+Even if you plan to not use it as a cold wallet, for the setup and understanding of how this new process works, follow this for now and you can re-import by your seed phrase that you saved at the start of this guide.
+<img width="261" alt="validator-forget-acct" src="assets/stake-ggx/validator-forget-acct.png">
+
+### 5. Adding Proxy Account for Validator
+<img width="379" alt="validator-add-acct" src="assets/stake-ggx/validator-add-acct.png">
+
+On the main "Accounts" page of the explorer is a + button with "Proxied" next to it, this is how we will add our proxy to the explorer so we can finish our Validator setup.
+
+<img width="1099" alt="validator-add-proxied-acct" src="assets/stake-ggx/validator-add-proxied-acct.png">
+
+Here is where you will copy your "Whatever Stash" address we had copied before forgetting the account. Name it as you named it before.
+
+Then you will be able to see on the accounts page the new proxy after reloading the page.
+
+<img width="1177" alt="validator-manage-proxy" src="assets/stake-ggx/validator-manage-proxy.ong">
+
+If you hover over the blue icon, it tells you how you can manage the Proxy, revoking its access or adding another maybe.
+<img width="1097" alt="validator-proxy-config" src="assets/stake-ggx/validator-proxy-config.png">
+
+### 6. Bonding to Proxy and Validating
+Now from here we want to navigate to the Networks "Staking" page so that we can select "Accounts". On this page we will be creating a "Stash" to then "Validate" with after. 
+
+When you click the "+ Proxied" button you should see a screen like the following:
+<img width="1092" alt="validator-stash-proxy" src="assets/stake-ggx/validator-stash-proxy.png">
+
+We will bond and then we need to sign and submit as below:
+<img width="1108" alt="validator-proxy-bond" src="assets/stake-ggx/validator-proxy-bond.png">
+
+Once it is bonded, you should see the stash on the account screen with the "Session Key" next to your stash. 
+<img width="1169" alt="validator-after-bond-session-key" src="assets/stake-ggx/validator-after-bond-session-key.png">
+
+Note: Session key was accessed in following the doc (here)[https://docs.ggxchain.io/sydney-testnet/validator-guides/how-to-setup-a-validator-node.html] we need this key to be entered in on the next screen so we can then choose to start our Validator.
+<img width="1108" alt="validator-session-key" src="assets/stake-ggx/validator-session-key.png">
+
+We need to select "Set Session Key" and then authorize the following transaction. 
+<img width="1094" alt="validator-auth-session-key" src="assets/stake-ggx/validator-auth-session-key.png">
+
+The "Session Key" button should now be replaced with a "Validate" button.
+<img width="1172" alt="validator-set-validate" src="assets/stake-ggx/validator-set-validate.png">
+
+We select the validate button and then have to set our commission rate.
+
+<img width="1103" alt="validator-set-commission" src="assets/stake-ggx/validator-set-commission.png">
+
+Lastly, lets now authorize the transaction.
+<img width="1102" alt="validator-auth-validate" src="assets/stake-ggx/validator-auth-validate.png">
+
+If all is successful you should see the following now
+<img width="1183" alt="validator-successful-setup" src="assets/stake-ggx/validator-successful-setup.png">
+
+
