@@ -14,12 +14,13 @@ Schedule of APY will be next:
 
 | Date | Yearly APY** |
 | -----|-----------------------|
-| 2023 |    14.93%             |
-| 2024 |    13.93%             |
-| 2028 |    11.31%             |
-| 2043 |    4%                 |
-| 2053 |    2%                 |
+| 2024 |    16.00%             |
+| 2025 |    14.93%             |
+| 2026 |    13.93%             |
+| 2029 |    11.31%             |
+| 2044 |    4%                 |
 | 2054 |    2%                 |
+| 2055 |    2%                 |
 
 **APY decreases by 6.7% per year.**
 
@@ -29,8 +30,8 @@ After 30 years, the APY stabilizes at 2%.
 
 - Initial total supply is distributed to multisig to distribute to selected network validators.
 - 18 decimals.
-- APY is configured to 14.93% and drops 6.7% every year until it reaches 2% (configured by `runtime/mainnet/src/pos/currency.rs`).
-- APY decrease happens every 365.25 days to address leap years (configured by `runtime/mainnet/src/pos/currency.rs`).
+- APY is configured to 16% and drops 6.7% every year until it reaches 2% (configured by `DefaultInflationPercent` and `DefaultInflationDecay`).
+- APY decrease happens every 365.25 days to address leap years.
 
 ## Staking
 
@@ -57,8 +58,8 @@ Slashed amounts are sent to the treasury.
 
 | Account | Part | Type |
 | ------- | ---- | ---- |
-| Validator | 5% | Configurable commission |
-| Nominator + Validator | 95% | Shared between nominators and validator |
+| Validator | Variable% | Configurable commission |
+| Nominator + Validator | Variable% | Shared between nominators and validator |
 
 - **Validators** receive a commission that is deducted from the nominators' rewards. The commission rate is configurable and determined as the median value of all validators' preferred rates. The remaining rewards, after the commission deduction, are shared between the nominators and the validator based on their respective stakes.
 - **10% of validators' rewards** go to the Treasury:
@@ -83,9 +84,9 @@ Slashed amounts are sent to the treasury.
 
 | Account | Part | Description |
 | ---------------------------- | ------------------- | ------------------------------------------------- |
-| Validators | 682,055 GGX per session | Reward for producing blocks and maintaining the network. Distribution based on session points and commission. |
-| Nominators | 6,138,492 GGX per session | Shared among nominators based on their stake. Distribution after validator commission. |
-| Treasury | 68,206 GGX per session | Leftover rewards and failed to pay amounts are sent to the treasury. Treasury commission also applies. |
+| Validators | 730,594 GGX per session | Reward for producing blocks and maintaining the network. Distribution based on session points and commission. |
+| Nominators | 6,575,342 GGX per session | Shared among nominators based on their stake. Distribution after validator commission. |
+| Treasury | 73,059 GGX per session | Leftover rewards and failed to pay amounts are sent to the treasury. Treasury commission also applies. |
 
 **Details:**
 - **Validator Rewards:** Calculated per session based on the total session points earned by the validator. A commission (static or median) is applied before distributing rewards to nominators.
@@ -93,10 +94,10 @@ Slashed amounts are sent to the treasury.
 - **Treasury:** Receives any remaining rewards after distribution to validators and nominators, and also gets a specific commission from the staking rewards.
 
 **Example Calculation:**
-- **Total Session Reward (session_reward):** 6,820,547 GGX (assuming 2190 sessions per year)
-- **Validator Reward:** 682,055 GGX (10% of session reward)
-- **Nominator Reward:** 6,138,492 GGX (remaining 90% of session reward)
-- **Treasury Commission:** 68,206 GGX per session
+- **Total Session Reward (session_reward):** 7,305,936 GGX (assuming 2190 sessions per year)
+- **Validator Reward:** 730,594 GGX (10% of session reward)
+- **Nominator Reward:** 6,575,342 GGX (remaining 90% of session reward)
+- **Treasury Commission:** 73,059 GGX per session
 
 * All these values are based on the initial supply and 1st year of inflation.
 
