@@ -9,6 +9,7 @@
   * [Node Installation](sydney-testnet/validator-guides/how-to-setup-a-validator-node.md)
   * [How to Stake](sydney-testnet/validator-guides/how-to-stake-ggxt-tokens.md)
   * [Pause Validator](sydney-testnet/validator-guides/how-to-chill.md)
+  * [Tokenomics](sydney-testnet/tokenomics.md)
 
 ## Developer documentation
 
