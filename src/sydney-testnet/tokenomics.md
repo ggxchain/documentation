@@ -2,7 +2,7 @@
 
 ## Initial Total Supply
 
-- **100 Billion GGX**
+- **1 Billion GGX**
 - **18 decimals**
 - **8886 Chain ID**
 
@@ -123,9 +123,9 @@ Fees are distributed each block.
 
 | Category | Type | Amount |
 | ------ | -------- | ----------- |
-| Transaction | 1 second of execution (or equivalent proof size) | 10,000 GGX |
+| Transaction | 1 second of execution (or equivalent proof size) | 113 Pico GGX |
 | Transaction | MPC signature | 100 GGX |
-| Storage | Existential Deposit (ED) for account | 0.1 GGX |
+| Storage | Existential Deposit (ED) for account | 1 GGX |
 
 ## Parameters Configuration
 
